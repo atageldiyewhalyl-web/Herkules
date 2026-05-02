@@ -137,6 +137,7 @@ a {
   z-index: 0;
   background: linear-gradient(90deg, var(--white) 0%, var(--white) 74%, rgba(255, 255, 255, 0) 100%);
   pointer-events: none;
+  transition: background 0.8s ease, opacity 0.8s ease;
 }
 
 .hero__copy {
@@ -2570,6 +2571,12 @@ main::after {
   .hero::after {
     inset: -12px 0 -12px -8%;
     background: rgba(255, 255, 255, 0.45);
+  }
+
+  .hero.is-mobile-video-complete::after {
+    background:
+      linear-gradient(180deg, rgba(242, 244, 248, 0.68) 0%, rgba(255, 255, 255, 0.76) 52%, rgba(238, 240, 244, 0.7) 100%),
+      rgba(210, 214, 222, 0.34);
   }
 
   .hero-video--desktop {

@@ -756,6 +756,23 @@
         });
       });
 
+      const hero = document.querySelector(".hero");
+      const mobileHeroVideo = document.querySelector(".hero-video--mobile");
+
+      if (hero && mobileHeroVideo) {
+        const markMobileHeroComplete = () => {
+          if (window.matchMedia("(max-width: 620px)").matches) {
+            hero.classList.add("is-mobile-video-complete");
+          }
+        };
+
+        mobileHeroVideo.addEventListener("ended", markMobileHeroComplete, { once: true });
+
+        if (mobileHeroVideo.ended) {
+          markMobileHeroComplete();
+        }
+      }
+
       const reviewMarquees = document.querySelectorAll(".reviews-marquee");
 
       reviewMarquees.forEach((marquee, index) => {
