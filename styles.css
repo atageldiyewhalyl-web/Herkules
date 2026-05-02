@@ -140,19 +140,6 @@ a {
   transition: background 0.8s ease, opacity 0.8s ease;
 }
 
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: -20px 0;
-  z-index: 0;
-  background:
-    linear-gradient(180deg, rgba(242, 244, 248, 0.68) 0%, rgba(255, 255, 255, 0.76) 52%, rgba(238, 240, 244, 0.7) 100%),
-    rgba(210, 214, 222, 0.34);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 2.4s ease;
-}
-
 .hero__copy {
   position: relative;
   z-index: 1;
@@ -2583,15 +2570,15 @@ main::after {
 
   .hero::after {
     inset: -12px 0 -12px -8%;
-    background: rgba(255, 255, 255, 0.45);
+    background:
+      linear-gradient(180deg, rgba(242, 244, 248, 0.62) 0%, rgba(255, 255, 255, 0.7) 52%, rgba(238, 240, 244, 0.64) 100%),
+      rgba(210, 214, 222, 0.3);
+    opacity: 0.42;
+    transition: opacity 3s ease;
   }
 
   .hero.is-mobile-video-complete::after {
-    background: rgba(255, 255, 255, 0.45);
-  }
-
-  .hero.is-mobile-video-complete::before {
-    opacity: 1;
+    opacity: 0.92;
   }
 
   .hero-video--desktop {

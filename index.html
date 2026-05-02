@@ -767,6 +767,25 @@
         };
 
         mobileHeroVideo.addEventListener("ended", markMobileHeroComplete, { once: true });
+        mobileHeroVideo.addEventListener("timeupdate", () => {
+          if (
+            Number.isFinite(mobileHeroVideo.duration) &&
+            mobileHeroVideo.duration > 0 &&
+            mobileHeroVideo.currentTime >= mobileHeroVideo.duration - 0.2
+          ) {
+            markMobileHeroComplete();
+          }
+        });
+
+        mobileHeroVideo.addEventListener(
+          "loadedmetadata",
+          () => {
+            if (Number.isFinite(mobileHeroVideo.duration) && mobileHeroVideo.duration > 0) {
+              window.setTimeout(markMobileHeroComplete, mobileHeroVideo.duration * 1000);
+            }
+          },
+          { once: true }
+        );
 
         if (mobileHeroVideo.ended) {
           markMobileHeroComplete();
