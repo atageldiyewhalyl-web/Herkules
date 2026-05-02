@@ -1,0 +1,15 @@
+.DS_Store
+assets/.DS_Store
+.vercel
+
+# Local QA screenshots and recordings generated during browser checks.
+/*.png
+/*.mp4
+
+# Source video uploads are converted to optimized webm assets for the site.
+assets/**/*.mp4
+
+# Editor and OS noise.
+.idea/
+.vscode/
+*.swp
