@@ -2737,8 +2737,13 @@ main::after {
   }
 
   .nav__item {
+    position: relative;
     display: grid;
     align-items: stretch;
+  }
+
+  .nav__item--dropdown::after {
+    display: none;
   }
 
   .nav__trigger {
@@ -2758,6 +2763,10 @@ main::after {
     transform: rotate(45deg) translateY(-2px);
   }
 
+  .nav__item.is-expanded .nav__trigger::after {
+    transform: rotate(225deg) translate(-1px, -1px);
+  }
+
   .nav__dropdown {
     position: static;
     display: grid;
@@ -2768,11 +2777,32 @@ main::after {
     border-radius: 0;
     background: transparent;
     box-shadow: none;
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: none;
+    pointer-events: none;
+    overflow: hidden;
+    transition:
+      max-height 220ms ease,
+      opacity 180ms ease,
+      visibility 180ms ease;
+    backdrop-filter: none;
+  }
+
+  .nav__item:hover .nav__dropdown,
+  .nav__item:focus-within .nav__dropdown {
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .nav__item.is-expanded .nav__dropdown {
+    max-height: 420px;
     opacity: 1;
     visibility: visible;
-    transform: none;
     pointer-events: auto;
-    backdrop-filter: none;
   }
 
   .nav__dropdown a {
