@@ -8,7 +8,7 @@
       name="description"
       content="Herkules Umzüge & Transporte e.K. aus Mannheim: über 20 Jahre Erfahrung, offizieller Partner der Stadt Mannheim und zuverlässiger Umzugsservice für Privat und Gewerbe."
     />
-    <link rel="stylesheet" href="styles.css?v=20260503-standorte" />
+    <link rel="stylesheet" href="styles.css?v=20260503-dropdown" />
   </head>
   <body class="about-page">
     <header class="site-header">
@@ -19,8 +19,24 @@
 
         <div class="nav__links" aria-label="Navigation">
           <a href="ueber-uns.html" aria-current="page">Über uns</a>
-          <a href="/#leistungen">Leistungen</a>
-          <a href="umzug-frankfurt.html">Standorte</a>
+          <div class="nav__item nav__item--dropdown">
+            <button class="nav__trigger" type="button" aria-haspopup="true" aria-expanded="false">Leistungen</button>
+            <div class="nav__dropdown" aria-label="Leistungen">
+              <a href="privatumzuege.html">Privatumzüge</a>
+              <a href="bueroumzuege.html">Büroumzüge</a>
+              <a href="seniorenumzuege.html">Seniorenumzüge</a>
+              <a href="auslandsumzuege.html">Auslandsumzüge</a>
+              <a href="halteverbotszone.html">Halteverbotszone</a>
+              <a href="aussenaufzug.html">Aussenaufzug</a>
+            </div>
+          </div>
+          <div class="nav__item nav__item--dropdown">
+            <button class="nav__trigger" type="button" aria-haspopup="true" aria-expanded="false">Standorte</button>
+            <div class="nav__dropdown" aria-label="Standorte">
+              <a href="/">Mannheim</a>
+              <a href="umzug-frankfurt.html">Frankfurt</a>
+            </div>
+          </div>
           <a href="/#ablauf">Ablauf</a>
           <a href="#kontakt">Kontakt</a>
         </div>
