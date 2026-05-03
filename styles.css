@@ -1317,7 +1317,7 @@ main::after {
 .rating-summary__credentials {
   display: flex;
   grid-column: 1 / -1;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 8px 10px;
   align-items: center;
 }
@@ -1336,6 +1336,7 @@ main::after {
   font-size: 0.82rem !important;
   font-weight: 950;
   line-height: 1.1 !important;
+  white-space: nowrap;
 }
 
 .rating-summary__badge img {
@@ -1356,6 +1357,13 @@ main::after {
   font-size: 1rem;
   font-weight: 1000;
   line-height: 1;
+}
+
+.rating-summary__badge .proof-number {
+  display: inline-flex;
+  color: var(--ink);
+  font-size: 1.35rem;
+  line-height: 0.9;
 }
 
 .about-page main {
@@ -3724,6 +3732,10 @@ main::after {
     font-size: 0.92rem;
   }
 
+  .rating-summary__badge .proof-number {
+    font-size: 0.92rem;
+  }
+
   .reviews-section__mobile-credentials {
     display: flex;
     width: min(100% - 28px, 1180px);
@@ -4438,6 +4450,10 @@ main::after {
   .reviews-section__mobile-credentials .rating-summary__badge--stadt img {
     width: 96px !important;
     height: auto !important;
+  }
+
+  .reviews-section__mobile-credentials .rating-summary__badge .proof-number {
+    font-size: 0.92rem;
   }
 }
 
