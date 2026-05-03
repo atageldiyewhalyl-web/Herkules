@@ -1261,6 +1261,12 @@ main::after {
   color: var(--yellow-dark);
 }
 
+.location-page .reviews-section h2 {
+  max-width: 720px;
+  font-size: clamp(2.35rem, 3.45vw, 3.85rem);
+  line-height: 1.02;
+}
+
 .rating-summary {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr);
