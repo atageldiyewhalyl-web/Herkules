@@ -1,6 +1,20 @@
 .DS_Store
 assets/.DS_Store
 .vercel
+dist/
+node_modules/
+
+# Local clean-URL shims for simple static servers. Vercel uses the generated dist/ output.
+/privatumzuege/
+/bueroumzuege/
+/seniorenumzuege/
+/halteverbotszone/
+/auslandsumzuege/
+/aussenaufzug/
+/umzug-frankfurt/
+/ueber-uns/
+/impressum/
+/datenschutz/
 
 # Local QA screenshots and recordings generated during browser checks.
 /*.png

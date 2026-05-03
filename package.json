@@ -1,0 +1,13 @@
+{
+  "name": "herkules-umzuege",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static pre-rendered website for Herkules Umzüge & Transporte e.K.",
+  "scripts": {
+    "build": "node scripts/prerender.js",
+    "validate": "node scripts/validate-seo.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

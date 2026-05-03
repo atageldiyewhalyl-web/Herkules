@@ -1,6 +1,137 @@
 {
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
   "cleanUrls": true,
-  "trailingSlash": false,
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/privatumzuege.html",
+      "destination": "/privatumzuege/",
+      "permanent": true
+    },
+    {
+      "source": "/bueroumzuege.html",
+      "destination": "/bueroumzuege/",
+      "permanent": true
+    },
+    {
+      "source": "/seniorenumzuege.html",
+      "destination": "/seniorenumzuege/",
+      "permanent": true
+    },
+    {
+      "source": "/halteverbotszone.html",
+      "destination": "/halteverbotszone/",
+      "permanent": true
+    },
+    {
+      "source": "/auslandsumzuege.html",
+      "destination": "/auslandsumzuege/",
+      "permanent": true
+    },
+    {
+      "source": "/aussenaufzug.html",
+      "destination": "/aussenaufzug/",
+      "permanent": true
+    },
+    {
+      "source": "/ueber-uns.html",
+      "destination": "/ueber-uns/",
+      "permanent": true
+    },
+    {
+      "source": "/umzug-frankfurt.html",
+      "destination": "/umzug-frankfurt/",
+      "permanent": true
+    },
+    {
+      "source": "/ein-und-auspackservice/",
+      "destination": "/privatumzuege/",
+      "permanent": true
+    },
+    {
+      "source": "/haushaltsaufloesung/",
+      "destination": "/privatumzuege/",
+      "permanent": true
+    },
+    {
+      "source": "/entsorgung/",
+      "destination": "/privatumzuege/",
+      "permanent": true
+    },
+    {
+      "source": "/einlagerung/",
+      "destination": "/privatumzuege/",
+      "permanent": true
+    },
+    {
+      "source": "/verpackungsmaterial/",
+      "destination": "/privatumzuege/",
+      "permanent": true
+    },
+    {
+      "source": "/kontakt/",
+      "destination": "/#kontakt",
+      "permanent": false
+    },
+    {
+      "source": "/impressum.html",
+      "destination": "/impressum/",
+      "permanent": true
+    },
+    {
+      "source": "/datenschutz.html",
+      "destination": "/datenschutz/",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/privatumzuege/",
+      "destination": "/privatumzuege.html"
+    },
+    {
+      "source": "/bueroumzuege/",
+      "destination": "/bueroumzuege.html"
+    },
+    {
+      "source": "/seniorenumzuege/",
+      "destination": "/seniorenumzuege.html"
+    },
+    {
+      "source": "/halteverbotszone/",
+      "destination": "/halteverbotszone.html"
+    },
+    {
+      "source": "/auslandsumzuege/",
+      "destination": "/auslandsumzuege.html"
+    },
+    {
+      "source": "/aussenaufzug/",
+      "destination": "/aussenaufzug.html"
+    },
+    {
+      "source": "/ueber-uns/",
+      "destination": "/ueber-uns.html"
+    },
+    {
+      "source": "/umzug-frankfurt/",
+      "destination": "/umzug-frankfurt.html"
+    },
+    {
+      "source": "/impressum/",
+      "destination": "/impressum.html"
+    },
+    {
+      "source": "/datenschutz/",
+      "destination": "/datenschutz.html"
+    }
+  ],
   "headers": [
     {
       "source": "/assets/(.*)",

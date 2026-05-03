@@ -1,0 +1,5 @@
+# Herkules Umzüge & Transporte e.K.
+
+This file mirrors /llms.txt for crawlers that request llm.txt.
+
+See: https://umzuege-herkules.de/llms.txt

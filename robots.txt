@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://umzuege-herkules.de/sitemap.xml
+
+# AI and answer-engine context
+Allow: /llms.txt
+Allow: /llm.txt

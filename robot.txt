@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://umzuege-herkules.de/sitemap.xml
