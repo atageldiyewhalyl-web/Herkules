@@ -2255,6 +2255,15 @@ main::after {
   padding: 0;
 }
 
+.contact-info__item--highlight {
+  margin: -8px 0 0;
+  padding: 12px 14px;
+  border: 1px solid rgba(246, 191, 38, 0.72);
+  border-radius: 10px;
+  background: rgba(255, 248, 226, 0.92);
+  box-shadow: 0 16px 40px rgba(246, 191, 38, 0.14);
+}
+
 .contact-info__item--wide {
   grid-column: 1 / -1;
   justify-items: center;
