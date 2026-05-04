@@ -2420,26 +2420,16 @@ main::after {
   display: grid;
   width: 100%;
   max-width: none;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 24px;
+  grid-template-columns: minmax(0, 1fr);
   align-items: center;
   padding: 28px 0;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
-  cursor: pointer;
+  cursor: default;
 }
 
 .service-faq .faq-section__toggle i {
-  display: grid;
-  width: 38px;
-  height: 38px;
-  place-items: center;
-  border-radius: 50%;
-  background: var(--yellow);
-  color: var(--ink);
-  font-size: 1.35rem;
-  font-weight: 950;
-  transition: transform 220ms ease;
+  display: none;
 }
 
 .service-faq.is-open .faq-section__toggle i {
@@ -2447,20 +2437,14 @@ main::after {
 }
 
 .service-faq .faq-list {
-  max-height: 0;
-  overflow: hidden;
-  opacity: 0;
-  margin-top: 0;
-  transition:
-    max-height 320ms ease,
-    opacity 220ms ease,
-    margin-top 220ms ease;
+  max-height: none;
+  overflow: visible;
+  opacity: 1;
+  margin-top: 28px;
 }
 
 .service-faq.is-open .faq-list {
-  max-height: 2200px;
-  opacity: 1;
-  margin-top: 28px;
+  max-height: none;
 }
 
 .service-faq .faq-answer p + p {
@@ -4644,6 +4628,11 @@ main::after {
     cursor: pointer;
   }
 
+  .service-faq .faq-section__toggle {
+    grid-template-columns: minmax(0, 1fr);
+    cursor: default;
+  }
+
   .faq-section__toggle span {
     font-size: clamp(1.9rem, 8.5vw, 2.25rem);
     line-height: 1.05;
@@ -4659,6 +4648,10 @@ main::after {
     color: var(--ink);
     font-size: 1.25rem;
     font-weight: 950;
+  }
+
+  .service-faq .faq-section__toggle i {
+    display: none;
   }
 
   .faq-list {
@@ -4677,6 +4670,13 @@ main::after {
 
   .faq-section.is-open .faq-list {
     max-height: 1200px;
+    opacity: 1;
+  }
+
+  .service-faq .faq-list,
+  .service-faq.is-open .faq-list {
+    max-height: none;
+    overflow: visible;
     opacity: 1;
   }
 
