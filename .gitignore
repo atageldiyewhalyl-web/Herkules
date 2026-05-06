@@ -3,6 +3,7 @@ assets/.DS_Store
 .vercel
 dist/
 node_modules/
+supabase/.temp/
 
 # Local clean-URL shims for simple static servers. Vercel uses the generated dist/ output.
 /privatumzuege/

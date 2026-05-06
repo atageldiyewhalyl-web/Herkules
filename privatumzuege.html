@@ -33,6 +33,7 @@
     <link rel="apple-touch-icon" href="/assets/Favicon.png" />
     <meta name="theme-color" content="#f8bf1c" />
     <link rel="stylesheet" href="/styles.css?v=20260503-seo-urls" />
+    <script defer src="/assets/request-form.js"></script>
   </head>
   <body class="service-page">
     <header class="site-header">
@@ -52,6 +53,7 @@
               <a href="/auslandsumzuege/">Auslandsumzüge</a>
               <a href="/halteverbotszone/">Halteverbotszone</a>
               <a href="/aussenaufzug/">Aussenaufzug</a>
+              <a href="/stundenpreise/">Stundenpreise</a>
             </div>
           </div>
           <div class="nav__item nav__item--dropdown">
@@ -252,12 +254,11 @@
             <span>der zu Ihnen passt.</span>
           </h2>
           <p>
-            Festpreis für maximale Sicherheit oder flexible Stundenbasis mit
-            Team und LKW - transparent, versichert und klar kalkulierbar.
+            Festpreis für maximale Planungssicherheit - transparent, versichert und klar kalkulierbar.
           </p>
         </div>
 
-        <div class="pricing-options" aria-label="Preisoptionen im Vergleich">
+        <div class="pricing-options pricing-options--single" aria-label="Preisoption Festpreis">
           <article class="pricing-option pricing-option--fixed">
             <div class="pricing-option__intro">
               <span class="pricing-label">Empfohlen</span>
@@ -285,58 +286,6 @@
                 Angebot erhalten
               </a>
             </div>
-          </article>
-
-          <article class="pricing-option pricing-option--hourly">
-            <div class="pricing-option__intro">
-              <span class="pricing-label">Flexibel</span>
-              <h3>Nach Aufwand</h3>
-              <p>
-                Für flexible Umzüge mit transparenter Abrechnung nach Stunden.
-              </p>
-            </div>
-            <div class="pricing-fit">
-              <span>Am besten, wenn</span>
-              <strong>Sie klein starten oder den Aufwand flexibel halten möchten.</strong>
-            </div>
-
-            <div class="rate-table" aria-label="Stundenpreise inklusive LKW">
-              <label>
-                <input type="radio" name="rate" value="90" checked />
-                <span>2 Personen + LKW</span>
-                <strong>90 €/h</strong>
-              </label>
-              <label>
-                <input type="radio" name="rate" value="120" />
-                <span>3 Personen + LKW</span>
-                <strong>120 €/h</strong>
-              </label>
-              <label>
-                <input type="radio" name="rate" value="150" />
-                <span>4 Personen + LKW</span>
-                <strong>150 €/h</strong>
-              </label>
-            </div>
-
-            <div class="price-calculator" aria-label="Preisrechner nach Stunden">
-              <div class="price-calculator__control">
-                <label for="moving-hours">Geplante Dauer</label>
-                <div>
-                  <button type="button" data-hours-step="-1" aria-label="Eine Stunde weniger">-</button>
-                  <input id="moving-hours" type="number" min="4" max="12" step="1" value="4" />
-                  <button type="button" data-hours-step="1" aria-label="Eine Stunde mehr">+</button>
-                </div>
-              </div>
-              <div class="price-calculator__result">
-                <span>Geschätzter Preis</span>
-                <strong><output id="moving-total">360 €</output></strong>
-              </div>
-            </div>
-
-            <p class="pricing-note">
-              Mindestdauer: 4 Stunden inkl. An- und Abfahrt. Jede weitere
-              Stunde wird entsprechend berechnet.
-            </p>
           </article>
         </div>
       </section>

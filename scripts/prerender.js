@@ -12,6 +12,7 @@ const routes = [
   { source: "halteverbotszone.html", route: "halteverbotszone" },
   { source: "auslandsumzuege.html", route: "auslandsumzuege" },
   { source: "aussenaufzug.html", route: "aussenaufzug" },
+  { source: "stundenpreise.html", route: "stundenpreise" },
   { source: "umzug-frankfurt.html", route: "umzug-frankfurt" },
   { source: "ueber-uns.html", route: "ueber-uns" },
   { source: "impressum.html", route: "impressum" },

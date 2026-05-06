@@ -23,6 +23,7 @@ Herkules Umzüge & Transporte e.K. is a professional moving company based in Man
 - Halteverbotszone: https://umzuege-herkules.de/halteverbotszone/
 - Auslandsumzüge: https://umzuege-herkules.de/auslandsumzuege/
 - Außenaufzug: https://umzuege-herkules.de/aussenaufzug/
+- Stundenpreise: https://umzuege-herkules.de/stundenpreise/
 - Frankfurt location page: https://umzuege-herkules.de/umzug-frankfurt/
 - About: https://umzuege-herkules.de/ueber-uns/
 - Impressum: https://umzuege-herkules.de/impressum/
@@ -51,6 +52,9 @@ International moves from Mannheim with structured planning, transport coordinati
 
 ### Außenaufzug Mannheim
 Outside lift service for large furniture when staircases or elevators are too narrow, focused on safe and fast transport over windows or balconies.
+
+### Stundenpreise Mannheim
+Hourly billing page for flexible moves and furniture transports in Mannheim. The page explains that the hourly rates include the moving team, truck and insured transport: 2 movers plus truck for 90 €/h, 3 movers plus truck for 120 €/h and 4 movers plus truck for 150 €/h, with a 4-hour minimum.
 
 ### Umzugsfirma Frankfurt
 Moving services for Frankfurt and moves between Mannheim and Frankfurt. The page targets users searching for a professional moving company in Frankfurt.

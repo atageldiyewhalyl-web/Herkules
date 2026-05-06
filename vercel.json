@@ -40,6 +40,11 @@
       "permanent": true
     },
     {
+      "source": "/stundenpreise.html",
+      "destination": "/stundenpreise/",
+      "permanent": true
+    },
+    {
       "source": "/ueber-uns.html",
       "destination": "/ueber-uns/",
       "permanent": true
@@ -114,6 +119,10 @@
     {
       "source": "/aussenaufzug/",
       "destination": "/aussenaufzug.html"
+    },
+    {
+      "source": "/stundenpreise/",
+      "destination": "/stundenpreise.html"
     },
     {
       "source": "/ueber-uns/",
