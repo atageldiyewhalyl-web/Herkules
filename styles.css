@@ -630,6 +630,14 @@ h1 span {
   height: auto;
 }
 
+/* Temporarily hidden until Stadt Mannheim partner approval is confirmed. */
+.proof__badge--stadt,
+.service-hero__credential--stadt,
+.rating-summary__badge--stadt,
+.about-partnership {
+  display: none !important;
+}
+
 .service-flow {
   position: relative;
   z-index: 2;
