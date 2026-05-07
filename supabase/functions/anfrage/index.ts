@@ -246,7 +246,7 @@ Deno.serve(async (req: Request) => {
     return jsonResponse(502, { error: "Die Anfrage konnte nicht gespeichert werden." });
   }
 
-  const adminEmail = Deno.env.get("ADMIN_EMAIL") || "atageldiyewhalyl@gmail.com";
+  const adminEmail = Deno.env.get("ADMIN_EMAIL") || "halyl@xn--nll-hoa.com";
   const from = Deno.env.get("MAIL_FROM") || "Herkules Umzüge <onboarding@resend.dev>";
   const ownerMessage = buildOwnerEmail(fields);
 

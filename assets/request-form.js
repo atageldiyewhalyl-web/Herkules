@@ -64,6 +64,13 @@
           "success",
           "Vielen Dank. Ihre Anfrage wurde verschickt und Sie erhalten eine Bestätigung per E-Mail."
         );
+        window.dispatchEvent(
+          new CustomEvent("herkules:form-submit", {
+            detail: {
+              page: window.location.href,
+            },
+          })
+        );
       } catch (error) {
         setStatus(
           form,
