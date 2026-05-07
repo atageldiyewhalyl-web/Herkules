@@ -6,7 +6,7 @@ const required = [
   ["title", /<title>.+?<\/title>/s],
   ["description", /<meta\s+name="description"\s+content="[^"]+"\s*\/>/s],
   ["canonical", /<link rel="canonical" href="https:\/\/www\.umzuege-herkules\.de\/[^"]*"\s*\/>/s],
-  ["favicon", /<link rel="icon" href="\/assets\/Favicon\.png" type="image\/png"\s*\/>/s],
+  ["favicon", /<link rel="icon" href="\/assets\/favicon-512\.png" type="image\/png" sizes="512x512"\s*\/>/s],
   ["open graph title", /<meta property="og:title" content="[^"]+"\s*\/>/s],
   ["twitter card", /<meta name="twitter:card" content="summary_large_image"\s*\/>/s],
   ["json-ld", /<script type="application\/ld\+json">.+?<\/script>/s],
@@ -23,7 +23,7 @@ for (const page of pages) {
   }
 }
 
-for (const file of ["robots.txt", "sitemap.xml", "llms.txt", "llm.txt", "assets/Favicon.png"]) {
+for (const file of ["robots.txt", "sitemap.xml", "llms.txt", "llm.txt", "assets/favicon-512.png"]) {
   if (!fs.existsSync(path.join(process.cwd(), file))) {
     failed = true;
     console.error(`missing ${file}`);
