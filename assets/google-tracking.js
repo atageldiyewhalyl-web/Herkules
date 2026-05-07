@@ -1,4 +1,6 @@
 (function () {
+  const ga4Id = "G-GZCDZCCMVH";
+  const gtmId = "GTM-NFX2W3T8";
   const googleAdsId = "AW-16491597405";
   const conversionLabels = {
     phone: "evzqCLrP36AZEN2c57c9",
@@ -6,43 +8,92 @@
     form: "XW9XCOyV36AZEN2c57c9",
   };
 
-  let loaded = false;
+  let gtagLoaded = false;
+  let ga4Configured = false;
+  let adsConfigured = false;
+  let gtmLoaded = false;
   const pendingConversions = [];
 
   function hasConsent(category) {
     return window.herkulesCookieConsent?.has(category) === true;
   }
 
-  function loadGoogleTag() {
-    if (loaded || !hasConsent("marketing")) return;
-    loaded = true;
-
+  function ensureDataLayer() {
     window.dataLayer = window.dataLayer || [];
-    window.gtag = function gtag() {
-      window.dataLayer.push(arguments);
-    };
+    window.gtag =
+      window.gtag ||
+      function gtag() {
+        window.dataLayer.push(arguments);
+      };
+  }
+
+  function loadGoogleTagScript() {
+    if (gtagLoaded) return;
+    gtagLoaded = true;
+
+    ensureDataLayer();
 
     window.gtag("js", new Date());
+
+    const script = document.createElement("script");
+    script.async = true;
+    script.src = `https://www.googletagmanager.com/gtag/js?id=${ga4Id}`;
+    document.head.append(script);
+  }
+
+  function configureGa4() {
+    if (ga4Configured || !hasConsent("analytics")) return;
+    ga4Configured = true;
+
+    loadGoogleTagScript();
+    window.gtag("config", ga4Id, {
+      anonymize_ip: true,
+      send_page_view: true,
+    });
+  }
+
+  function configureAds() {
+    if (adsConfigured || !hasConsent("marketing")) return;
+    adsConfigured = true;
+
+    loadGoogleTagScript();
     window.gtag("config", googleAdsId, {
       anonymize_ip: true,
       allow_ad_personalization_signals: false,
     });
-
-    const script = document.createElement("script");
-    script.async = true;
-    script.src = `https://www.googletagmanager.com/gtag/js?id=${googleAdsId}`;
-    document.head.append(script);
 
     while (pendingConversions.length) {
       sendConversion(pendingConversions.shift());
     }
   }
 
+  function loadGoogleTagManager() {
+    if (gtmLoaded || (!hasConsent("analytics") && !hasConsent("marketing"))) return;
+    gtmLoaded = true;
+
+    ensureDataLayer();
+    window.dataLayer.push({
+      "gtm.start": new Date().getTime(),
+      event: "gtm.js",
+    });
+
+    const script = document.createElement("script");
+    script.async = true;
+    script.src = `https://www.googletagmanager.com/gtm.js?id=${gtmId}`;
+    document.head.append(script);
+  }
+
+  function loadGoogleTools() {
+    configureGa4();
+    configureAds();
+    loadGoogleTagManager();
+  }
+
   function sendConversion(type) {
     if (!conversionLabels[type]) return;
-    if (!loaded) {
+    if (!adsConfigured) {
       pendingConversions.push(type);
-      loadGoogleTag();
+      configureAds();
       return;
     }
 
@@ -72,11 +123,11 @@
     trackConversion("form");
   });
 
-  window.addEventListener("herkules:cookie-consent", loadGoogleTag);
+  window.addEventListener("herkules:cookie-consent", loadGoogleTools);
 
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", loadGoogleTag);
+    document.addEventListener("DOMContentLoaded", loadGoogleTools);
   } else {
-    loadGoogleTag();
+    loadGoogleTools();
   }
 })();
