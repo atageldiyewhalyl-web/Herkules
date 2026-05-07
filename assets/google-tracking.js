@@ -104,6 +104,7 @@
 
     window.gtag("event", "conversion", {
       send_to: `${googleAdsId}/${conversionLabels[type]}`,
+      transport_type: "beacon",
     });
   }
 
@@ -123,6 +124,7 @@
     window.gtag("event", event.name, {
       send_to: ga4Id,
       page_location: window.location.href,
+      transport_type: "beacon",
       ...event.params,
     });
   }
@@ -137,18 +139,31 @@
     if (!link) return;
 
     const href = link.getAttribute("href") || "";
+    const isPrimaryClick = event.button === 0 && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey;
     if (href.startsWith("tel:")) {
+      if (isPrimaryClick) event.preventDefault();
       trackGa4Event("phone_click", {
         link_url: href,
         link_text: link.textContent.trim(),
       });
       trackConversion("phone");
+      if (isPrimaryClick) {
+        window.setTimeout(() => {
+          window.location.href = href;
+        }, 250);
+      }
     } else if (href.startsWith("mailto:")) {
+      if (isPrimaryClick) event.preventDefault();
       trackGa4Event("email_click", {
         link_url: href,
         link_text: link.textContent.trim(),
       });
       trackConversion("email");
+      if (isPrimaryClick) {
+        window.setTimeout(() => {
+          window.location.href = href;
+        }, 250);
+      }
     }
   });
 
