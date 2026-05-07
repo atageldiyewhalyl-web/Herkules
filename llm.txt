@@ -2,4 +2,4 @@
 
 This file mirrors /llms.txt for crawlers that request llm.txt.
 
-See: https://umzuege-herkules.de/llms.txt
+See: https://www.umzuege-herkules.de/llms.txt

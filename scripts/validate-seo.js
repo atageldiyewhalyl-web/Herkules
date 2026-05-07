@@ -5,7 +5,7 @@ const pages = fs.readdirSync(process.cwd()).filter((file) => file.endsWith(".htm
 const required = [
   ["title", /<title>.+?<\/title>/s],
   ["description", /<meta\s+name="description"\s+content="[^"]+"\s*\/>/s],
-  ["canonical", /<link rel="canonical" href="https:\/\/umzuege-herkules\.de\/[^"]*"\s*\/>/s],
+  ["canonical", /<link rel="canonical" href="https:\/\/www\.umzuege-herkules\.de\/[^"]*"\s*\/>/s],
   ["favicon", /<link rel="icon" href="\/assets\/Favicon\.png" type="image\/png"\s*\/>/s],
   ["open graph title", /<meta property="og:title" content="[^"]+"\s*\/>/s],
   ["twitter card", /<meta name="twitter:card" content="summary_large_image"\s*\/>/s],

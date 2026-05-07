@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://umzuege-herkules.de/sitemap.xml
+Sitemap: https://www.umzuege-herkules.de/sitemap.xml
 
 # AI and answer-engine context
 Allow: /llms.txt

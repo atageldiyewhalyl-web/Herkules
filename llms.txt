@@ -16,18 +16,18 @@ Herkules Umzüge & Transporte e.K. is a professional moving company based in Man
 
 ## Main pages
 
-- Homepage: https://umzuege-herkules.de/
-- Privatumzüge: https://umzuege-herkules.de/privatumzuege/
-- Büroumzüge: https://umzuege-herkules.de/bueroumzuege/
-- Seniorenumzüge: https://umzuege-herkules.de/seniorenumzuege/
-- Halteverbotszone: https://umzuege-herkules.de/halteverbotszone/
-- Auslandsumzüge: https://umzuege-herkules.de/auslandsumzuege/
-- Außenaufzug: https://umzuege-herkules.de/aussenaufzug/
-- Stundenpreise: https://umzuege-herkules.de/stundenpreise/
-- Frankfurt location page: https://umzuege-herkules.de/umzug-frankfurt/
-- About: https://umzuege-herkules.de/ueber-uns/
-- Impressum: https://umzuege-herkules.de/impressum/
-- Datenschutz: https://umzuege-herkules.de/datenschutz/
+- Homepage: https://www.umzuege-herkules.de/
+- Privatumzüge: https://www.umzuege-herkules.de/privatumzuege/
+- Büroumzüge: https://www.umzuege-herkules.de/bueroumzuege/
+- Seniorenumzüge: https://www.umzuege-herkules.de/seniorenumzuege/
+- Halteverbotszone: https://www.umzuege-herkules.de/halteverbotszone/
+- Auslandsumzüge: https://www.umzuege-herkules.de/auslandsumzuege/
+- Außenaufzug: https://www.umzuege-herkules.de/aussenaufzug/
+- Stundenpreise: https://www.umzuege-herkules.de/stundenpreise/
+- Frankfurt location page: https://www.umzuege-herkules.de/umzug-frankfurt/
+- About: https://www.umzuege-herkules.de/ueber-uns/
+- Impressum: https://www.umzuege-herkules.de/impressum/
+- Datenschutz: https://www.umzuege-herkules.de/datenschutz/
 
 ## Search intent summary
 
