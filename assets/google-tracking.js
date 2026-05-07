@@ -13,6 +13,7 @@
   let adsConfigured = false;
   let gtmLoaded = false;
   const pendingConversions = [];
+  const pendingGa4Events = [];
 
   function hasConsent(category) {
     return window.herkulesCookieConsent?.has(category) === true;
@@ -50,6 +51,10 @@
       anonymize_ip: true,
       send_page_view: true,
     });
+
+    while (pendingGa4Events.length) {
+      sendGa4Event(pendingGa4Events.shift());
+    }
   }
 
   function configureAds() {
@@ -107,19 +112,51 @@
     sendConversion(type);
   }
 
+  function sendGa4Event(event) {
+    if (!event?.name) return;
+    if (!ga4Configured) {
+      pendingGa4Events.push(event);
+      configureGa4();
+      return;
+    }
+
+    window.gtag("event", event.name, {
+      send_to: ga4Id,
+      page_location: window.location.href,
+      ...event.params,
+    });
+  }
+
+  function trackGa4Event(name, params) {
+    if (!hasConsent("analytics")) return;
+    sendGa4Event({ name, params });
+  }
+
   document.addEventListener("click", (event) => {
     const link = event.target.closest("a[href]");
     if (!link) return;
 
     const href = link.getAttribute("href") || "";
     if (href.startsWith("tel:")) {
+      trackGa4Event("phone_click", {
+        link_url: href,
+        link_text: link.textContent.trim(),
+      });
       trackConversion("phone");
     } else if (href.startsWith("mailto:")) {
+      trackGa4Event("email_click", {
+        link_url: href,
+        link_text: link.textContent.trim(),
+      });
       trackConversion("email");
     }
   });
 
-  window.addEventListener("herkules:form-submit", () => {
+  window.addEventListener("herkules:form-submit", (event) => {
+    trackGa4Event("anfrage_submit", {
+      form_name: "Umzugsanfrage",
+      form_location: event.detail?.page || window.location.href,
+    });
     trackConversion("form");
   });
 
