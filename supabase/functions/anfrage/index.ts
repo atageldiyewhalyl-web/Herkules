@@ -58,6 +58,13 @@ function isEmail(value: string) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
 }
 
+function parseRecipients(value: string) {
+  return value
+    .split(",")
+    .map((item) => item.trim())
+    .filter(Boolean);
+}
+
 function collectFields(body: Record<string, unknown>) {
   const fields: Record<string, string> = {};
   for (const key of Object.keys(fieldLabels)) {
@@ -246,19 +253,24 @@ Deno.serve(async (req: Request) => {
     return jsonResponse(502, { error: "Die Anfrage konnte nicht gespeichert werden." });
   }
 
-  const adminEmail = Deno.env.get("ADMIN_EMAIL") || "halyl@xn--nll-hoa.com";
+  const adminEmail = parseRecipients(
+    Deno.env.get("ADMIN_EMAIL") ||
+      "info@herkules-umzuege24.de,atageldiyewhalyl@gmail.com,halyl@xn--nll-hoa.com",
+  );
   const from = Deno.env.get("MAIL_FROM") || "Herkules Umzüge <onboarding@resend.dev>";
   const ownerMessage = buildOwnerEmail(fields);
 
   try {
-    await sendEmail({
-      from,
-      to: adminEmail,
-      reply_to: fields.email,
-      subject: ownerMessage.subject,
-      text: ownerMessage.text,
-      html: ownerMessage.html,
-    });
+    for (const recipient of adminEmail) {
+      await sendEmail({
+        from,
+        to: recipient,
+        reply_to: fields.email,
+        subject: ownerMessage.subject,
+        text: ownerMessage.text,
+        html: ownerMessage.html,
+      });
+    }
 
     await updateEmailStatus(anfrage.id, {
       email_sent: true,
