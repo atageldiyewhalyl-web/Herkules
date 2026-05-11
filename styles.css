@@ -2400,7 +2400,7 @@ main::after {
 
 .faq-item.is-open .faq-answer {
   max-height: 180px;
-  opacity: 0.36;
+  opacity: 1;
 }
 
 .faq-item.is-open .faq-question span {
@@ -2411,7 +2411,7 @@ main::after {
   max-width: 760px;
   margin: 0;
   padding: 0 56px 24px 0;
-  color: var(--muted);
+  color: var(--ink);
   font-size: 1rem;
   font-weight: 550;
   line-height: 1.6;
