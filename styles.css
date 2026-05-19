@@ -411,12 +411,12 @@ h1 span {
 
 .hero__visual {
   position: absolute;
-  top: 54%;
-  right: 0;
+  top: 55%;
+  right: -32px;
   left: auto;
   z-index: 0;
-  width: min(960px, 50vw);
-  height: min(660px, calc(100% - 64px));
+  width: min(1120px, 58vw);
+  height: min(700px, calc(100% - 64px));
   overflow: hidden;
   pointer-events: none;
   transform: translateY(-50%);
@@ -444,7 +444,8 @@ h1 span {
     radial-gradient(circle at 0% 100%, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0) 34%);
 }
 
-.hero-video {
+.hero-video,
+.hero-image {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -456,8 +457,14 @@ h1 span {
   object-position: left center;
 }
 
-.hero-video--mobile {
+.hero-video--mobile,
+.hero-image--mobile {
   display: none;
+}
+
+.hero-image--desktop {
+  object-fit: contain;
+  object-position: center right;
 }
 
 .service-page .site-header {
@@ -1954,22 +1961,49 @@ main::after {
   border-color: rgba(216, 155, 0, 0.34);
 }
 
+.pricing-option--featured {
+  border-color: rgba(216, 155, 0, 0.58);
+  box-shadow:
+    0 24px 70px rgba(16, 21, 34, 0.08),
+    0 0 0 1px rgba(216, 155, 0, 0.08);
+}
+
 .pricing-option--hourly {
   background: linear-gradient(180deg, #ffffff 0%, #fbfcfe 100%);
+}
+
+.pricing-option__badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 14px;
 }
 
 .pricing-label {
   display: inline-flex;
   width: fit-content;
-  margin-bottom: 12px;
-  padding: 0;
-  border-radius: 0;
-  background: transparent;
-  color: var(--yellow-dark);
+  padding: 4px 10px;
+  border: 1px solid rgba(216, 155, 0, 0.28);
+  border-radius: 999px;
+  background: rgba(255, 210, 0, 0.16);
+  color: var(--ink);
   font-size: 0.72rem;
   font-weight: 950;
   letter-spacing: 0;
   text-transform: uppercase;
+}
+
+.pricing-popular {
+  display: inline-flex;
+  width: fit-content;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--white);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0;
 }
 
 .pricing-option h3 {
@@ -2043,6 +2077,7 @@ main::after {
 .pricing-option li::before {
   content: "✓";
   color: var(--yellow-dark);
+  font-weight: 950;
 }
 
 .pricing-option__intro {
@@ -2085,9 +2120,9 @@ main::after {
 .no-parking-page .pricing-options--single .pricing-option {
   min-height: 0;
   grid-template-rows: none;
-  grid-template-columns: minmax(0, 1.05fr) minmax(260px, 0.82fr);
-  gap: 18px 32px;
-  padding: 24px;
+  grid-template-columns: minmax(0, 1.02fr) minmax(280px, 0.8fr);
+  gap: 22px 36px;
+  padding: 28px;
 }
 
 .pricing-options--single .pricing-option__intro,
@@ -2107,11 +2142,24 @@ main::after {
   margin-top: 0;
 }
 
+.pricing-options--single .pricing-feature-list,
+.no-parking-page .pricing-options--single .pricing-feature-list {
+  grid-column: 1 / -1;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 28px;
+}
+
 .pricing-options--single .fixed-price-summary,
 .no-parking-page .pricing-options--single .fixed-price-summary {
   grid-column: 1 / -1;
   margin-top: 4px;
   padding-top: 18px;
+}
+
+.pricing-options--single .fixed-price-summary .button,
+.no-parking-page .pricing-options--single .fixed-price-summary .button {
+  min-width: 220px;
+  justify-self: end;
 }
 
 .rate-table {
@@ -3208,15 +3256,19 @@ main::after {
   }
 
   .hero__visual {
-    right: 0;
-    width: min(700px, 50vw);
-    height: min(590px, calc(100% - 66px));
+    right: -24px;
+    width: min(820px, 58vw);
+    height: min(620px, calc(100% - 66px));
   }
 
   .hero-video {
     opacity: 1;
     object-fit: cover;
     object-position: left center;
+  }
+
+  .hero-image {
+    opacity: 1;
   }
 
   .proof {
@@ -3606,6 +3658,10 @@ main::after {
     object-position: left center;
   }
 
+  .hero-image {
+    opacity: 1;
+  }
+
   .trust-ribbon {
     grid-template-columns: repeat(2, 1fr);
     gap: 18px 10px;
@@ -3781,7 +3837,8 @@ main::after {
     display: none;
   }
 
-  .hero-video--desktop {
+  .hero-video--desktop,
+  .hero-image--desktop {
     display: none;
   }
 
@@ -4036,7 +4093,8 @@ main::after {
     opacity: 0.9;
   }
 
-  .hero-video--desktop {
+  .hero-video--desktop,
+  .hero-image--desktop {
     display: none;
   }
 
@@ -5171,6 +5229,14 @@ main::after {
 
   .pricing-option ul {
     display: none;
+  }
+
+  .pricing-options--single .pricing-feature-list,
+  .no-parking-page .pricing-options--single .pricing-feature-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    margin-top: 2px;
   }
 
   .pricing-option li {

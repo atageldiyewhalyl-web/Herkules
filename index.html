@@ -81,17 +81,13 @@
     <main>
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero__visual" aria-hidden="true">
-          <video
-            class="hero-video hero-video--desktop"
-            autoplay
-            muted
-            playsinline
-            preload="auto"
-            poster="/assets/herkules-truck-poster.png"
-          >
-            <source src="/assets/herkules-truck-animation.webm" type="video/webm" />
-            <source src="/herkules-truck-animation.mp4" type="video/mp4" />
-          </video>
+          <img
+            class="hero-image hero-image--desktop"
+            src="/assets/hero-new-logo-desktop.webp"
+            alt=""
+            decoding="async"
+            fetchpriority="high"
+          />
           <video
             class="hero-video hero-video--mobile"
             autoplay
@@ -293,7 +289,7 @@
 
         <ol class="process-steps" aria-label="Umzugsablauf">
           <li>
-            <img src="/assets/process-anfrage.webp" alt="" aria-hidden="true" />
+            <img src="/assets/process-anfrage-new-logo.webp" alt="" aria-hidden="true" />
             <span>01</span>
             <h3>Anfrage stellen</h3>
             <p>Sie senden uns eine Anfrage – telefonisch oder online.</p>
@@ -311,7 +307,7 @@
             <p>Wir planen Ihren Umzug im Detail – schnell und zuverlässig.</p>
           </li>
           <li>
-            <img src="/assets/process-durchfuhrung.webp" alt="" aria-hidden="true" />
+            <img src="/assets/process-umziehen-new-logo.webp" alt="" aria-hidden="true" />
             <span>04</span>
             <h3>Durchführung</h3>
             <p>Unser Team führt den Umzug professionell und stressfrei durch.</p>
@@ -443,23 +439,28 @@
         </div>
 
         <div class="pricing-options pricing-options--single" aria-label="Preisoption Festpreis">
-          <article class="pricing-option pricing-option--fixed">
+          <article class="pricing-option pricing-option--fixed pricing-option--featured" aria-label="Festpreis Angebot">
             <div class="pricing-option__intro">
-              <span class="pricing-label">Empfohlen</span>
-              <h3>Festpreis</h3>
+              <div class="pricing-option__badges">
+                <span class="pricing-label">Festpreis</span>
+                <span class="pricing-popular">Empfohlen</span>
+              </div>
+              <h3>Individuell kalkuliert</h3>
               <p>
                 Für alle, die vor dem Umzug eine verbindliche Kalkulation
-                möchten.
+                möchten - passend zu Wohnung, Strecke, Etage und gewünschtem
+                Serviceumfang.
               </p>
             </div>
             <div class="pricing-fit">
-              <span>Am besten, wenn</span>
-              <strong>Umfang, Termin und Adressen bereits feststehen.</strong>
+              <span>Enthalten</span>
+              <strong>Persönliche Planung, versicherter Transport und klare Kosten vor dem Umzug.</strong>
             </div>
-            <ul>
+            <ul class="pricing-feature-list">
               <li>Persönliche Einschätzung Ihres Umzugs</li>
               <li>Verbindliches Angebot ohne Überraschungen</li>
-              <li>Planung, Team, LKW und Durchführung inklusive</li>
+              <li>Passendes Team und LKW eingeplant</li>
+              <li>Versicherter Transport Ihrer Möbel</li>
             </ul>
             <div class="fixed-price-summary">
               <div>
