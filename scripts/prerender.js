@@ -13,6 +13,7 @@ const routes = [
   { source: "auslandsumzuege.html", route: "auslandsumzuege" },
   { source: "aussenaufzug.html", route: "aussenaufzug" },
   { source: "stundenpreise.html", route: "stundenpreise" },
+  { source: "umzugskartons.html", route: "umzugskartons" },
   { source: "umzug-frankfurt.html", route: "umzug-frankfurt" },
   { source: "ueber-uns.html", route: "ueber-uns" },
   { source: "impressum.html", route: "impressum" },
