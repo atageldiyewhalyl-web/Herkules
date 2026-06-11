@@ -24,6 +24,7 @@ Herkules Umzüge & Transporte e.K. is a professional moving company based in Man
 - Auslandsumzüge: https://www.umzuege-herkules.de/auslandsumzuege/
 - Außenaufzug: https://www.umzuege-herkules.de/aussenaufzug/
 - Stundenpreise: https://www.umzuege-herkules.de/stundenpreise/
+- Umzugskartons & Verpackungsmaterial: https://www.umzuege-herkules.de/umzugskartons/
 - Frankfurt location page: https://www.umzuege-herkules.de/umzug-frankfurt/
 - About: https://www.umzuege-herkules.de/ueber-uns/
 - Impressum: https://www.umzuege-herkules.de/impressum/
@@ -55,6 +56,9 @@ Outside lift service for large furniture when staircases or elevators are too na
 
 ### Stundenpreise Mannheim
 Hourly billing page for flexible moves and furniture transports in Mannheim. The page explains that the hourly rates include the moving team, truck and insured transport: 2 movers plus truck for 110 €/h, 3 movers plus truck for 140 €/h and 4 movers plus truck for 170 €/h, with a 4-hour minimum.
+
+### Umzugskartons & Verpackungsmaterial Mannheim
+Professional moving boxes and packing materials in Mannheim, including standard boxes, book boxes, wardrobe boxes, mirror and picture boxes, packing paper, tissue paper, bubble wrap, packing tape and stretch film. Customers can order materials with a move or separately and receive advice on the right quantity.
 
 ### Umzugsfirma Frankfurt
 Moving services for Frankfurt and moves between Mannheim and Frankfurt. The page targets users searching for a professional moving company in Frankfurt.

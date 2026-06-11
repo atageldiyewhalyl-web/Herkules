@@ -45,6 +45,11 @@
       "permanent": true
     },
     {
+      "source": "/umzugskartons.html",
+      "destination": "/umzugskartons/",
+      "permanent": true
+    },
+    {
       "source": "/ueber-uns.html",
       "destination": "/ueber-uns/",
       "permanent": true
@@ -76,7 +81,7 @@
     },
     {
       "source": "/verpackungsmaterial/",
-      "destination": "/privatumzuege/",
+      "destination": "/umzugskartons/",
       "permanent": true
     },
     {
@@ -123,6 +128,10 @@
     {
       "source": "/stundenpreise/",
       "destination": "/stundenpreise.html"
+    },
+    {
+      "source": "/umzugskartons/",
+      "destination": "/umzugskartons.html"
     },
     {
       "source": "/ueber-uns/",

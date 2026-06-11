@@ -3244,6 +3244,39 @@ main::after {
   overflow-wrap: normal;
 }
 
+.contact-info__item--whatsapp {
+  grid-column: auto;
+  justify-items: start;
+  margin-top: 0;
+}
+
+.contact-info a.contact-info__whatsapp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: #25d366;
+  color: var(--ink);
+  font-size: 0.88rem;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+}
+
+.contact-info a.contact-info__whatsapp:hover,
+.contact-info a.contact-info__whatsapp:focus-visible {
+  background: #1fb95a;
+  color: var(--ink);
+}
+
+.contact-info__item--wide:has(+ .contact-info__item--whatsapp) {
+  grid-column: auto;
+  justify-items: stretch;
+  text-align: left;
+}
+
 .button--dark {
   background: var(--ink);
   color: var(--white);
@@ -6028,6 +6061,17 @@ main::after {
     grid-column: auto;
     justify-items: stretch;
     text-align: left;
+  }
+
+  .contact-info__item--whatsapp {
+    display: block;
+    margin-top: 0;
+    padding-top: 12px;
+  }
+
+  .contact-info a.contact-info__whatsapp {
+    width: 100%;
+    min-height: 48px;
   }
 
   .contact-info span {
