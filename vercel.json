@@ -60,6 +60,46 @@
       "permanent": true
     },
     {
+      "source": "/umzug-lindenhof.html",
+      "destination": "/umzug-lindenhof/",
+      "permanent": true
+    },
+    {
+      "source": "/umzug-mannheim-quadrate.html",
+      "destination": "/umzug-mannheim-quadrate/",
+      "permanent": true
+    },
+    {
+      "source": "/umzug-neckarstadt.html",
+      "destination": "/umzug-neckarstadt/",
+      "permanent": true
+    },
+    {
+      "source": "/umzugsfirma-heidelberg.html",
+      "destination": "/umzug-heidelberg/",
+      "permanent": true
+    },
+    {
+      "source": "/umzugsfirma-heidelberg/",
+      "destination": "/umzug-heidelberg/",
+      "permanent": true
+    },
+    {
+      "source": "/umzugsfirma-ludwigshafen.html",
+      "destination": "/umzugsfirma-ludwigshafen/",
+      "permanent": true
+    },
+    {
+      "source": "/umzugsfirma-schwetzingen.html",
+      "destination": "/umzugsfirma-schwetzingen/",
+      "permanent": true
+    },
+    {
+      "source": "/umzugsfirma-viernheim.html",
+      "destination": "/umzugsfirma-viernheim/",
+      "permanent": true
+    },
+    {
       "source": "/ein-und-auspackservice/",
       "destination": "/privatumzuege/",
       "permanent": true
@@ -140,6 +180,34 @@
     {
       "source": "/umzug-frankfurt/",
       "destination": "/umzug-frankfurt.html"
+    },
+    {
+      "source": "/umzug-lindenhof/",
+      "destination": "/umzug-lindenhof.html"
+    },
+    {
+      "source": "/umzug-mannheim-quadrate/",
+      "destination": "/umzug-mannheim-quadrate.html"
+    },
+    {
+      "source": "/umzug-neckarstadt/",
+      "destination": "/umzug-neckarstadt.html"
+    },
+    {
+      "source": "/umzug-heidelberg/",
+      "destination": "/umzugsfirma-heidelberg.html"
+    },
+    {
+      "source": "/umzugsfirma-ludwigshafen/",
+      "destination": "/umzugsfirma-ludwigshafen.html"
+    },
+    {
+      "source": "/umzugsfirma-schwetzingen/",
+      "destination": "/umzugsfirma-schwetzingen.html"
+    },
+    {
+      "source": "/umzugsfirma-viernheim/",
+      "destination": "/umzugsfirma-viernheim.html"
     },
     {
       "source": "/impressum/",
