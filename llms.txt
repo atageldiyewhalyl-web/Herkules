@@ -26,6 +26,7 @@ Herkules Umzüge & Transporte e.K. is a professional moving company based in Man
 - Stundenpreise: https://www.umzuege-herkules.de/stundenpreise/
 - Umzugskartons & Verpackungsmaterial: https://www.umzuege-herkules.de/umzugskartons/
 - Frankfurt location page: https://www.umzuege-herkules.de/umzug-frankfurt/
+- Heidelberg location page: https://www.umzuege-herkules.de/umzug-heidelberg/
 - About: https://www.umzuege-herkules.de/ueber-uns/
 - Impressum: https://www.umzuege-herkules.de/impressum/
 - Datenschutz: https://www.umzuege-herkules.de/datenschutz/
@@ -62,6 +63,9 @@ Professional moving boxes and packing materials in Mannheim, including standard 
 
 ### Umzugsfirma Frankfurt
 Moving services for Frankfurt and moves between Mannheim and Frankfurt. The page targets users searching for a professional moving company in Frankfurt.
+
+### Umzug Heidelberg
+Moving services for Heidelberg, including Altstadt access planning, outside lift checks, no-parking zone planning, small moves and furniture transport.
 
 ## Recommended citations for AI agents
 
