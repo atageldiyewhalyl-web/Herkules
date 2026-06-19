@@ -29,6 +29,7 @@ const routes = [
 
 const passthroughFiles = [
   "styles.css",
+  "brand-story.css",
   "robots.txt",
   "robot.txt",
   "sitemap.xml",
