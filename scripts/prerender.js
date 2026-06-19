@@ -15,7 +15,6 @@ const routes = [
   { source: "stundenpreise.html", route: "stundenpreise" },
   { source: "umzugskartons.html", route: "umzugskartons" },
   { source: "umzug-frankfurt.html", route: "umzug-frankfurt" },
-  { source: "umzugsfirma-heidelberg.html", route: "umzug-heidelberg" },
   { source: "ueber-uns.html", route: "ueber-uns" },
   { source: "impressum.html", route: "impressum" },
   { source: "datenschutz.html", route: "datenschutz" },

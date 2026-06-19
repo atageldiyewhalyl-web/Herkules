@@ -60,16 +60,6 @@
       "permanent": true
     },
     {
-      "source": "/umzugsfirma-heidelberg.html",
-      "destination": "/umzug-heidelberg/",
-      "permanent": true
-    },
-    {
-      "source": "/umzugsfirma-heidelberg/",
-      "destination": "/umzug-heidelberg/",
-      "permanent": true
-    },
-    {
       "source": "/ein-und-auspackservice/",
       "destination": "/privatumzuege/",
       "permanent": true
@@ -150,10 +140,6 @@
     {
       "source": "/umzug-frankfurt/",
       "destination": "/umzug-frankfurt.html"
-    },
-    {
-      "source": "/umzug-heidelberg/",
-      "destination": "/umzugsfirma-heidelberg.html"
     },
     {
       "source": "/impressum/",
