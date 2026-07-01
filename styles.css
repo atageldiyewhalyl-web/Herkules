@@ -3911,7 +3911,7 @@ main::after {
 }
 
 .request-form label span {
-  color: var(--muted);
+  color: var(--ink);
   font-size: 0.93rem;
   font-weight: 750;
 }
@@ -3957,8 +3957,10 @@ main::after {
   padding: 14px;
 }
 
+.request-form input::placeholder,
 .request-form textarea::placeholder {
-  color: #626a78;
+  color: var(--ink);
+  opacity: 1;
 }
 
 .request-form input:focus,

@@ -11,6 +11,7 @@ const fieldLabels: Record<string, string> = {
   service: "Service",
   "moving-date": "Umzugsdatum",
   "apartment-floor": "Etage der Wohnung",
+  "destination-floor": "Etage der Zielwohnung",
   "has-elevator": "Aufzug vorhanden",
   "parking-available": "Parkplatz verfügbar",
   "lead-source": "Gefunden über",
@@ -27,6 +28,7 @@ const requiredFields = [
   "service",
   "moving-date",
   "apartment-floor",
+  "destination-floor",
   "has-elevator",
   "parking-available",
   "lead-source",
@@ -119,6 +121,7 @@ function buildClientEmail(fields: Record<string, string>) {
       `Service: ${fields.service}`,
       `Umzugsdatum: ${fields["moving-date"]}`,
       `Etage der Wohnung: ${fields["apartment-floor"]}`,
+      `Etage der Zielwohnung: ${fields["destination-floor"]}`,
       `Aufzug vorhanden: ${fields["has-elevator"]}`,
       `Parkplatz verfügbar: ${fields["parking-available"]}`,
       `Gefunden über: ${fields["lead-source"]}`,
@@ -138,6 +141,7 @@ function buildClientEmail(fields: Record<string, string>) {
         <p><strong>Service:</strong> ${escapeHtml(fields.service)}<br>
         <strong>Umzugsdatum:</strong> ${escapeHtml(fields["moving-date"])}<br>
         <strong>Etage der Wohnung:</strong> ${escapeHtml(fields["apartment-floor"])}<br>
+        <strong>Etage der Zielwohnung:</strong> ${escapeHtml(fields["destination-floor"])}<br>
         <strong>Aufzug vorhanden:</strong> ${escapeHtml(fields["has-elevator"])}<br>
         <strong>Parkplatz verfügbar:</strong> ${escapeHtml(fields["parking-available"])}<br>
         <strong>Gefunden über:</strong> ${escapeHtml(fields["lead-source"])}<br>
@@ -177,6 +181,7 @@ async function insertAnfrage(fields: Record<string, string>, req: Request) {
       page: fields.page || null,
       metadata: {
         apartmentFloor: fields["apartment-floor"] || null,
+        destinationFloor: fields["destination-floor"] || null,
         hasElevator: fields["has-elevator"] || null,
         parkingAvailable: fields["parking-available"] || null,
         leadSource: fields["lead-source"] || null,
@@ -278,7 +283,9 @@ Deno.serve(async (req: Request) => {
       "info@herkules-umzuege24.de,atageldiyewhalyl@gmail.com,halyl@xn--nll-hoa.com",
   );
   const from = Deno.env.get("MAIL_FROM") || "Herkules Umzüge <onboarding@resend.dev>";
+  const replyTo = adminEmail[0] || "info@herkules-umzuege24.de";
   const ownerMessage = buildOwnerEmail(fields);
+  const clientMessage = buildClientEmail(fields);
 
   try {
     for (const recipient of adminEmail) {
@@ -291,6 +298,15 @@ Deno.serve(async (req: Request) => {
         html: ownerMessage.html,
       });
     }
+
+    await sendEmail({
+      from,
+      to: fields.email,
+      reply_to: replyTo,
+      subject: clientMessage.subject,
+      text: clientMessage.text,
+      html: clientMessage.html,
+    });
 
     await updateEmailStatus(anfrage.id, {
       email_sent: true,
