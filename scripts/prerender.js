@@ -6,6 +6,7 @@ const dist = path.join(root, "dist");
 
 const routes = [
   { source: "index.html", route: "" },
+  { source: "leistungen.html", route: "leistungen" },
   { source: "privatumzuege.html", route: "privatumzuege" },
   { source: "bueroumzuege.html", route: "bueroumzuege" },
   { source: "seniorenumzuege.html", route: "seniorenumzuege" },
@@ -29,6 +30,7 @@ const routes = [
 
 const passthroughFiles = [
   "styles.css",
+  "blog.css",
   "brand-story.css",
   "robots.txt",
   "robot.txt",
@@ -40,7 +42,7 @@ const passthroughFiles = [
   "README.md",
 ];
 
-const passthroughDirs = ["assets"];
+const passthroughDirs = ["assets", "blog"];
 
 function rmrf(target) {
   fs.rmSync(target, { recursive: true, force: true });

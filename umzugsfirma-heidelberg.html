@@ -13,7 +13,7 @@
     <meta name="geo.region" content="DE-BW" />
     <meta name="geo.placename" content="Heidelberg" />
     <meta property="og:locale" content="de_DE" />
-    <meta property="og:type" content="article" />
+    <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Herkules Umzüge & Transporte e.K." />
     <meta property="og:title" content="Umzug Heidelberg | Herkules Umzüge zum Festpreis" />
     <meta property="og:description" content="Umzug Heidelberg geplant? Herkules organisiert Umzüge in Heidelberg mit Altstadt-Planung, Halteverbot, Außenaufzug und sicherem Möbeltransport." />
@@ -29,12 +29,12 @@
     <link rel="icon" href="/assets/favicon-512.png" type="image/png" sizes="512x512" />
     <link rel="apple-touch-icon" href="/assets/favicon-512.png" />
     <meta name="theme-color" content="#f8bf1c" />
-    <link rel="stylesheet" href="/styles.css?v=20260619-brand-story" />
+    <link rel="stylesheet" href="/styles.css?v=20260702" />
     <script defer src="/assets/request-form.js"></script>
     <script defer src="/assets/cookie-consent.js"></script>
     <script defer src="/assets/google-tracking.js"></script>
   </head>
-  <body class="service-page local-landing-page">
+  <body class="private-page service-page local-landing-page">
 
     <header class="site-header">
       <nav class="nav" aria-label="Hauptnavigation">
@@ -46,6 +46,7 @@
           <div class="nav__item nav__item--dropdown">
             <button class="nav__trigger" type="button" aria-haspopup="true" aria-expanded="false">Leistungen</button>
             <div class="nav__dropdown" aria-label="Leistungen">
+              <a href="/leistungen/">Alle Leistungen</a>
               <a href="/privatumzuege/">Privatumzüge</a>
               <a href="/bueroumzuege/">Büroumzüge</a>
               <a href="/seniorenumzuege/">Seniorenumzüge</a>
@@ -64,7 +65,7 @@
             </div>
           </div>
           <a href="#ablauf">Ablauf</a>
-          <a href="#kontakt">Kontakt</a>
+          <a href="/blog/">Blog</a><a href="#kontakt">Kontakt</a>
         </div>
         <button class="nav__toggle" type="button" aria-label="Menü öffnen" aria-expanded="false">
           <span></span><span></span><span></span>
@@ -180,7 +181,11 @@
               </label>
               <label><span>Aufzug vorhanden? *</span><select name="has-elevator" required><option value="">Bitte wählen</option><option>Ja</option><option>Nein</option></select></label>
               <label><span>Parkplatz verfügbar? *</span><select name="parking-available" required><option value="">Bitte wählen</option><option>Ja</option><option>Nein</option><option>Unklar</option></select></label>
-              <label><span>Wie haben Sie uns gefunden? *</span><select name="lead-source" required><option value="">Bitte wählen</option><option>Flyer</option><option>Google Suche</option><option>Empfehlung</option><option>Social Media</option><option>Sonstiges</option></select></label>
+              <label><span>Wie haben Sie uns gefunden? *</span><select name="lead-source" required><option value="">Bitte wählen</option><option>Google Suche</option>
+                  <option>Empfehlung</option>
+                  <option>Social Media</option>
+                  <option>Sonstiges</option>
+                  <option>Flyer</option></select></label>
             </div>
             <label><span>Beladestelle* Straße, Nr., Postleitzahl und Ort *</span><input type="text" name="loading-address" autocomplete="street-address" required /></label>
             <label><span>Entladestelle* Straße, Nr., Postleitzahl und Ort *</span><input type="text" name="unloading-address" required /></label>

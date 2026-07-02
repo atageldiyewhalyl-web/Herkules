@@ -15,6 +15,11 @@
       "permanent": true
     },
     {
+      "source": "/leistungen.html",
+      "destination": "/leistungen/",
+      "permanent": true
+    },
+    {
       "source": "/bueroumzuege.html",
       "destination": "/bueroumzuege/",
       "permanent": true
@@ -127,7 +132,7 @@
     {
       "source": "/kontakt/",
       "destination": "/#kontakt",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/impressum.html",
@@ -141,6 +146,10 @@
     }
   ],
   "rewrites": [
+    {
+      "source": "/leistungen/",
+      "destination": "/leistungen.html"
+    },
     {
       "source": "/privatumzuege/",
       "destination": "/privatumzuege.html"
