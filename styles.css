@@ -3996,6 +3996,117 @@ main::after {
   line-height: 1.34;
 }
 
+.service-page-reviews {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 72px 0 84px;
+}
+
+.service-page-reviews__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+.service-page-reviews__header h2 {
+  margin: 6px 0 0;
+  font-size: clamp(2rem, 3.2vw, 2.8rem);
+  line-height: 1.05;
+}
+
+.service-page-reviews__header-rating {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--ink);
+  font-size: 0.92rem;
+  font-weight: 750;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.service-page-reviews__header-rating img {
+  width: 20px;
+  height: 20px;
+}
+
+.service-page-reviews__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.service-review-card {
+  display: flex;
+  flex-direction: column;
+  padding: 26px;
+  border-radius: 12px;
+  background: #f2f2f3;
+}
+
+.service-review-card__stars {
+  margin: 0 0 16px;
+  color: var(--yellow-dark);
+  font-size: 1.15rem;
+  font-weight: 950;
+  letter-spacing: 0;
+}
+
+.service-review-card h3 {
+  margin: 0 0 12px;
+  color: var(--ink);
+  font-size: 0.92rem;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.service-review-card > p:not(.service-review-card__stars) {
+  margin: 0 0 20px;
+  color: #202637;
+  font-size: 1.02rem;
+  line-height: 1.34;
+}
+
+.service-review-card__author {
+  margin-top: auto;
+}
+
+.service-review-card__author-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.service-review-card__avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.service-review-card__author-details {
+  display: grid;
+  gap: 2px;
+}
+
+.service-review-card__author-details strong {
+  color: var(--ink);
+  font-size: 0.92rem;
+}
+
+.service-review-card__author-details span {
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
 .reviews-marquee {
   --review-gap: 24px;
   display: block;

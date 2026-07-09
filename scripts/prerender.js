@@ -15,6 +15,7 @@ const routes = [
   { source: "aussenaufzug.html", route: "aussenaufzug" },
   { source: "stundenpreise.html", route: "stundenpreise" },
   { source: "umzugskartons.html", route: "umzugskartons" },
+  { source: "umzug-mannheim.html", route: "umzug-mannheim" },
   { source: "umzug-frankfurt.html", route: "umzug-frankfurt" },
   { source: "umzug-lindenhof.html", route: "umzug-lindenhof" },
   { source: "umzug-mannheim-quadrate.html", route: "umzug-mannheim-quadrate" },
