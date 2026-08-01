@@ -27,16 +27,13 @@ const requiredFields = [
   "email",
   "service",
   "moving-date",
-  "apartment-floor",
-  "destination-floor",
-  "has-elevator",
-  "parking-available",
   "lead-source",
   "loading-address",
-  "unloading-address",
 ];
 
 const maxFieldLength = 2000;
+const randomTextPattern = /^(.)\1{2,}$|^[a-z]{8,}$/i;
+const floorPattern = /\b(eg|erdgeschoss|kg|souterrain|hochparterre|dachgeschoss|dg|[0-9]{1,2}\.?\s*(og|stock|etage)?)\b/i;
 
 function jsonResponse(status: number, payload: Record<string, unknown>) {
   return new Response(JSON.stringify(payload), {
@@ -66,6 +63,116 @@ function escapeHtml(value: unknown) {
 
 function isEmail(value: string) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+}
+
+function normalize(value: string) {
+  return value.trim().replace(/\s+/g, " ");
+}
+
+function hasRandomText(value: string) {
+  const text = normalize(value);
+  if (!text) {
+    return false;
+  }
+
+  const lettersOnly = text.replace(/[^a-zäöüß]/gi, "");
+  const vowelCount = (lettersOnly.match(/[aeiouäöü]/gi) || []).length;
+  const words = text.split(/\s+/).filter(Boolean);
+
+  return (
+    randomTextPattern.test(text) ||
+    (lettersOnly.length >= 7 && vowelCount === 0) ||
+    words.some((word) => word.length >= 14 && !/[aeiouäöü]/i.test(word))
+  );
+}
+
+function isValidName(value: string) {
+  const text = normalize(value);
+  if (text.length < 5 || text.length > 80 || hasRandomText(text)) {
+    return false;
+  }
+
+  const parts = text.split(/[\s-]+/).filter(Boolean);
+  return parts.length >= 2 && parts.every((part) => /^[A-Za-zÀ-ÖØ-öø-ÿ.'-]{2,}$/.test(part));
+}
+
+function isValidPhone(value: string) {
+  const text = normalize(value);
+  const digits = text.replace(/\D/g, "");
+  return digits.length >= 7 && digits.length <= 16 && /^[+()0-9\s/-]+$/.test(text);
+}
+
+function isValidMovingDate(value: string) {
+  if (!value) {
+    return false;
+  }
+
+  const selected = new Date(`${value}T00:00:00`);
+  if (Number.isNaN(selected.getTime())) {
+    return false;
+  }
+
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const twoYearsFromNow = new Date(today);
+  twoYearsFromNow.setFullYear(today.getFullYear() + 2);
+
+  return selected >= today && selected <= twoYearsFromNow;
+}
+
+function isValidAddress(value: string) {
+  const text = normalize(value);
+  const hasStreetNumber = /\b\d+[a-z]?\b/i.test(text);
+  const hasPostalCode = /\b(?=[A-Z0-9 -]{4,10}\b)(?=[A-Z0-9 -]*\d)[A-Z0-9][A-Z0-9 -]{2,8}[A-Z0-9]\b/i.test(text);
+  const hasLetters = /[A-Za-zÀ-ÖØ-öø-ÿ]{3,}/.test(text);
+
+  return text.length >= 12 && !hasRandomText(text) && hasStreetNumber && hasPostalCode && hasLetters;
+}
+
+function isValidFloor(value: string) {
+  const text = normalize(value);
+  return text.length <= 40 && floorPattern.test(text);
+}
+
+function validateInquiry(fields: Record<string, string>, body: Record<string, unknown>) {
+  if (sanitize(body.website)) {
+    return "Bitte prüfen Sie die Pflichtfelder.";
+  }
+
+  const missing = requiredFields.filter((key) => !fields[key]);
+  if (missing.length || !isEmail(fields.email)) {
+    return "Bitte prüfen Sie die Pflichtfelder.";
+  }
+
+  if (!isValidName(fields.name)) {
+    return "Bitte geben Sie Vor- und Nachnamen an.";
+  }
+
+  if (!isValidPhone(fields.phone)) {
+    return "Bitte geben Sie eine erreichbare Telefonnummer an.";
+  }
+
+  if (!isValidMovingDate(fields["moving-date"])) {
+    return "Bitte wählen Sie ein realistisches Umzugsdatum in der Zukunft.";
+  }
+
+  if (!isValidAddress(fields["loading-address"])) {
+    return "Bitte geben Sie die Beladestelle mit Straße, Hausnummer, PLZ und Ort an.";
+  }
+
+  if (fields["unloading-address"] && !isValidAddress(fields["unloading-address"])) {
+    return "Bitte geben Sie die Entladestelle mit Straße, Hausnummer, PLZ und Ort an.";
+  }
+
+  if (fields["apartment-floor"] && !isValidFloor(fields["apartment-floor"])) {
+    return "Bitte geben Sie eine realistische Etage an.";
+  }
+
+  if (fields["destination-floor"] && !isValidFloor(fields["destination-floor"])) {
+    return "Bitte geben Sie eine realistische Zieletage an.";
+  }
+
+  return "";
 }
 
 function parseRecipients(value: string) {
@@ -263,10 +370,10 @@ Deno.serve(async (req: Request) => {
   }
 
   const fields = collectFields(body);
-  const missing = requiredFields.filter((key) => !fields[key]);
+  const validationError = validateInquiry(fields, body);
 
-  if (missing.length || !isEmail(fields.email)) {
-    return jsonResponse(400, { error: "Bitte prüfen Sie die Pflichtfelder." });
+  if (validationError) {
+    return jsonResponse(400, { error: validationError });
   }
 
   let anfrage: { id: string } | null = null;
