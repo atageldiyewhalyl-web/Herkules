@@ -28,3 +28,36 @@ assets/**/*.mp4
 .idea/
 .vscode/
 *.swp
+
+# Raw video source. Converted to optimized web assets before use.
+# (2.4 GB .mov in repo root would otherwise land in git history.)
+*.mov
+*.MOV
+
+# Unreferenced raw image drops (spaces in filenames, not used by any page).
+/assets/Intro*
+/assets/intro image*
+/assets/stundenprice*
+/assets/intro-family.webp
+
+# One-off migration/recovery scripts. These wrote corrupted bytes into
+# location pages in the past (stray \x02 in place of closing tags) --
+# keep them out of the repo.
+/recovered_script*.py
+/scratch_update_*.py
+/inject_service_pages.py
+/update_heidelberg.py
+/update_ludwigshafen.py
+
+# Local scratch and backups.
+*.bak
+/diff.txt
+/commands.txt
+/prev_commands.txt
+/old_heidelberg.html
+/styles_recovered*.css
+/standard_header.html
+
+# Unreferenced icon drop (directory name has a trailing space).
+"/icons "
+/icons\ /
