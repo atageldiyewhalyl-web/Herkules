@@ -47,7 +47,7 @@ score; mark `written:<date>` / `skipped:<reason>`, never delete.
 - serp_evidence: not yet inspected — Mannheim twin post exists and the pattern (city process pages) is proven; verify SERP before writing.
 - angle: replicate the successful Mannheim guide for the second-biggest service city; links to umzugsfirma-ludwigshafen page.
 - score: 7
-- status: pending
+- status: written:2026-09-02 — SERP not re-inspected but Mannheim/Frankfurt twin pattern proven; grounded on official ludwigshafen.de facts (3-week lead, WBL sign rental as the key difference, fees 28/46/60 €).
 
 ## Küche mitnehmen beim Umzug: Abbau, Aufbau, Anpassung — was es kostet
 - primary_kw: küchenmontage umzug kosten (vol: n/a, difficulty: med)
