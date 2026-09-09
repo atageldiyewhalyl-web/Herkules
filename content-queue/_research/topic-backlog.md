@@ -129,6 +129,13 @@ Strategie: `2026-08-25-frankfurt-cluster-strategy.md` · Verlinkung: `2026-08-25
 | 9 | umzug-heidelberg-frankfurt | blog | umzug heidelberg frankfurt | written:2026-08-25 |
 | 10 | umzug-weinheim-frankfurt-pendler | blog | umzug weinheim frankfurt | written:2026-08-25 |
 
+## Umzug nach Frankfurt: Ablauf, Stadtteile, Anmeldung, Kosten
+- primary_kw: umzug nach frankfurt · secondary: umzug frankfurt, umziehen nach frankfurt, umzug frankfurt planen
+- intent: commercial + informational (relocation)
+- angle: Hub-Support für `/umzug-frankfurt/` ohne Kannibalisierung — Relocation-Guide (Zeitplan, Stadtteil-Wahl nach Altbau/Neubau, Halteverbot-Unterschied FFM, Bürgeramt-Anmeldung, Kostenrahmen innerorts vs. aus der Region). Verlinkt hoch zum Hub + quer zu allen 10 Cluster-Paketen.
+- score: 8 (Head-Term-Support, Relocation-Intent bringt Kunden, klare Cluster-Lücke)
+- status: written:2026-09-09
+
 Offen (kein Paket, aber Voraussetzung dafür, dass der Cluster wirkt):
 - **#11 Hub-Ausbau:** `umzug-frankfurt.html` (aktuell 2.105 Wörter) um eine Stadtteil-Übersicht
   mit Links zu Paketen 3–5 und einen Kosten-Abschnitt mit Link zu Paket 1 erweitern.
