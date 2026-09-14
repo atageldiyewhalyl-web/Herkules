@@ -61,3 +61,4 @@ assets/**/*.mp4
 # Unreferenced icon drop (directory name has a trailing space).
 "/icons "
 /icons\ /
+.env*

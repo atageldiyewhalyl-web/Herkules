@@ -2728,6 +2728,112 @@ main::after {
   background: var(--white);
 }
 
+.frankfurt-seo-guide {
+  width: min(1320px, calc(100% - 48px));
+  margin: 64px auto 0;
+  padding: 34px;
+  border: 1px solid rgba(229, 232, 238, 0.95);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(248, 191, 28, 0.16), rgba(255, 255, 255, 0) 42%),
+    #f7f8fa;
+}
+
+.frankfurt-seo-guide__intro {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(320px, 0.58fr);
+  gap: 18px 48px;
+  align-items: end;
+  margin-bottom: 24px;
+}
+
+.frankfurt-seo-guide__intro .eyebrow {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 0.72rem;
+}
+
+.frankfurt-seo-guide h2 {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(2.15rem, 3.15vw, 3.35rem);
+  line-height: 0.98;
+  letter-spacing: 0;
+}
+
+.frankfurt-seo-guide h2 span {
+  color: var(--yellow-dark);
+}
+
+.frankfurt-seo-guide__intro > p {
+  max-width: 640px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.frankfurt-seo-guide__panel {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.42fr) minmax(0, 1fr);
+  gap: 14px;
+  align-items: stretch;
+}
+
+.frankfurt-seo-guide__highlight,
+.frankfurt-seo-guide__cards article {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+}
+
+.frankfurt-seo-guide__highlight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 22px;
+  padding: 24px;
+  box-shadow: 0 22px 54px rgba(16, 21, 34, 0.08);
+}
+
+.frankfurt-seo-guide__highlight span {
+  width: fit-content;
+  padding: 8px 11px;
+  border-radius: 999px;
+  background: rgba(248, 191, 28, 0.2);
+  color: var(--ink);
+  font-size: 0.72rem;
+  font-weight: 950;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.frankfurt-seo-guide h3 {
+  margin: 0 0 10px;
+  color: var(--ink);
+  font-size: 1.14rem;
+  line-height: 1.18;
+  letter-spacing: 0;
+}
+
+.frankfurt-seo-guide p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.frankfurt-seo-guide__cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.frankfurt-seo-guide__cards article {
+  min-height: 188px;
+  padding: 22px;
+}
+
 .services-section {
   position: relative;
   width: 100%;
@@ -9826,6 +9932,44 @@ main::after {
 
   .city-proof-section {
     padding: 18px;
+  }
+
+  .frankfurt-seo-guide {
+    width: min(100% - 28px, 1180px);
+    margin-top: 42px;
+    padding: 18px;
+  }
+
+  .frankfurt-seo-guide__intro,
+  .frankfurt-seo-guide__panel,
+  .frankfurt-seo-guide__cards {
+    grid-template-columns: 1fr;
+  }
+
+  .frankfurt-seo-guide__intro {
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+
+  .frankfurt-seo-guide h2 {
+    font-size: clamp(1.82rem, 7.8vw, 2.2rem);
+    line-height: 1.04;
+  }
+
+  .frankfurt-seo-guide h2 br {
+    display: none;
+  }
+
+  .frankfurt-seo-guide__intro > p,
+  .frankfurt-seo-guide p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .frankfurt-seo-guide__highlight,
+  .frankfurt-seo-guide__cards article {
+    min-height: auto;
+    padding: 16px;
   }
 
   .mannheim-page .leistungen-hub__grid {
