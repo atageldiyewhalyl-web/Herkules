@@ -35,12 +35,12 @@ const packageDirs = [
 const existingRelated = {
   "umzugskosten-frankfurt": [
     ["/blog/halteverbotszone-frankfurt-beantragen/", "Halteverbotszone Frankfurt beantragen", "Lokale Services"],
-    ["/blog/umzug-mannheim-frankfurt/", "Umzug Mannheim - Frankfurt", "Strecken"],
+    ["/blog/umzugsfirma-frankfurt-finden/", "Umzugsfirma Frankfurt finden", "Planung"],
     ["/umzug-frankfurt-sachsenhausen/", "Umzug Frankfurt-Sachsenhausen", "Stadtteile"],
   ],
   "halteverbotszone-frankfurt-beantragen": [
     ["/blog/umzugskosten-frankfurt/", "Umzugskosten Frankfurt", "Kosten"],
-    ["/umzug-frankfurt-sachsenhausen/", "Umzug Frankfurt-Sachsenhausen", "Stadtteile"],
+    ["/blog/ummelden-frankfurt/", "Ummelden in Frankfurt", "Lokale Services"],
     ["/umzug-frankfurt/", "Umzugsfirma Frankfurt", "Standort"],
   ],
   "umzug-heidelberg-frankfurt": [
@@ -183,6 +183,7 @@ function markdownToHtml(markdown) {
   let paragraph = [];
   let list = null;
   let table = [];
+  let quote = [];
   let firstH1 = null;
 
   const flushParagraph = () => {
@@ -210,10 +211,16 @@ function markdownToHtml(markdown) {
     html.push("</table>");
     table = [];
   };
+  const flushQuote = () => {
+    if (!quote.length) return;
+    html.push(`<div class="callout callout--info">${inlineMarkdown(quote.join(" "))}</div>`);
+    quote = [];
+  };
   const flushAll = () => {
     flushParagraph();
     flushList();
     flushTable();
+    flushQuote();
   };
 
   for (const raw of lines) {
@@ -225,6 +232,13 @@ function markdownToHtml(markdown) {
     if (line.startsWith("<div ") || line.startsWith("</div>") || line.startsWith("<strong>")) {
       flushAll();
       html.push(line);
+      continue;
+    }
+    if (line.startsWith(">")) {
+      flushParagraph();
+      flushList();
+      flushTable();
+      quote.push(line.replace(/^>\s?/, "").trim());
       continue;
     }
     if (line.startsWith("|")) {
@@ -274,6 +288,17 @@ function faqFromJsonLd(jsonLd) {
   const data = JSON.parse(jsonLd);
   const faq = Array.isArray(data) ? data.find((entry) => entry["@type"] === "FAQPage") : null;
   return faq?.mainEntity || [];
+}
+
+const monthsDe = ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"];
+
+function packageDate(meta) {
+  return meta.date || date;
+}
+
+function humanDate(iso) {
+  const [y, m, d] = iso.split("-").map(Number);
+  return `${d}. ${monthsDe[m - 1]} ${y}`;
 }
 
 function pageUrl(meta) {
@@ -417,8 +442,9 @@ function scriptHtml() {
     </script>`;
 }
 
-function renderPage(pkg) {
+function renderPage(pkg, relatedOverride) {
   const meta = pkg.meta;
+  const published = packageDate(meta);
   const jsonLd = extractJsonLd(pkg.body);
   const content = markdownToHtml(contentBeforeSchema(pkg.body));
   const url = pageUrl(meta);
@@ -430,7 +456,7 @@ function renderPage(pkg) {
   const imageAbs = `${site}${image}`;
   const readTime = Math.max(6, Math.round(content.html.replace(/<[^>]+>/g, " ").split(/\s+/).filter(Boolean).length / 170));
   const faqs = faqFromJsonLd(jsonLd);
-  const related = existingRelated[meta.slug] || [
+  const related = relatedOverride || existingRelated[meta.slug] || [
     ["/umzug-frankfurt/", "Umzug Frankfurt", "Standort"],
     ["/blog/umzugskosten-frankfurt/", "Umzugskosten Frankfurt", "Kosten"],
     ["/blog/halteverbotszone-frankfurt-beantragen/", "Halteverbotszone Frankfurt", "Lokale Services"],
@@ -468,8 +494,8 @@ function renderPage(pkg) {
     <meta name="twitter:title" content="${escapeHtml(title)} | Herkules Umzüge" />
     <meta name="twitter:description" content="${escapeHtml(description)}" />
     <meta name="twitter:image" content="${imageAbs}" />
-    <meta property="article:published_time" content="${date}T00:00:00+00:00" />
-    <meta property="article:modified_time" content="${date}T00:00:00+00:00" />
+    <meta property="article:published_time" content="${published}T00:00:00+00:00" />
+    <meta property="article:modified_time" content="${published}T00:00:00+00:00" />
     <script type="application/ld+json">${jsonLd}</script>
     <link rel="icon" href="/assets/favicon-512.png" type="image/png" sizes="512x512" />
     <meta name="theme-color" content="#f8bf1c" />
@@ -495,7 +521,7 @@ function renderPage(pkg) {
           <h1>${escapeHtml(content.h1)}</h1>
           <p class="article-header__deck">${escapeHtml(description)}</p>
           <div class="article-header__meta">
-            <span>25. August 2026</span>
+            <span>${humanDate(published)}</span>
             <span>${readTime} Min. Lesezeit</span>
             <span>Von <a href="/ueber-uns/">${escapeHtml(meta.author || "Döndü Akbaba")}</a></span>
           </div>
@@ -596,7 +622,7 @@ function updateSitemap(packages) {
   fs.writeFileSync(file, xml);
 }
 
-function card(pkg) {
+function card(pkg, label = "SEO Cluster") {
   const meta = pkg.meta;
   const content = markdownToHtml(contentBeforeSchema(pkg.body));
   const image = meta.slug.includes("halteverbotszone") ? "/assets/halteverbotszone.png" : "/assets/intro-truck.webp";
@@ -608,9 +634,9 @@ function card(pkg) {
             </div>
             <div class="blog-card__body">
               <div class="blog-card__meta">
-                <span>25. August 2026</span>
+                <span>${humanDate(packageDate(meta))}</span>
                 <span class="blog-card__meta-dot"></span>
-                <span>SEO Cluster</span>
+                <span>${escapeHtml(label)}</span>
               </div>
               <h3 class="blog-card__title">${escapeHtml(content.h1)}</h3>
               <p class="blog-card__excerpt">${escapeHtml(meta.meta_description)}</p>
@@ -653,9 +679,13 @@ function updateFrankfurtHub() {
   fs.writeFileSync(file, html);
 }
 
-const packages = packageDirs.map(readPackage);
-writePages(packages);
-updatePrerender(packages);
-updateSitemap(packages);
-updateBlogIndex(packages);
-updateFrankfurtHub();
+module.exports = { readPackage, renderPage, markdownToHtml, contentBeforeSchema, pageUrl, card, escapeHtml, site };
+
+if (require.main === module) {
+  const packages = packageDirs.map(readPackage);
+  writePages(packages);
+  updatePrerender(packages);
+  updateSitemap(packages);
+  updateBlogIndex(packages);
+  updateFrankfurtHub();
+}

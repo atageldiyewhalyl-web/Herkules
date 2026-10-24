@@ -1,7 +1,8 @@
 ---
 client: Herkules Umzüge & Transporte e.K.
-date: 2026-07-11
+date: 2026-10-24
 slug: umzugskosten-steuer-absetzen
+type: blog
 status: ready
 primary_keyword: umzugskosten steuer absetzen
 secondary_keywords: [umzugskostenpauschale 2026, umzug werbungskosten, umzug haushaltsnahe dienstleistungen §35a]
@@ -62,15 +63,13 @@ Varianten stehen zur Wahl:
   Kosten an. Das lohnt sich, sobald die realen Ausgaben über der Pauschale
   liegen, etwa bei einem größeren Haushalt oder einer weiten Strecke.
 - **Umzugskostenpauschale:** Für sonstige Umzugsauslagen (Ummeldungen,
-  Trinkgelder für Helfer, Kleinkram, der sich schwer belegen lässt) gewährt
-  das Bundesfinanzministerium eine Pauschale, die es **regelmäßig per
-  BMF-Schreiben aktualisiert** — die genaue Höhe für das jeweilige Umzugsdatum
-  finden Sie im aktuellen BMF-Schreiben zu § 9 EStG bzw. beim
-  [Bundesfinanzministerium](https://www.bundesfinanzministerium.de/). Für
-  Umzüge mit Kindern gilt zusätzlich ein Zuschlag für den erhöhten
-  Aufwand pro Kind. Fragen Sie im Zweifel Ihren Steuerberater oder das
-  zuständige Finanzamt nach dem für Ihr Umzugsdatum gültigen Betrag — die
-  Pauschale wird nicht rückwirkend, sondern nach Umzugsstichtag gestaffelt.
+  Trinkgelder für Helfer, Kleinkram, der sich schwer belegen lässt) gilt eine
+  Pauschale, die das Bundesfinanzministerium regelmäßig anpasst. Für Umzüge
+  **ab dem 1. März 2024** — und damit auch 2026 — beträgt sie **964 Euro** für
+  die umziehende Person, **643 Euro** für jede weitere Person im Haushalt
+  (Ehepartner, Kinder) und 193 Euro für Personen, die vorher keine eigene
+  Wohnung hatten ([Finanzverwaltung NRW](https://www.finanzamt.nrw.de/steuerinfos/privatpersonen/arbeitnehmende/werbungskosten/umzugskosten)).
+  Ein Paar mit einem Kind kommt so auf 2.250 Euro Pauschale.
 
 **Praxistipp:** Nutzen Sie die Pauschale nur für Kosten, die Sie ohnehin
 schwer belegen können. Für alles, was auf einer Rechnung steht — allen voran
@@ -232,7 +231,7 @@ Kostenloses Angebot: ☎ 0621 899 59 69.
     },
     "headline": "Umzugskosten von der Steuer absetzen 2026: Pauschalen & Werbungskosten",
     "description": "Umzugskosten steuerlich absetzen 2026: Werbungskosten bei beruflichem Umzug, haushaltsnahe Dienstleistungen bei privatem Umzug — mit Beispielen.",
-    "image": "https://www.umzuege-herkules.de/assets/blog/umzugskosten-steuer-absetzen-hero.webp",
+    "image": "https://www.umzuege-herkules.de/assets/intro-truck.webp",
     "author": {
       "@type": "Person",
       "name": "Döndü Akbaba",
@@ -241,8 +240,8 @@ Kostenloses Angebot: ☎ 0621 899 59 69.
     "publisher": {
       "@id": "https://www.umzuege-herkules.de/#organization"
     },
-    "datePublished": "2026-07-11",
-    "dateModified": "2026-07-11",
+    "datePublished": "2026-10-24",
+    "dateModified": "2026-10-24",
     "inLanguage": "de",
     "about": [
       {"@type": "Thing", "name": "Umzugskosten Steuer"},

@@ -143,3 +143,26 @@ Offen (kein Paket, aber Voraussetzung dafür, dass der Cluster wirkt):
   eigene Rufnummer, keine Adresse, und im Footer-Positionierungssatz gar nicht genannt
   (nur Mannheim + Frankfurt). Günstiger Teilschritt: Heidelberg in den Footer-Satz
   aufnehmen.
+
+---
+## Run 2026-10-24 — Fokus "umzugsfirma frankfurt"
+SERP (Firecrawl, 2026-10-24): Frankfurter Umzugsfirmen-Startseiten (Hofmann, Stark, moveyourhome,
+Sorglos, Christ, UMEX, Hoffmann, Hertling) + Verzeichnisse (umzugsfirmen-check, umzugsportal, 11880,
+MyHammer). Herkules nicht in Top 15. Ohne Frankfurter Adresse/GBP bleibt das Local Pack zu (#12 offen);
+Hebel = Hub `/umzug-frankfurt/` stärken + Supporting-Content, der auf den Hub verlinkt.
+
+| Slug | Typ | primary_kw | status |
+|---|---|---|---|
+| umzugsfirma-frankfurt-finden | blog | umzugsfirma frankfurt finden | written+published:2026-10-24 |
+| ummelden-frankfurt | blog | ummelden frankfurt | written+published:2026-10-24 |
+| sperrmuell-frankfurt-umzug | blog | sperrmüll frankfurt | written+published:2026-10-24 |
+| ummelden-mannheim | blog | ummelden mannheim | published:2026-10-24 (written 2026-07-10) |
+| umzugskosten-steuer-absetzen | blog | umzugskosten steuer absetzen | published:2026-10-24 (Pauschale 964/643/193 € ergänzt) |
+
+Hub #11 erledigt: `/umzug-frankfurt/` hat jetzt eine Frankfurt-Ratgeber-Sektion (Stadtteile, Leistungen,
+Planung & Kosten, Strecken) + 3 neue FAQs. Publizieren künftig mit `node scripts/publish-packages.js <dir>`.
+
+Nächste Kandidaten (nicht geschrieben):
+- Möbel einlagern Frankfurt — braucht Kundenfakten (eigenes Lager? Preise?)
+- Umzug Darmstadt – Frankfurt (Route-Spoke aus Cluster-Strategie, fehlt noch)
+- Nach Frankfurt ziehen: Stadtteil-Wahl aus Umzugssicht — Überschneidung mit Stadtteilseiten prüfen

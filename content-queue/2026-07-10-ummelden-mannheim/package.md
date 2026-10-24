@@ -1,7 +1,9 @@
 ---
 client: Herkules Umzüge & Transporte e.K.
-date: 2026-07-10
+date: 2026-10-24
 slug: ummelden-mannheim
+type: blog
+author: Döndü Akbaba
 status: ready
 primary_keyword: ummelden mannheim
 secondary_keywords: [umzug ummelden mannheim, wohnsitz ummelden mannheim frist, wohnungsgeberbestätigung mannheim, ummelden mannheim online, ummelden mannheim kosten]
@@ -256,7 +258,7 @@ Wohnung in Deutschland beziehen.
     },
     "headline": "Ummelden nach dem Umzug in Mannheim: Fristen, Unterlagen und Ablauf",
     "description": "Ummelden nach dem Umzug in Mannheim: 14-Tage-Frist, Unterlagen, Termin beim Bürgerservice oder online — Schritt für Schritt erklärt, mit Praxistipps.",
-    "image": "https://www.umzuege-herkules.de/assets/blog/ummelden-mannheim-hero.webp",
+    "image": "https://www.umzuege-herkules.de/assets/intro-truck.webp",
     "author": {
       "@type": "Person",
       "name": "Döndü Akbaba",
@@ -265,8 +267,8 @@ Wohnung in Deutschland beziehen.
     "publisher": {
       "@id": "https://www.umzuege-herkules.de/#organization"
     },
-    "datePublished": "2026-07-10",
-    "dateModified": "2026-07-10",
+    "datePublished": "2026-10-24",
+    "dateModified": "2026-10-24",
     "inLanguage": "de",
     "about": [
       {"@type": "Thing", "name": "Ummeldung Wohnsitz"},

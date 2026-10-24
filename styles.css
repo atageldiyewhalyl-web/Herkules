@@ -10274,3 +10274,62 @@ main::after {
   .internal-cluster-links { width: min(100% - 28px, 1180px); margin-top: 42px; }
   .internal-cluster-links .related-articles__grid { grid-template-columns: 1fr; }
 }
+
+/* Frankfurt hub: grouped links to Stadtteil pages, services and guides */
+.frankfurt-hub__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.frankfurt-hub__group {
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+}
+
+.frankfurt-hub__group ul {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.frankfurt-hub__group a {
+  display: inline-flex;
+  gap: 8px;
+  color: var(--ink);
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.35;
+  text-decoration: none;
+}
+
+.frankfurt-hub__group a::before {
+  content: "→";
+  color: var(--yellow-dark);
+}
+
+.frankfurt-hub__group a:hover,
+.frankfurt-hub__group a:focus-visible {
+  color: var(--yellow-dark);
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  .frankfurt-hub__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .frankfurt-hub__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .frankfurt-hub__group {
+    padding: 16px;
+  }
+}

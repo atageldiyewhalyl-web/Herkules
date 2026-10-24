@@ -778,3 +778,25 @@ details[open] > .faq-question::after {
   border: 1.5px solid var(--line);
 }
 .button--outline:hover { background: var(--panel); filter: none; }
+
+/* Keep wide tables from stretching the article column past the viewport */
+.article-main { min-width: 0; }
+@media (max-width: 640px) {
+  .article-prose table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .article-prose thead th,
+  .article-prose td {
+    padding: 10px 12px;
+  }
+}
+
+/* Phones: the header CTA pushes the menu toggle off-screen; the in-article CTAs remain */
+@media (max-width: 480px) {
+  .article-page .nav__cta,
+  .blog-index-page .nav__cta {
+    display: none;
+  }
+}
