@@ -7,6 +7,13 @@
 
 ## 1. What the client offers (from the site, source of truth)
 
+> **KORREKTUR 2026-10-24:** Herkules HAT einen Frankfurter Standort mit Google-Unternehmensprofil:
+> Lyoner Straße 14, 60528 Frankfurt am Main (Niederrad), Tel. 069 66554358, 4,1★ (8 Rezensionen),
+> Mo–Sa 08–19, Kategorie „Umzugs- und Lagerservice“, Maps-CID 14583629453367596577.
+> Das Profil hatte am 2026-10-24 KEINE Website verlinkt. Die Aussage „keine Frankfurter Adresse /
+> Local Pack unerreichbar“ weiter unten ist damit falsch — das Local Pack ist erreichbar.
+
+
 Service pages: Privatumzüge, Büroumzüge, Seniorenumzüge, Auslandsumzüge,
 Halteverbotszone, Außenaufzug, Stundenpreise (Umzugshelfer nach Stunden,
 ab ca. 35–55 €/h inkl. Fahrzeug, Mindestbuchung 2–3 h), Umzugskartons.

@@ -1,13 +1,15 @@
 # Herkules Umzüge & Transporte e.K.
 
-Herkules Umzüge & Transporte e.K. is a professional moving company based in Mannheim, Germany. The company serves private and commercial moving customers in Mannheim, Frankfurt, Karlsruhe and the Rhein-Neckar region.
+Herkules Umzüge & Transporte e.K. is a professional moving company headquartered in Mannheim, Germany, with a second location in Frankfurt am Main (Niederrad). The company serves private and commercial moving customers in Mannheim, Frankfurt, Karlsruhe and the Rhein-Neckar region.
 
 ## Core facts
 
 - Company: Herkules Umzüge & Transporte e.K.
 - Owner: Döndü Akbaba
-- Address: Relaisstraße 192, 68219 Mannheim, Germany
+- Address (headquarters): Relaisstraße 192, 68219 Mannheim, Germany
 - Phone: 0621 899 59 69
+- Frankfurt location: Lyoner Straße 14, 60528 Frankfurt am Main, Germany
+- Frankfurt phone: 069 66 554 358
 - Email: info@herkules-umzuege24.de
 - Region served: Mannheim, Frankfurt, Karlsruhe, Rhein-Neckar and surrounding areas
 - Experience: 20+ years

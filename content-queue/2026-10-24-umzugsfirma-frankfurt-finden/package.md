@@ -92,7 +92,7 @@ Vergleichsportale können bei der ersten Orientierung helfen. Bedenken Sie aber:
 
 Prüfen Sie das Impressum: Firmenname mit Rechtsform, vollständige Anschrift, Handelsregister-Eintrag bei eingetragenen Kaufleuten oder Gesellschaften, erreichbare Telefonnummer. Fehlt die Anschrift oder gibt es nur eine Mobilnummer, ist im Schadensfall schwer jemand zu erreichen.
 
-Zur Transparenz in eigener Sache: Herkules Umzüge & Transporte e.K. hat seinen Sitz in Mannheim (Relaisstraße 192) und plant Umzüge in Frankfurt und im Rhein-Main-Gebiet von dort aus. Für Frankfurt erreichen Sie uns zusätzlich unter 069 66 554 358.
+Zur Transparenz in eigener Sache: Herkules Umzüge & Transporte e.K. hat seinen Hauptsitz in Mannheim (Relaisstraße 192) und einen eigenen Standort in Frankfurt-Niederrad: **Lyoner Straße 14, 60528 Frankfurt am Main**, Telefon 069 66 554 358. Beide Adressen finden Sie auch bei Google Maps.
 
 ## 8. Zahlungsbedingungen
 
@@ -145,11 +145,11 @@ Vergleichen Sie danach nicht nur die Endsumme, sondern Teamgröße und kalkulier
 
 **Wie viel haftet eine Umzugsfirma bei Schäden?** Gesetzlich bis zu 620 Euro je Kubikmeter benötigtem Laderaum (§ 451e HGB). Für besonders wertvolle Einzelstücke kann eine Zusatzversicherung sinnvoll sein. Erkennbare Schäden müssen spätestens am Tag nach der Ablieferung, nicht erkennbare innerhalb von 14 Tagen gemeldet werden.
 
-**Muss eine Umzugsfirma ihren Sitz in Frankfurt haben?** Nein. Entscheidend sind Ortskenntnis, Planung und Erreichbarkeit. Eine Firma aus der Region, die Frankfurt regelmäßig anfährt, kann genauso gut planen — wichtig ist, dass sie Parksituation, Halteverbot und Treppenhaus an Ihren Adressen kennt und vorab prüft.
+**Muss eine Umzugsfirma ihren Sitz in Frankfurt haben?** Nicht zwingend, aber ein Standort vor Ort verkürzt die Wege zu Besichtigung und Umzugstag. Entscheidend sind Ortskenntnis, Planung und Erreichbarkeit: Die Firma sollte Parksituation, Halteverbot und Treppenhaus an Ihren Adressen kennen und vorab prüfen — und eine Anschrift haben, die Sie im Zweifel aufsuchen können.
 
 ## Angebot für Ihren Umzug in Frankfurt
 
-Herkules Umzüge plant Umzüge in Frankfurt nach genau diesen Prüfpunkten: Besichtigung vor Ort oder per Video, schriftliches Festpreisangebot, Halteverbotszone inklusive Schilder auf Wunsch. Mehr zu unserer Arbeit vor Ort finden Sie auf der Seite [Umzugsfirma Frankfurt](/umzug-frankfurt/).
+Herkules Umzüge plant Umzüge in Frankfurt von unserem Standort in Niederrad aus nach genau diesen Prüfpunkten: Besichtigung vor Ort oder per Video, schriftliches Festpreisangebot, Halteverbotszone inklusive Schilder auf Wunsch. Mehr zu unserer Arbeit vor Ort finden Sie auf der Seite [Umzugsfirma Frankfurt](/umzug-frankfurt/).
 
 ## Schema
 
@@ -178,7 +178,7 @@ Herkules Umzüge plant Umzüge in Frankfurt nach genau diesen Prüfpunkten: Besi
       { "@type": "Question", "name": "Wie viele Angebote sollte ich einholen?", "acceptedAnswer": { "@type": "Answer", "text": "Zwei bis drei Angebote reichen in der Regel, wenn sie auf derselben Grundlage entstehen. Mehr Angebote machen den Vergleich nicht besser, sondern unübersichtlicher, vor allem wenn sie ohne Besichtigung erstellt wurden." } },
       { "@type": "Question", "name": "Wie weit im Voraus sollte ich eine Umzugsfirma in Frankfurt buchen?", "acceptedAnswer": { "@type": "Answer", "text": "Sechs bis acht Wochen vor dem Termin, in der Hochsaison eher früher. Die Halteverbotszone muss in Frankfurt spätestens zwei Wochen vorher beantragt werden, und die Schilder müssen drei volle Kalendertage vor dem Umzug stehen." } },
       { "@type": "Question", "name": "Wie viel haftet eine Umzugsfirma bei Schäden?", "acceptedAnswer": { "@type": "Answer", "text": "Gesetzlich bis zu 620 Euro je Kubikmeter benötigtem Laderaum (§ 451e HGB). Für besonders wertvolle Einzelstücke kann eine Zusatzversicherung sinnvoll sein. Erkennbare Schäden müssen spätestens am Tag nach der Ablieferung, nicht erkennbare innerhalb von 14 Tagen gemeldet werden." } },
-      { "@type": "Question", "name": "Muss eine Umzugsfirma ihren Sitz in Frankfurt haben?", "acceptedAnswer": { "@type": "Answer", "text": "Nein. Entscheidend sind Ortskenntnis, Planung und Erreichbarkeit. Eine Firma aus der Region, die Frankfurt regelmäßig anfährt, kann genauso gut planen, wenn sie Parksituation, Halteverbot und Treppenhaus an beiden Adressen vorab prüft." } }
+      { "@type": "Question", "name": "Muss eine Umzugsfirma ihren Sitz in Frankfurt haben?", "acceptedAnswer": { "@type": "Answer", "text": "Nicht zwingend, aber ein Standort vor Ort verkürzt die Wege zu Besichtigung und Umzugstag. Entscheidend sind Ortskenntnis, Planung und Erreichbarkeit: Die Firma sollte Parksituation, Halteverbot und Treppenhaus an Ihren Adressen kennen und vorab prüfen und eine Anschrift haben, die Sie im Zweifel aufsuchen können." } }
     ]
   }
 ]

@@ -133,7 +133,7 @@ Offen (kein Paket, aber Voraussetzung dafür, dass der Cluster wirkt):
 - **#11 Hub-Ausbau:** `umzug-frankfurt.html` (aktuell 2.105 Wörter) um eine Stadtteil-Übersicht
   mit Links zu Paketen 3–5 und einen Kosten-Abschnitt mit Link zu Paket 1 erweitern.
   Ohne diesen Schritt hängen die Spokes ohne Gegenrichtung.
-- **#12 Frankfurt-NAP klären (KORRIGIERT 2026-08-25):** Die Frankfurter Nummer
+- **#12 Frankfurt-NAP — ERLEDIGT 2026-10-24 (Standort Lyoner Str. 14 existiert, siehe Run 2026-10-24).** Alter Stand: Die Frankfurter Nummer
   `069 - 66 554 358` steht sehr wohl auf vielen Seiten (index, umzug-frankfurt,
   impressum, leistungen u. a.). Eine frühere Notiz hier behauptete das Gegenteil —
   das beruhte auf einem fehlgeschlagenen grep-Aufruf. Was tatsächlich fehlt, ist eine
@@ -148,8 +148,16 @@ Offen (kein Paket, aber Voraussetzung dafür, dass der Cluster wirkt):
 ## Run 2026-10-24 — Fokus "umzugsfirma frankfurt"
 SERP (Firecrawl, 2026-10-24): Frankfurter Umzugsfirmen-Startseiten (Hofmann, Stark, moveyourhome,
 Sorglos, Christ, UMEX, Hoffmann, Hertling) + Verzeichnisse (umzugsfirmen-check, umzugsportal, 11880,
-MyHammer). Herkules nicht in Top 15. Ohne Frankfurter Adresse/GBP bleibt das Local Pack zu (#12 offen);
-Hebel = Hub `/umzug-frankfurt/` stärken + Supporting-Content, der auf den Hub verlinkt.
+MyHammer). Herkules nicht in den organischen Top 15. Hebel = Hub `/umzug-frankfurt/` stärken + Supporting-Content.
+
+> **KORREKTUR 2026-10-24:** Herkules HAT einen Frankfurter Standort mit Google-Unternehmensprofil:
+> Lyoner Straße 14, 60528 Frankfurt am Main (Niederrad), Tel. 069 66554358, 4,1★ (8 Rezensionen),
+> Mo–Sa 08–19, Kategorie „Umzugs- und Lagerservice“, Maps-CID 14583629453367596577.
+> Das Profil hatte am 2026-10-24 KEINE Website verlinkt. Die Aussage „keine Frankfurter Adresse /
+> Local Pack unerreichbar“ weiter unten ist damit falsch — das Local Pack ist erreichbar.
+> Umgesetzt: Frankfurt-Standort als eigene MovingCompany-Entity (#frankfurt) + sichtbare NAP auf dem Hub,
+> llms.txt ergänzt, Blogpost umzugsfirma-frankfurt-finden korrigiert. #12 damit erledigt.
+
 
 | Slug | Typ | primary_kw | status |
 |---|---|---|---|

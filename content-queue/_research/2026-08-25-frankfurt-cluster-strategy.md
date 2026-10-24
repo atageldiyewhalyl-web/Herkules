@@ -10,7 +10,14 @@ Target: rank for "umzug frankfurt" / "umzugsunternehmen frankfurt" + build corri
 - Frankfurt Stadtteile are named in the FAQ schema (Sachsenhausen, Bockenheim, Bornheim,
   Nordend, Westend, Gallus, Innenstadt, Ostend) but **no page exists for any of them**.
 
-## 2. The real Frankfurt-presence position (CORRECTED 2026-08-25)
+## 2. The real Frankfurt-presence position
+
+> **KORREKTUR 2026-10-24:** Herkules HAT einen Frankfurter Standort mit Google-Unternehmensprofil:
+> Lyoner Straße 14, 60528 Frankfurt am Main (Niederrad), Tel. 069 66554358, 4,1★ (8 Rezensionen),
+> Mo–Sa 08–19, Kategorie „Umzugs- und Lagerservice“, Maps-CID 14583629453367596577.
+> Das Profil hatte am 2026-10-24 KEINE Website verlinkt. Die Aussage „keine Frankfurter Adresse /
+> Local Pack unerreichbar“ weiter unten ist damit falsch — das Local Pack ist erreichbar.
+ (CORRECTED 2026-08-25)
 
 > **Correction.** An earlier version of this file claimed the Frankfurt number
 > `069 66554358` appeared in no HTML file. **That was wrong** — it was produced by a
