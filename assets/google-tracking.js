@@ -152,6 +152,17 @@
           window.location.href = href;
         }, 250);
       }
+    } else if (/^https:\/\/(wa\.me|api\.whatsapp\.com)\//.test(href)) {
+      // WhatsApp links open in a new tab, so the beacon transport is enough.
+      const placement =
+        ["rg-form__wa", "rg-dock__wa", "rg-btn--wa", "contact-info__whatsapp"].find((name) =>
+          link.classList.contains(name)
+        ) || "other";
+      trackGa4Event("whatsapp_click", {
+        link_url: href,
+        link_text: link.textContent.trim(),
+        link_placement: placement,
+      });
     } else if (href.startsWith("mailto:")) {
       if (isPrimaryClick) event.preventDefault();
       trackGa4Event("email_click", {
