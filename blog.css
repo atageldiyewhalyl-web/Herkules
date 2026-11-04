@@ -3,36 +3,6 @@
    Requires: styles.css loaded first (CSS vars, reset, .site-header, .site-footer)
    ============================================================ */
 
-/* ── Nav fix for blog pages ────────────────────────────────── */
-.article-page .nav,
-.blog-index-page .nav {
-  grid-template-columns: auto 1fr auto;
-}
-.article-page .nav__cta,
-.blog-index-page .nav__cta {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 48px;
-  padding: 0 24px;
-  border: 1px solid rgba(216, 155, 0, 0.38);
-  border-radius: 4px;
-  background: var(--yellow);
-  color: var(--ink);
-  box-shadow: 0 10px 24px rgba(246, 192, 45, 0.26);
-  font-size: 0.84rem;
-  font-weight: 900;
-  line-height: 1;
-  text-decoration: none;
-  white-space: nowrap;
-  justify-self: end;
-}
-.article-page .nav__cta:hover,
-.blog-index-page .nav__cta:hover {
-  background: #f2b815;
-  filter: none;
-}
-
 /* ── Eyebrow label (shared) ────────────────────────────────── */
 .eyebrow {
   display: inline-block;
@@ -794,15 +764,3 @@ details[open] > .faq-question::after {
   }
 }
 
-/* Phones: the header CTA pushes the menu toggle off-screen; the in-article CTAs remain */
-@media (max-width: 480px) {
-  .article-page .nav__cta,
-  .blog-index-page .nav__cta {
-    display: none;
-  }
-  .article-page .nav__toggle,
-  .blog-index-page .nav__toggle {
-    grid-column: -2;
-    justify-self: end;
-  }
-}

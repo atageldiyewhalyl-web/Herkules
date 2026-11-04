@@ -361,7 +361,6 @@
 .lt-contacts { display: grid; gap: 10px; margin-top: 4px; }
 .lt-contacts a { text-decoration: none; }
 
-.service-page .nav__cta { justify-self: end; }
 body:has(.rg-dock) .rg-dock { z-index: 900; }
 
 @media (max-width: 1100px) {

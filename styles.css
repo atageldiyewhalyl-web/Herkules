@@ -10333,3 +10333,43 @@ main::after {
     padding: 16px;
   }
 }
+
+/* ── Site navigation: one header for every page ─────────────── */
+.private-page .nav__cta {
+  text-decoration: none;
+  white-space: nowrap;
+  justify-self: end;
+}
+
+.nav__links > a[aria-current="page"],
+.nav__item.is-current > .nav__trigger {
+  color: var(--yellow-dark);
+}
+
+.nav__dropdown a[aria-current="page"] {
+  background: #fff7dc;
+  font-weight: 900;
+}
+
+@media (min-width: 1025px) and (max-width: 1240px) {
+  .private-page .nav__links {
+    gap: 22px;
+    padding-right: 24px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .private-page .nav.is-open {
+    grid-template-rows: auto minmax(0, 1fr) auto;
+  }
+
+  .private-page .nav.is-open .nav__cta {
+    display: inline-flex;
+    grid-column: 1 / -1;
+    grid-row: 3;
+    justify-self: stretch;
+    min-height: 54px;
+    margin-top: 18px;
+    font-size: 0.95rem;
+  }
+}
