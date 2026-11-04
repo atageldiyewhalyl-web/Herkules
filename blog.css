@@ -25,6 +25,7 @@
   line-height: 1;
   text-decoration: none;
   white-space: nowrap;
+  justify-self: end;
 }
 .article-page .nav__cta:hover,
 .blog-index-page .nav__cta:hover {
@@ -134,7 +135,7 @@
   background-size: cover;
   background-position: center;
   transition: transform 400ms ease;
-  opacity: 0.6;
+  opacity: 0.92;
 }
 .blog-card:hover .blog-card__thumb-bg {
   transform: scale(1.05);
@@ -798,5 +799,10 @@ details[open] > .faq-question::after {
   .article-page .nav__cta,
   .blog-index-page .nav__cta {
     display: none;
+  }
+  .article-page .nav__toggle,
+  .blog-index-page .nav__toggle {
+    grid-column: -2;
+    justify-self: end;
   }
 }

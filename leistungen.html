@@ -20,7 +20,7 @@
     <meta property="og:title" content="Leistungen | Herkules Umzüge Mannheim" />
     <meta property="og:description" content="Finden Sie die passende Herkules Leistung für Ihren Umzug: privat, gewerblich, seniorengerecht, international oder als einzelne Zusatzleistung." />
     <meta property="og:url" content="https://www.umzuege-herkules.de/leistungen/" />
-    <meta property="og:image" content="https://www.umzuege-herkules.de/assets/herkules-truck-poster.png" />
+    <meta property="og:image" content="https://www.umzuege-herkules.de/assets/leistungen/privatumzuege/og.jpg" />
     <meta property="og:image:alt" content="Herkules Umzüge & Transporte LKW" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Leistungen | Herkules Umzüge Mannheim" />
@@ -31,6 +31,9 @@
     <link rel="apple-touch-icon" href="/assets/favicon-512.png" />
     <meta name="theme-color" content="#f8bf1c" />
     <link rel="stylesheet" href="/styles.css?v=20260739" />
+    <link rel="preload" href="/assets/fonts/barlow-condensed-800.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="/assets/blog-ratgeber.css?v=20261104" />
+    <link rel="stylesheet" href="/assets/leistung.css?v=20261104" />
     <script defer src="/assets/cookie-consent.js"></script>
     <script defer src="/assets/google-tracking.js"></script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","@id":"https://www.umzuege-herkules.de/leistungen/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Startseite","item":"https://www.umzuege-herkules.de/"},{"@type":"ListItem","position":2,"name":"Leistungen","item":"https://www.umzuege-herkules.de/leistungen/"}]}</script>
@@ -87,6 +90,8 @@
           <a href="/blog/">Blog</a><a href="#kontakt">Kontakt</a>
         </div>
 
+        <a class="nav__cta" href="/#kontakt">Kostenloses Angebot</a>
+
         <button class="nav__toggle" type="button" aria-label="Menü öffnen" aria-expanded="false">
           <span></span>
           <span></span>
@@ -95,73 +100,100 @@
       </nav>
     </header>
 
-    <main>
-      <section class="leistungen-hub" aria-labelledby="leistungen-hub-title">
-        <div class="leistungen-hub__header">
-          <p class="eyebrow">Leistungen</p>
-          <h1 id="leistungen-hub-title">Unsere Leistungen</h1>
-          <p>Wählen Sie die passende Leistung und springen Sie direkt zur Detailseite.</p>
+    <main class="ratgeber leistung">
+      <section class="lt-hub" aria-labelledby="leistungen-hub-title">
+        <div class="lt-hub__inner">
+          <div class="lt-sign lt-sign--hub">
+            <div class="lt-board lt-board--yellow">
+              <p class="lt-board__kicker">Leistungen</p>
+              <h1 id="leistungen-hub-title">Unsere Leistungen</h1>
+              <p class="lt-hub__intro">Wählen Sie die passende Leistung und springen Sie direkt zur Detailseite.</p>
+              <ul class="lt-rows lt-rows--links">
+                <li><a href="/privatumzuege/"><span class="lt-arrow" aria-hidden="true"></span><span>Privatumzüge</span></a></li>
+                <li><a href="/bueroumzuege/"><span class="lt-arrow" aria-hidden="true"></span><span>Büroumzüge</span></a></li>
+                <li><a href="/seniorenumzuege/"><span class="lt-arrow" aria-hidden="true"></span><span>Seniorenumzüge</span></a></li>
+                <li><a href="/auslandsumzuege/"><span class="lt-arrow" aria-hidden="true"></span><span>Auslandsumzüge</span></a></li>
+                <li><a href="/halteverbotszone/"><span class="lt-arrow" aria-hidden="true"></span><span>Halteverbotszone</span></a></li>
+                <li><a href="/aussenaufzug/"><span class="lt-arrow" aria-hidden="true"></span><span>Außenaufzug</span></a></li>
+                <li><a href="/umzugskartons/"><span class="lt-arrow" aria-hidden="true"></span><span>Umzugskartons</span></a></li>
+                <li><a href="/stundenpreise/"><span class="lt-arrow" aria-hidden="true"></span><span>Stundenpreise</span></a></li>
+              </ul>
+            </div>
+          </div>
+          <aside class="rg-offer" aria-label="Angebot">
+            <p class="rg-offer__title">Nicht sicher, was Sie brauchen?</p>
+            <p class="rg-offer__text">Rufen Sie an oder schreiben Sie uns. Wir stellen die passenden Leistungen für Ihren Umzug zusammen.</p>
+            <a class="rg-btn rg-btn--go" href="/#kontakt">Kostenloses Angebot anfordern</a>
+            <a class="rg-btn rg-btn--plain" href="tel:+496218995969">0621 899 59 69</a>
+            <p class="rg-offer__proof">
+              <span><strong>4,8 / 5</strong>Google Bewertung</span>
+              <span><strong>Seit 2004</strong>Mannheim &amp; Region</span>
+              <span><strong>Festpreis</strong>Keine Überraschungen</span>
+            </p>
+          </aside>
         </div>
-        <div class="leistungen-hub__grid">
-          <a class="leistungen-card" href="/privatumzuege/">
-            <img src="/assets/private-service-herkules-uniform-20260508.webp" alt="Herkules Mitarbeiter beim Privatumzug" loading="lazy" decoding="async" />
-            <div class="leistungen-card__body">
+      </section>
+      <section class="lt-section lt-section--pavement" aria-label="Alle Leistungen im Überblick">
+        <div class="lt-inner lt-hubgrid">
+          <a class="lt-hubcard" href="/privatumzuege/">
+            <img src="/assets/leistungen/privatumzuege/hero-768.webp" width="768" height="512" alt="Herkules Mitarbeiter beim Privatumzug" loading="lazy" decoding="async" />
+            <div class="lt-hubcard__body">
               <span>Wohnung & Haus</span>
               <h2>Privatumzüge</h2>
               <p>Wohnungsumzug mit Planung, Transport, Montage und optionaler Packhilfe.</p>
             </div>
           </a>
-          <a class="leistungen-card" href="/bueroumzuege/">
-            <img src="/assets/office-service-herkules-uniform-20260508.webp" alt="Herkules Team beim Büroumzug" loading="lazy" decoding="async" />
-            <div class="leistungen-card__body">
+          <a class="lt-hubcard" href="/bueroumzuege/">
+            <img src="/assets/leistungen/bueroumzuege/hero-768.webp" width="768" height="512" alt="Herkules Team beim Büroumzug" loading="lazy" decoding="async" />
+            <div class="lt-hubcard__body">
               <span>Firma & Büro</span>
               <h2>Büroumzüge</h2>
               <p>Schnell und strukturiert mit möglichst wenig Ausfallzeit umziehen.</p>
             </div>
           </a>
-          <a class="leistungen-card" href="/seniorenumzuege/">
-            <img src="/assets/senior-service-herkules-uniform-20260508.webp" alt="Seniorenumzug mit persönlicher Betreuung" loading="lazy" decoding="async" />
-            <div class="leistungen-card__body">
+          <a class="lt-hubcard" href="/seniorenumzuege/">
+            <img src="/assets/leistungen/seniorenumzuege/hero-768.webp" width="768" height="512" alt="Seniorenumzug mit persönlicher Betreuung" loading="lazy" decoding="async" />
+            <div class="lt-hubcard__body">
               <span>Ruhig begleitet</span>
               <h2>Seniorenumzüge</h2>
               <p>Persönliche Abstimmung, Packhilfe und sorgfältiger Aufbau im neuen Zuhause.</p>
             </div>
           </a>
-          <a class="leistungen-card" href="/auslandsumzuege/">
-            <img src="/assets/international-service-real.webp" alt="Verpacktes Umzugsgut für internationalen Transport" loading="lazy" decoding="async" />
-            <div class="leistungen-card__body">
+          <a class="lt-hubcard" href="/auslandsumzuege/">
+            <img src="/assets/leistungen/auslandsumzuege/hero-768.webp" width="768" height="512" alt="Verpacktes Umzugsgut für internationalen Transport" loading="lazy" decoding="async" />
+            <div class="lt-hubcard__body">
               <span>Europa & Ausland</span>
               <h2>Auslandsumzüge</h2>
               <p>Internationale Umzüge mit sauberer Planung und Transportkoordination.</p>
             </div>
           </a>
-          <a class="leistungen-card" href="/halteverbotszone/">
-            <img src="/assets/labeling-service-herkules-uniform-20260508.webp" alt="Herkules Mitarbeiter beim Verpackungsservice" loading="lazy" decoding="async" />
-            <div class="leistungen-card__body">
+          <a class="lt-hubcard" href="/halteverbotszone/">
+            <img src="/assets/leistungen/halteverbotszone/hero-768.webp" width="768" height="512" alt="Umzugs-LKW in einer Halteverbotszone vor einem Mannheimer Altbau" loading="lazy" decoding="async" />
+            <div class="lt-hubcard__body">
               <span>Parkraum sichern</span>
               <h2>Halteverbotszone</h2>
               <p>LKW nah an die Adresse — lange Laufwege vermeiden.</p>
             </div>
           </a>
-          <a class="leistungen-card" href="/aussenaufzug/">
-            <img src="/assets/aussenaufzug-service-herkules-uniform-20260508.webp" alt="Außenaufzug an einem Wohngebäude" loading="lazy" decoding="async" />
-            <div class="leistungen-card__body">
+          <a class="lt-hubcard" href="/aussenaufzug/">
+            <img src="/assets/leistungen/aussenaufzug/hero-768.webp" width="768" height="512" alt="Außenaufzug an einem Wohngebäude" loading="lazy" decoding="async" />
+            <div class="lt-hubcard__body">
               <span>Schwere Möbel</span>
               <h2>Außenaufzug</h2>
               <p>Möbel über Balkon oder Fenster wenn das Treppenhaus zu eng ist.</p>
             </div>
           </a>
-          <a class="leistungen-card" href="/umzugskartons/">
-            <img src="/assets/herkules-boxes.png" alt="Umzugskartons von Herkules Umzüge" loading="lazy" decoding="async" />
-            <div class="leistungen-card__body">
+          <a class="lt-hubcard" href="/umzugskartons/">
+            <img src="/assets/leistungen/umzugskartons/hero-768.webp" width="768" height="512" alt="Umzugskartons von Herkules Umzüge" loading="lazy" decoding="async" />
+            <div class="lt-hubcard__body">
               <span>Packen & schützen</span>
               <h2>Umzugskartons</h2>
               <p>Kartons, Kleiderboxen, Packpapier, Luftpolsterfolie und Beratung.</p>
             </div>
           </a>
-          <a class="leistungen-card" href="/stundenpreise/">
-            <img src="/assets/stundenprice-asset.webp" alt="Umzugshelfer auf Stundenbasis in Mannheim" loading="lazy" decoding="async" />
-            <div class="leistungen-card__body">
+          <a class="lt-hubcard" href="/stundenpreise/">
+            <img src="/assets/leistungen/stundenpreise/hero-768.webp" width="768" height="512" alt="Umzugshelfer auf Stundenbasis in Mannheim" loading="lazy" decoding="async" />
+            <div class="lt-hubcard__body">
               <span>Klein & flexibel</span>
               <h2>Stundenpreise</h2>
               <p>Team und LKW nach Stunden für kleine Umzüge und Teiltransporte.</p>
