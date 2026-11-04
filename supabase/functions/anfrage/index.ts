@@ -35,7 +35,7 @@ const optionalFields = [
   "helper-count",
 ];
 
-const ownerRecipients = ["halyl@xn--nll-hoa.com"];
+const ownerRecipients = ["info@herkules-umzuege24.de", "halyl@xn--nll-hoa.com"];
 
 const requiredFields = [
   "name",
