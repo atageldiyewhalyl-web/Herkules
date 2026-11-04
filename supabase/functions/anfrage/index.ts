@@ -17,9 +17,25 @@ const fieldLabels: Record<string, string> = {
   "lead-source": "Gefunden über",
   "loading-address": "Beladestelle",
   "unloading-address": "Entladestelle",
+  "destination-country": "Zielland",
+  "furniture-items": "Möbel für den Außenaufzug",
+  "materials-needed": "Benötigtes Material",
+  "estimated-hours": "Geschätzte Stunden",
+  "helper-count": "Anzahl Helfer",
   message: "Nachricht",
   page: "Seite",
 };
+
+// Only asked on some service pages, so they are left out of emails when empty.
+const optionalFields = [
+  "destination-country",
+  "furniture-items",
+  "materials-needed",
+  "estimated-hours",
+  "helper-count",
+];
+
+const ownerRecipients = ["halyl@xn--nll-hoa.com"];
 
 const requiredFields = [
   "name",
@@ -175,13 +191,6 @@ function validateInquiry(fields: Record<string, string>, body: Record<string, un
   return "";
 }
 
-function parseRecipients(value: string) {
-  return value
-    .split(",")
-    .map((item) => item.trim())
-    .filter(Boolean);
-}
-
 function collectFields(body: Record<string, unknown>) {
   const fields: Record<string, string> = {};
   for (const key of Object.keys(fieldLabels)) {
@@ -190,15 +199,19 @@ function collectFields(body: Record<string, unknown>) {
   return fields;
 }
 
+function filledEntries(fields: Record<string, string>) {
+  return Object.entries(fieldLabels).filter(([key]) => !optionalFields.includes(key) || fields[key]);
+}
+
 function buildOwnerEmail(fields: Record<string, string>) {
-  const rows = Object.entries(fieldLabels)
+  const rows = filledEntries(fields)
     .map(([key, label]) => {
       const value = fields[key] || "-";
       return `<tr><th align="left" style="padding:8px 12px;border-bottom:1px solid #e6e8ee;">${escapeHtml(label)}</th><td style="padding:8px 12px;border-bottom:1px solid #e6e8ee;">${escapeHtml(value).replace(/\n/g, "<br>")}</td></tr>`;
     })
     .join("");
 
-  const text = Object.entries(fieldLabels)
+  const text = filledEntries(fields)
     .map(([key, label]) => `${label}: ${fields[key] || "-"}`)
     .join("\n");
 
@@ -234,6 +247,7 @@ function buildClientEmail(fields: Record<string, string>) {
       `Gefunden über: ${fields["lead-source"]}`,
       `Beladestelle: ${fields["loading-address"]}`,
       `Entladestelle: ${fields["unloading-address"]}`,
+      ...optionalFields.filter((key) => fields[key]).map((key) => `${fieldLabels[key]}: ${fields[key]}`),
       fields.message ? `Nachricht: ${fields.message}` : "",
       "",
       "Herkules Umzüge & Transporte e.K.",
@@ -253,7 +267,10 @@ function buildClientEmail(fields: Record<string, string>) {
         <strong>Parkplatz verfügbar:</strong> ${escapeHtml(fields["parking-available"])}<br>
         <strong>Gefunden über:</strong> ${escapeHtml(fields["lead-source"])}<br>
         <strong>Beladestelle:</strong> ${escapeHtml(fields["loading-address"])}<br>
-        <strong>Entladestelle:</strong> ${escapeHtml(fields["unloading-address"])}</p>
+        <strong>Entladestelle:</strong> ${escapeHtml(fields["unloading-address"])}${optionalFields
+          .filter((key) => fields[key])
+          .map((key) => `<br>\n        <strong>${escapeHtml(fieldLabels[key])}:</strong> ${escapeHtml(fields[key])}`)
+          .join("")}</p>
         <p>Herkules Umzüge &amp; Transporte e.K.</p>
       </div>
     `,
@@ -292,6 +309,11 @@ async function insertAnfrage(fields: Record<string, string>, req: Request) {
         hasElevator: fields["has-elevator"] || null,
         parkingAvailable: fields["parking-available"] || null,
         leadSource: fields["lead-source"] || null,
+        destinationCountry: fields["destination-country"] || null,
+        furnitureItems: fields["furniture-items"] || null,
+        materialsNeeded: fields["materials-needed"] || null,
+        estimatedHours: fields["estimated-hours"] || null,
+        helperCount: fields["helper-count"] || null,
         userAgent: req.headers.get("user-agent"),
         referer: req.headers.get("referer"),
       },
@@ -385,17 +407,13 @@ Deno.serve(async (req: Request) => {
     return jsonResponse(502, { error: "Die Anfrage konnte nicht gespeichert werden." });
   }
 
-  const adminEmail = parseRecipients(
-    Deno.env.get("ADMIN_EMAIL") ||
-      "info@herkules-umzuege24.de,atageldiyewhalyl@gmail.com,halyl@xn--nll-hoa.com",
-  );
   const from = Deno.env.get("MAIL_FROM") || "Herkules Umzüge <onboarding@resend.dev>";
-  const replyTo = adminEmail[0] || "info@herkules-umzuege24.de";
+  const replyTo = ownerRecipients[0];
   const ownerMessage = buildOwnerEmail(fields);
   const clientMessage = buildClientEmail(fields);
 
   try {
-    for (const recipient of adminEmail) {
+    for (const recipient of ownerRecipients) {
       await sendEmail({
         from,
         to: recipient,
