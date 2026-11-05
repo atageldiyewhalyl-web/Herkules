@@ -6,6 +6,7 @@
     phone: "evzqCLrP36AZEN2c57c9",
     email: "acJ2COKC9KgcEN2c57c9",
     form: "XW9XCOyV36AZEN2c57c9",
+    whatsapp: "_yarCImIvLIdEN2c57c9",
   };
 
   let gtagLoaded = false;
@@ -163,6 +164,7 @@
         link_text: link.textContent.trim(),
         link_placement: placement,
       });
+      trackConversion("whatsapp");
     } else if (href.startsWith("mailto:")) {
       if (isPrimaryClick) event.preventDefault();
       trackGa4Event("email_click", {
