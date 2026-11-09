@@ -36,7 +36,8 @@
     <link rel="preload" href="/assets/fonts/barlow-condensed-800.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" href="/assets/blog-ratgeber.css?v=20261104-nav" />
     <link rel="stylesheet" href="/assets/leistung.css?v=20261104-nav" />
-    <script defer src="/assets/request-form.js"></script>
+    <link rel="stylesheet" href="/assets/anfrage.css?v=20261109" />
+    <script defer src="/assets/anfrage.js?v=20261109"></script>
     <script defer src="/assets/cookie-consent.js"></script>
     <script defer src="/assets/google-tracking.js?v=20261105"></script>
 
@@ -301,92 +302,7 @@
             <a class="rg-form__wa" href="https://wa.me/4915117285670" target="_blank" rel="noopener">Per WhatsApp schreiben</a>
             <p class="lt-mail"><a href="mailto:Info@herkules-umzuege24.de">Info@herkules-umzuege24.de</a></p>
           </div>
-          <form class="request-form" aria-label="Umzugsanfrage">
-            <div class="request-form__grid">
-              <label>
-                <span>Vorname Nachname *</span>
-                <input type="text" name="name" autocomplete="name" required />
-              </label>
-              <label>
-                <span>Telefonnummer *</span>
-                <input type="tel" name="phone" autocomplete="tel" required />
-              </label>
-              <label>
-                <span>E-mail *</span>
-                <input type="email" name="email" autocomplete="email" required />
-              </label>
-              <label>
-                <span>Service *</span>
-                <select name="service" required>
-                  <option>Privatumzüge</option>
-                  <option>Büroumzüge</option>
-                  <option>Seniorenumzüge</option>
-                  <option>Auslandsumzüge</option>
-                  <option>Halteverbotszone</option>
-                  <option>Aussenaufzug</option>
-                  <option>Umzugskartons & Verpackungsmaterial</option>
-                </select>
-              </label>
-            </div>
-
-            <label>
-              <span>Umzugsdatum *</span>
-              <input type="date" name="moving-date" required />
-            </label>
-            <div class="request-form__grid request-form__grid--details">
-              <label>
-                <span>Etage der Wohnung *</span>
-                <input type="text" name="apartment-floor" placeholder="z. B. 3. OG" required />
-              </label>
-              <label>
-                <span>Etage der Zielwohnung *</span>
-                <input type="text" name="destination-floor" placeholder="z. B. 2. OG" required />
-              </label>
-              <label>
-                <span>Aufzug vorhanden? *</span>
-                <select name="has-elevator" required>
-                  <option value="">Bitte wählen</option>
-                  <option>Ja</option>
-                  <option>Nein</option>
-                </select>
-              </label>
-              <label>
-                <span>Parkplatz verfügbar? *</span>
-                <select name="parking-available" required>
-                  <option value="">Bitte wählen</option>
-                  <option>Ja</option>
-                  <option>Nein</option>
-                  <option>Unklar</option>
-                </select>
-              </label>
-              <label>
-                <span>Wie haben Sie uns gefunden? *</span>
-                <select name="lead-source" required>
-                  <option value="">Bitte wählen</option>
-                  <option>Google Suche</option>
-                  <option>Empfehlung</option>
-                  <option>Social Media</option>
-                  <option>Sonstiges</option>
-                  <option>Flyer</option>
-                </select>
-              </label>
-            </div>
-            <label>
-              <span>Beladestelle* Straße, Nr., Postleitzahl und Ort *</span>
-              <input type="text" name="loading-address" autocomplete="street-address" required />
-            </label>
-            <label>
-              <span>Entladestelle* Straße, Nr., Postleitzahl und Ort *</span>
-              <input type="text" name="unloading-address" required />
-            </label>
-            <label>
-              <span class="visually-hidden">Ihre Nachricht</span>
-              <textarea name="message" placeholder="Ihre Nachricht..."></textarea>
-            </label>
-            <button class="request-form__submit" type="submit">
-              Anfrage verschicken
-            </button>
-          </form>
+          <form class="anfrage" aria-label="Umzugsanfrage"><noscript><p>Bitte aktivieren Sie JavaScript, um die Anfrage zu senden, oder rufen Sie uns an: <a href="tel:+496218995969">0621 899 59 69</a>.</p></noscript></form>
         </div>
       </section>
     </main>

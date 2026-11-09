@@ -1,0 +1,477 @@
+/* ============================================================
+   city-hub.css — Mannheim & Frankfurt landing pages
+   Road-sign look on top of the existing section markup.
+   Requires styles.css, blog-ratgeber.css and leistung.css.
+   Everything is scoped to main.city-hub.
+   ============================================================ */
+
+.city-hub {
+  --hub-line: #d5dae0;
+  --hub-radius: 14px;
+  color: var(--text);
+}
+
+/* ── Shared type ───────────────────────────────────────────── */
+.city-hub section h2 {
+  color: var(--ink);
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: clamp(2.3rem, 4.2vw, 3.6rem);
+  line-height: 0.98;
+  letter-spacing: -0.005em;
+}
+.city-hub section h2 span { display: inline; color: var(--ink); }
+.city-hub section h3 { font-family: var(--display); font-weight: 800; letter-spacing: 0; }
+.city-hub .eyebrow {
+  display: inline-block;
+  justify-self: start;
+  align-self: start;
+  width: fit-content;
+  max-width: 100%;
+  margin-bottom: 18px;
+  padding: 5px 12px 4px;
+  border: 2px solid var(--ink);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--ink);
+  font-family: var(--display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.city-hub .button {
+  min-height: 52px;
+  border: 2px solid var(--ink);
+  border-radius: 8px;
+  font-family: var(--display);
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: none;
+  box-shadow: none;
+}
+.city-hub .button--primary { background: var(--yellow); color: var(--ink); }
+.city-hub .button--primary:hover { background: #ffd04d; }
+.city-hub .button--secondary { background: #fff; color: var(--ink); }
+.city-hub .button--secondary:hover { background: var(--pavement); }
+
+/* ── Hero: Ortstafel over a street photo ───────────────────── */
+.city-hero .lc-ort h1 br { display: none; }
+.city-hero .lc-ort h1 .lc-ort__region { display: block; }
+.city-hero .lc-ort__pre { font-family: var(--display); }
+.city-hero .rg-offer .subheadline {
+  margin: 0 0 18px;
+  color: var(--text);
+  font-size: 1.02rem;
+  font-weight: 500;
+  line-height: 1.55;
+}
+.city-hero .hero__actions { display: grid; gap: 10px; }
+.city-hero .hero__actions .rg-btn { width: 100%; }
+.city-proof {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 10px;
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid #e3e6ea;
+  color: #5d6577;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+.city-proof .proof__google img { display: block; width: 20px; height: 20px; }
+.city-proof .proof__stars { color: #e8a300; letter-spacing: 1px; }
+.city-proof .proof__rating { color: var(--ink); font-weight: 700; }
+.city-proof .proof__badge { flex-basis: 100%; }
+.city-proof .proof-number { color: var(--ink); font-family: var(--display); font-size: 1.15rem; font-weight: 800; }
+
+/* ── Trust strip: asphalt with lane marking ────────────────── */
+.city-hub .trust-ribbon {
+  position: relative;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 26px max(24px, calc((100% - 1410px) / 2)) 30px;
+  border: 0;
+  border-radius: 0;
+  background: var(--asphalt);
+  box-shadow: none;
+}
+.city-hub .trust-ribbon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  height: 5px;
+  background: repeating-linear-gradient(90deg, var(--yellow) 0 46px, transparent 46px 78px);
+  opacity: 0.9;
+}
+.city-hub .trust-ribbon .trust-ribbon__item {
+  border-color: rgba(255, 255, 255, 0.16);
+  background: transparent;
+  box-shadow: none;
+}
+.city-hub .trust-ribbon__item strong { color: #fff; font-family: var(--display); font-size: 1.2rem; font-weight: 800; }
+.city-hub .trust-ribbon__item span { color: rgba(255, 255, 255, 0.72); }
+.city-hub .trust-ribbon__mark {
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.18);
+}
+
+/* ── Local section ─────────────────────────────────────────── */
+.city-hub .city-local-section__visual img,
+.city-hub .city-proof-section__visual img {
+  border: 6px solid #fff;
+  border-radius: var(--hub-radius);
+  box-shadow: 0 24px 60px rgba(16, 21, 34, 0.18);
+}
+.city-hub .city-local-section__header > p a,
+.city-hub .faq-official-note a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--yellow);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 3px;
+}
+.city-hub .city-local-grid article {
+  position: relative;
+  padding-top: 30px;
+  border: 2px solid var(--hub-line);
+  border-radius: var(--hub-radius);
+  background: #fff;
+  box-shadow: none;
+}
+.city-hub .city-local-grid span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  min-width: 52px;
+  padding: 4px 10px 3px;
+  border: 3px solid var(--ink);
+  border-radius: 6px;
+  background: var(--yellow);
+  color: var(--ink);
+  font-family: var(--display);
+  font-size: 1.3rem;
+  font-weight: 800;
+  line-height: 1;
+}
+.city-hub .city-local-grid h3 { font-size: 1.55rem; line-height: 1.05; }
+
+/* ── Typical moves ─────────────────────────────────────────── */
+.city-hub .city-proof-section { background: var(--pavement); }
+.city-hub .city-proof-section .glass-panel {
+  border: 0;
+  border-radius: var(--hub-radius);
+  background: #fff;
+  box-shadow: none;
+  backdrop-filter: none;
+}
+.city-hub .city-case-grid article {
+  position: relative;
+  padding-left: 30px;
+  border: 0;
+  border-radius: var(--hub-radius);
+  background: #fff;
+  box-shadow: none;
+}
+.city-hub .city-case-grid article::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  bottom: 18px;
+  left: 0;
+  width: 8px;
+  border-radius: 0 6px 6px 0;
+  background: repeating-linear-gradient(180deg, var(--ink) 0 12px, var(--yellow) 12px 24px);
+}
+.city-hub .city-case-grid h3 { font-size: 1.5rem; line-height: 1.05; }
+.city-hub .city-proof-section h2 { margin-bottom: 16px; }
+
+/* ── Frankfurt guide + hub ─────────────────────────────────── */
+.city-hub .frankfurt-seo-guide {
+  border: 0;
+  border-radius: var(--hub-radius);
+  background: var(--pavement);
+}
+.city-hub .frankfurt-seo-guide__highlight {
+  border: 0;
+  border-radius: var(--hub-radius);
+  background: var(--sign-blue);
+  box-shadow: inset 0 0 0 4px var(--sign-blue), inset 0 0 0 7px #fff;
+}
+.city-hub .frankfurt-seo-guide__highlight span { color: rgba(255, 255, 255, 0.82); font-family: var(--display); font-size: 1.1rem; font-weight: 600; letter-spacing: 0; text-transform: none; }
+.city-hub .frankfurt-seo-guide__highlight h3 { color: #fff; font-size: 2rem; line-height: 1.02; }
+.city-hub .frankfurt-seo-guide__highlight p { color: rgba(255, 255, 255, 0.86); }
+.city-hub .frankfurt-seo-guide__cards article {
+  border: 2px solid var(--hub-line);
+  border-radius: var(--hub-radius);
+  background: #fff;
+  box-shadow: none;
+}
+.city-hub .frankfurt-seo-guide__cards h3 { font-size: 1.45rem; line-height: 1.05; }
+.city-hub .frankfurt-hub__group {
+  border: 0;
+  border-radius: var(--hub-radius);
+  background: var(--yellow);
+  box-shadow: inset 0 0 0 3px var(--yellow), inset 0 0 0 6px var(--ink);
+}
+.city-hub .frankfurt-hub__group h3 { color: var(--ink); font-size: 1.6rem; }
+.city-hub .frankfurt-hub__group ul { border: 0; }
+.city-hub .frankfurt-hub__group li { border-color: rgba(16, 21, 34, 0.18); }
+.city-hub .frankfurt-hub__group a {
+  position: relative;
+  padding-left: 28px;
+  color: var(--ink);
+  font-weight: 700;
+  text-decoration: none;
+}
+.city-hub .frankfurt-hub__group a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 18px;
+  height: 14px;
+  background: var(--ink);
+  clip-path: polygon(0 35%, 55% 35%, 55% 0, 100% 50%, 55% 100%, 55% 65%, 0 65%);
+  transform: translateY(-50%);
+}
+.city-hub .frankfurt-hub__group a:hover { text-decoration: underline; }
+
+/* ── Price table: price plates ─────────────────────────────── */
+.city-hub .service-card--price {
+  border: 3px solid var(--ink);
+  border-radius: var(--hub-radius);
+  background: #fff;
+  box-shadow: none;
+}
+.city-hub .service-card--price-highlight { box-shadow: 0 0 0 5px var(--yellow); }
+.city-hub .service-card--price h3 { font-size: 1.5rem; }
+.city-hub .price-range {
+  color: var(--ink);
+  font-family: var(--display);
+  font-size: clamp(2rem, 2.6vw, 2.5rem);
+  font-weight: 800;
+  line-height: 1;
+}
+.city-hub .bestseller-badge {
+  border: 2px solid var(--ink);
+  border-radius: 6px;
+  background: var(--yellow);
+  color: var(--ink);
+  font-family: var(--display);
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+/* ── Services ──────────────────────────────────────────────── */
+.city-hub .services-section { background: var(--pavement); }
+.city-hub .leistungen-card {
+  border: 0;
+  border-radius: var(--hub-radius);
+  background: #fff;
+  box-shadow: none;
+}
+.city-hub .leistungen-card:hover { box-shadow: 0 0 0 3px var(--ink); }
+.city-hub .leistungen-card__body span {
+  display: inline-block;
+  padding: 3px 9px 2px;
+  border-radius: 4px;
+  background: var(--sign-blue);
+  color: #fff;
+  font-family: var(--display);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.city-hub .leistungen-card__body h3 { font-size: 1.6rem; line-height: 1.02; }
+
+/* ── Process: steps on the road ────────────────────────────── */
+.city-hub .process-section {
+  padding-top: 72px;
+  background: var(--asphalt);
+  box-shadow: 0 0 0 100vmax var(--asphalt);
+  clip-path: inset(0 -100vmax);
+}
+.city-hub .process-section h2,
+.city-hub .process-section h2 span { color: #fff; }
+.city-hub .process-section__header > p { color: rgba(255, 255, 255, 0.74); }
+.city-hub .process-section .eyebrow { border-color: #fff; background: transparent; color: #fff; }
+.city-hub .process-steps { position: relative; }
+.city-hub .process-steps li {
+  padding: 18px 18px 20px;
+  border: 0;
+  border-radius: var(--hub-radius);
+  background: #fff;
+  box-shadow: none;
+}
+.city-hub .process-steps span {
+  border: 3px solid var(--ink);
+  border-radius: 6px;
+  background: var(--yellow);
+  color: var(--ink);
+  font-family: var(--display);
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+.city-hub .process-steps h3 { font-size: 1.55rem; }
+.city-hub .process-section__footer {
+  border-top: 5px dashed rgba(246, 192, 45, 0.85);
+}
+.city-hub .process-section__footer p { color: #fff; font-family: var(--display); font-size: 1.3rem; font-weight: 600; }
+
+/* ── Reviews ───────────────────────────────────────────────── */
+.city-hub .rating-summary {
+  border: 3px solid var(--ink);
+  border-radius: var(--hub-radius);
+  background: #fff;
+  box-shadow: 0 0 0 5px var(--yellow);
+}
+.city-hub .rating-summary strong { font-family: var(--display); font-weight: 800; }
+.city-hub .review-card {
+  border: 2px solid var(--hub-line);
+  border-radius: var(--hub-radius);
+  background: #fff;
+  box-shadow: none;
+}
+.city-hub .review-card h3 { font-size: 1.3rem; letter-spacing: 0; text-transform: none; }
+.city-hub .review-stars { color: #e8a300; }
+.city-hub .reviews-section__footer {
+  border: 0;
+  border-radius: var(--hub-radius);
+  background: var(--pavement);
+}
+
+/* ── Price options ─────────────────────────────────────────── */
+.city-hub #preisoption { background: var(--pavement); }
+.city-hub .pricing-section__background { display: none; }
+.city-hub .pricing-option {
+  border: 3px solid var(--hub-line);
+  border-radius: var(--hub-radius);
+  background: #fff;
+  box-shadow: none;
+  backdrop-filter: none;
+}
+.city-hub .pricing-option--fixed { border-color: var(--ink); box-shadow: 0 0 0 5px var(--yellow); }
+.city-hub .pricing-option h3 { font-size: 2.2rem; line-height: 1; }
+.city-hub .pricing-label {
+  border-radius: 6px;
+  background: var(--pavement);
+  color: var(--ink);
+  font-family: var(--display);
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.city-hub .pricing-option--fixed .pricing-label { background: var(--yellow); }
+.city-hub .pricing-fit { border: 0; border-radius: 8px; background: var(--pavement); }
+.city-hub .fixed-price-summary { border-top: 2px dashed var(--hub-line); }
+.city-hub .fixed-price-summary strong { font-family: var(--display); font-weight: 800; }
+
+/* ── FAQ ───────────────────────────────────────────────────── */
+.city-hub .faq-section h2 { max-width: 20ch; }
+.city-hub .faq-section__toggle {
+  color: var(--ink);
+  font-family: var(--display);
+  font-size: clamp(2.3rem, 4.2vw, 3.6rem);
+  font-weight: 800;
+  line-height: 0.98;
+}
+.city-hub .faq-item {
+  border: 2px solid var(--hub-line);
+  border-radius: 12px;
+  background: #fff;
+}
+.city-hub .faq-item.is-open { border-color: var(--ink); }
+.city-hub .faq-question { min-height: 72px; padding: 16px 18px; }
+.city-hub .faq-answer p { padding: 0 18px; }
+.city-hub .faq-question h3 { font-family: var(--display); font-size: 1.3rem; font-weight: 800; line-height: 1.1; }
+.city-hub .faq-question span {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  background: var(--yellow);
+  color: var(--ink);
+  font-weight: 800;
+}
+.city-hub .faq-cta { border: 0; border-radius: var(--hub-radius); background: var(--pavement); }
+
+/* ── District links: yellow signposts ──────────────────────── */
+.city-hub .related-articles h2 { font-size: clamp(2rem, 3.4vw, 2.8rem); }
+.city-hub .related-card {
+  position: relative;
+  isolation: isolate;
+  padding: 18px 54px 18px 22px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  transition: transform 140ms ease;
+}
+.city-hub .related-card::before,
+.city-hub .related-card::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  clip-path: polygon(0 0, calc(100% - 28px) 0, 100% 50%, calc(100% - 28px) 100%, 0 100%);
+}
+.city-hub .related-card::before { inset: 0; background: var(--ink); }
+.city-hub .related-card::after { inset: 4px 6px 4px 4px; background: var(--yellow); }
+.city-hub .related-card:hover { transform: translateX(4px); }
+.city-hub .related-card h3 { color: var(--ink); font-size: 1.45rem; line-height: 1.05; }
+.city-hub .related-card__link { color: var(--ink); font-weight: 700; }
+
+/* ── Contact + form ────────────────────────────────────────── */
+.city-hub .final-cta h2 { color: var(--ink); }
+.city-hub .request-form {
+  border: 3px solid var(--ink);
+  border-radius: var(--hub-radius);
+  background: #fff;
+  box-shadow: 0 0 0 6px var(--yellow);
+}
+.city-hub .request-form input,
+.city-hub .request-form select,
+.city-hub .request-form textarea { border: 2px solid var(--hub-line); border-radius: 8px; }
+.city-hub .request-form input:focus,
+.city-hub .request-form select:focus,
+.city-hub .request-form textarea:focus { border-color: var(--ink); outline: 3px solid rgba(246, 192, 45, 0.6); outline-offset: 1px; }
+.city-hub .contact-info {
+  border: 0;
+  border-radius: var(--hub-radius);
+  background: var(--sign-blue);
+  box-shadow: inset 0 0 0 4px var(--sign-blue), inset 0 0 0 7px #fff;
+}
+.city-hub .contact-info__intro { color: #fff; font-family: var(--display); font-size: 1.6rem; font-weight: 800; }
+.city-hub .contact-info span { color: rgba(255, 255, 255, 0.72); }
+.city-hub .contact-info a { color: #fff; }
+.city-hub .contact-info .contact-info__item--highlight {
+  border: 2px solid var(--yellow);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.city-hub .contact-info a.contact-info__whatsapp { border: 2px solid #fff; background: #25d366; color: #0b2e18; }
+
+@media (max-width: 900px) {
+  .city-hero .rg-offer { margin-top: 24px; }
+}
+@media (max-width: 640px) {
+  .city-hero .rg-hero__photo { height: 290px; object-position: 62% 50%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .city-hub .related-card { transition: none; }
+}

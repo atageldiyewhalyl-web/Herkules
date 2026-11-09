@@ -37,6 +37,10 @@ const optionalFields = [
 
 const ownerRecipients = ["info@herkules-umzuege24.de", "halyl@xn--nll-hoa.com"];
 
+// The form shrinks photos in the browser; these limits keep the request and the email small.
+const MAX_PHOTOS = 8;
+const MAX_PHOTO_BYTES = 6.5 * 1024 * 1024;
+
 const requiredFields = [
   "name",
   "phone",
@@ -203,16 +207,17 @@ function filledEntries(fields: Record<string, string>) {
   return Object.entries(fieldLabels).filter(([key]) => !optionalFields.includes(key) || fields[key]);
 }
 
-function buildOwnerEmail(fields: Record<string, string>) {
-  const rows = filledEntries(fields)
-    .map(([key, label]) => {
-      const value = fields[key] || "-";
+function buildOwnerEmail(fields: Record<string, string>, photoCount: number) {
+  const entries: [string, string][] = filledEntries(fields).map(([key, label]) => [label, fields[key] || "-"]);
+  entries.push(["Fotos", photoCount ? `${photoCount} im Anhang` : "keine"]);
+  const rows = entries
+    .map(([label, value]) => {
       return `<tr><th align="left" style="padding:8px 12px;border-bottom:1px solid #e6e8ee;">${escapeHtml(label)}</th><td style="padding:8px 12px;border-bottom:1px solid #e6e8ee;">${escapeHtml(value).replace(/\n/g, "<br>")}</td></tr>`;
     })
     .join("");
 
-  const text = filledEntries(fields)
-    .map(([key, label]) => `${label}: ${fields[key] || "-"}`)
+  const text = entries
+    .map(([label, value]) => `${label}: ${value}`)
     .join("\n");
 
   return {
@@ -277,7 +282,7 @@ function buildClientEmail(fields: Record<string, string>) {
   };
 }
 
-async function insertAnfrage(fields: Record<string, string>, req: Request) {
+async function insertAnfrage(fields: Record<string, string>, req: Request, photoCount: number) {
   const supabaseUrl = Deno.env.get("SUPABASE_URL");
   const serviceRoleKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY");
 
@@ -314,6 +319,7 @@ async function insertAnfrage(fields: Record<string, string>, req: Request) {
         materialsNeeded: fields["materials-needed"] || null,
         estimatedHours: fields["estimated-hours"] || null,
         helperCount: fields["helper-count"] || null,
+        photoCount,
         userAgent: req.headers.get("user-agent"),
         referer: req.headers.get("referer"),
       },
@@ -354,6 +360,26 @@ async function updateEmailStatus(id: string, updates: Record<string, unknown>) {
   }
 }
 
+function validatePhotos(photos: File[]) {
+  if (photos.length > MAX_PHOTOS) return `Bitte höchstens ${MAX_PHOTOS} Fotos hochladen.`;
+  if (photos.some((photo) => !photo.type.startsWith("image/"))) return "Bitte nur Bilddateien hochladen.";
+  if (photos.reduce((sum, photo) => sum + photo.size, 0) > MAX_PHOTO_BYTES) return "Die Fotos sind zusammen zu groß.";
+  return "";
+}
+
+function safeFilename(name: string, index: number) {
+  return name.replace(/[^\w.\- ]+/g, "_").slice(-80) || `foto-${index + 1}.jpg`;
+}
+
+function toBase64(buffer: ArrayBuffer) {
+  const bytes = new Uint8Array(buffer);
+  let binary = "";
+  for (let offset = 0; offset < bytes.length; offset += 0x8000) {
+    binary += String.fromCharCode(...bytes.subarray(offset, offset + 0x8000));
+  }
+  return btoa(binary);
+}
+
 async function sendEmail(payload: Record<string, unknown>) {
   const resendApiKey = Deno.env.get("RESEND_API_KEY");
 
@@ -384,15 +410,26 @@ Deno.serve(async (req: Request) => {
     return jsonResponse(405, { error: "Method not allowed" });
   }
 
+  // The step form sends multipart with photos; older pages still send JSON.
   let body: Record<string, unknown>;
+  let photos: File[] = [];
   try {
-    body = await req.json();
+    if ((req.headers.get("content-type") || "").includes("multipart/form-data")) {
+      const form = await req.formData();
+      body = {};
+      for (const [key, value] of form.entries()) {
+        if (typeof value === "string") body[key] = value;
+      }
+      photos = form.getAll("photos").filter((entry): entry is File => entry instanceof File && entry.size > 0);
+    } else {
+      body = await req.json();
+    }
   } catch (_error) {
-    return jsonResponse(400, { error: "Invalid JSON" });
+    return jsonResponse(400, { error: "Ungültige Anfrage." });
   }
 
   const fields = collectFields(body);
-  const validationError = validateInquiry(fields, body);
+  const validationError = validateInquiry(fields, body) || validatePhotos(photos);
 
   if (validationError) {
     return jsonResponse(400, { error: validationError });
@@ -401,7 +438,7 @@ Deno.serve(async (req: Request) => {
   let anfrage: { id: string } | null = null;
 
   try {
-    anfrage = await insertAnfrage(fields, req);
+    anfrage = await insertAnfrage(fields, req, photos.length);
   } catch (error) {
     console.error(error);
     return jsonResponse(502, { error: "Die Anfrage konnte nicht gespeichert werden." });
@@ -409,7 +446,11 @@ Deno.serve(async (req: Request) => {
 
   const from = Deno.env.get("MAIL_FROM") || "Herkules Umzüge <onboarding@resend.dev>";
   const replyTo = ownerRecipients[0];
-  const ownerMessage = buildOwnerEmail(fields);
+  const ownerMessage = buildOwnerEmail(fields, photos.length);
+  const attachments = await Promise.all(photos.map(async (photo, index) => ({
+    filename: safeFilename(photo.name, index),
+    content: toBase64(await photo.arrayBuffer()),
+  })));
   const clientMessage = buildClientEmail(fields);
 
   try {
@@ -421,6 +462,7 @@ Deno.serve(async (req: Request) => {
         subject: ownerMessage.subject,
         text: ownerMessage.text,
         html: ownerMessage.html,
+        ...(attachments.length ? { attachments } : {}),
       });
     }
 

@@ -205,7 +205,13 @@
     <meta name="theme-color" content="#f8bf1c" />
     <link rel="preload" as="image" href="/assets/hero-new-logo-desktop.webp" fetchpriority="high" />
     <link rel="stylesheet" href="/styles.css?v=20261104-nav" />
-    <script defer src="/assets/request-form.js"></script>
+    <link rel="preload" href="/assets/fonts/barlow-condensed-800.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" as="image" href="/assets/standorte/umzug-mannheim/hero-1536.webp" imagesrcset="/assets/standorte/umzug-mannheim/hero-768.webp 768w, /assets/standorte/umzug-mannheim/hero-1536.webp 1536w" imagesizes="100vw" fetchpriority="high" />
+    <link rel="stylesheet" href="/assets/blog-ratgeber.css?v=20261104-nav" />
+    <link rel="stylesheet" href="/assets/leistung.css?v=20261104-nav" />
+    <link rel="stylesheet" href="/assets/city-hub.css?v=20261109" />
+    <link rel="stylesheet" href="/assets/anfrage.css?v=20261109" />
+    <script defer src="/assets/anfrage.js?v=20261109"></script>
     <script defer src="/assets/site-nav.js"></script>
     <script defer src="/assets/cookie-consent.js"></script>
     <script defer src="/assets/google-tracking.js?v=20261105"></script>
@@ -256,48 +262,36 @@
       </nav>
     </header>
 
-    <main>
+    <main class="ratgeber leistung city-hub">
       <!-- HERO -->
-      <section class="hero is-mobile-video-complete" aria-labelledby="hero-title">
-        <div class="hero__visual" aria-hidden="true">
-          <img
-            class="hero-image hero-image--desktop"
-            src="/assets/hero-new-logo-desktop.webp"
-            alt=""
-            decoding="async"
-            fetchpriority="high"
-          />
-          <img
-            class="hero-image hero-image--mobile"
-            src="/assets/hero-new-logo-desktop.webp"
-            alt=""
-            decoding="async"
-            fetchpriority="high"
-            aria-hidden="true"
-          />
-        </div>
-
-        <div class="hero__copy">
-          <h1 id="hero-title">
-            Umzugsfirma Mannheim<br />
-            <span>Festpreis. Versichert. Seit 2004.</span>
-          </h1>
-          <p class="subheadline">
+      <section class="rg-hero city-hero" aria-labelledby="hero-title">
+        <img class="rg-hero__photo" src="/assets/standorte/umzug-mannheim/hero-1536.webp" srcset="/assets/standorte/umzug-mannheim/hero-768.webp 768w, /assets/standorte/umzug-mannheim/hero-1536.webp 1536w" sizes="100vw" width="1536" height="1024" alt="" fetchpriority="high" decoding="async" />
+        <div class="rg-hero__inner">
+          <div class="lt-sign lc-sign">
+            <div class="lc-ort">
+              <h1 id="hero-title">
+                <span class="lc-ort__pre">Umzugsfirma</span> <span class="lc-ort__city">Mannheim</span><br />
+                <span class="lc-ort__region">Festpreis. Versichert. Seit 2004.</span>
+              </h1>
+            </div>
+          </div>
+          <aside class="rg-offer" aria-label="Angebot">
+            <p class="subheadline">
             Professionelle Umzüge in allen Mannheimer Stadtteilen und den
             Quadraten – transparent kalkuliert, pünktlich durchgeführt,
             vollständig versichert.
           </p>
 
-          <div class="hero__actions">
-            <a class="button button--primary" href="#kontakt">
+            <div class="hero__actions">
+            <a class="rg-btn rg-btn--go" href="#kontakt">
               Kostenloses Angebot erhalten
             </a>
-            <a class="button button--secondary" href="tel:+496218995969">
+            <a class="rg-btn rg-btn--plain" href="tel:+496218995969">
               Jetzt anrufen
             </a>
           </div>
 
-          <div class="proof" aria-label="Vertrauenssignale">
+            <div class="proof city-proof" aria-label="Vertrauenssignale">
             <span class="proof__google" aria-hidden="true">
               <img src="/assets/google-favicon.webp" alt="" />
             </span>
@@ -307,6 +301,7 @@
               <strong class="proof-number">20+</strong> Jahre Erfahrung
             </span>
           </div>
+          </aside>
         </div>
       </section>
 
@@ -1085,92 +1080,7 @@
             Kostenloses Angebot<br />
             für Ihren Umzug in Mannheim
           </h2>
-          <form class="request-form" aria-label="Umzugsanfrage Mannheim">
-            <div class="request-form__grid">
-              <label>
-                <span>Vorname Nachname *</span>
-                <input type="text" name="name" autocomplete="name" required />
-              </label>
-              <label>
-                <span>Telefonnummer *</span>
-                <input type="tel" name="phone" autocomplete="tel" required />
-              </label>
-              <label>
-                <span>E-mail *</span>
-                <input type="email" name="email" autocomplete="email" required />
-              </label>
-              <label>
-                <span>Service *</span>
-                <select name="service" required>
-                  <option>Privatumzüge</option>
-                  <option>Büroumzüge</option>
-                  <option>Seniorenumzüge</option>
-                  <option>Auslandsumzüge</option>
-                  <option>Halteverbotszone</option>
-                  <option>Aussenaufzug</option>
-                  <option>Umzugskartons & Verpackungsmaterial</option>
-                </select>
-              </label>
-            </div>
-
-            <label>
-              <span>Umzugsdatum *</span>
-              <input type="date" name="moving-date" required />
-            </label>
-            <div class="request-form__grid request-form__grid--details">
-              <label>
-                <span>Etage der Wohnung *</span>
-                <input type="text" name="apartment-floor" placeholder="z. B. 3. OG" required />
-              </label>
-              <label>
-                <span>Etage der Zielwohnung *</span>
-                <input type="text" name="destination-floor" placeholder="z. B. 2. OG" required />
-              </label>
-              <label>
-                <span>Aufzug vorhanden? *</span>
-                <select name="has-elevator" required>
-                  <option value="">Bitte wählen</option>
-                  <option>Ja</option>
-                  <option>Nein</option>
-                </select>
-              </label>
-              <label>
-                <span>Parkplatz verfügbar? *</span>
-                <select name="parking-available" required>
-                  <option value="">Bitte wählen</option>
-                  <option>Ja</option>
-                  <option>Nein</option>
-                  <option>Unklar</option>
-                </select>
-              </label>
-              <label>
-                <span>Wie haben Sie uns gefunden? *</span>
-                <select name="lead-source" required>
-                  <option value="">Bitte wählen</option>
-                  <option>Google Suche</option>
-                  <option>Empfehlung</option>
-                  <option>Social Media</option>
-                  <option>Sonstiges</option>
-                  <option>Flyer</option>
-                </select>
-              </label>
-            </div>
-            <label>
-              <span>Beladestelle* Straße, Nr., Postleitzahl und Ort *</span>
-              <input type="text" name="loading-address" autocomplete="street-address" required />
-            </label>
-            <label>
-              <span>Entladestelle* Straße, Nr., Postleitzahl und Ort *</span>
-              <input type="text" name="unloading-address" required />
-            </label>
-            <label>
-              <span class="visually-hidden">Ihre Nachricht</span>
-              <textarea name="message" placeholder="Ihre Nachricht..."></textarea>
-            </label>
-            <button class="button button--primary request-form__submit" type="submit">
-              Anfrage verschicken
-            </button>
-          </form>
+          <form class="anfrage" aria-label="Umzugsanfrage Mannheim"><noscript><p>Bitte aktivieren Sie JavaScript, um die Anfrage zu senden, oder rufen Sie uns an: <a href="tel:+496218995969">0621 899 59 69</a>.</p></noscript></form>
         </div>
       </section>
     </main>
@@ -1296,6 +1206,29 @@
         };
 
         moveCard();
+      });
+
+      const faqItems = document.querySelectorAll(".faq-item");
+
+      faqItems.forEach((item) => {
+        const button = item.querySelector(".faq-question");
+        const icon = button.querySelector("span");
+
+        button.addEventListener("click", () => {
+          const isOpen = item.classList.contains("is-open");
+
+          faqItems.forEach((otherItem) => {
+            otherItem.classList.remove("is-open");
+            otherItem.querySelector(".faq-question").setAttribute("aria-expanded", "false");
+            otherItem.querySelector(".faq-question span").textContent = "+";
+          });
+
+          if (!isOpen) {
+            item.classList.add("is-open");
+            button.setAttribute("aria-expanded", "true");
+            icon.textContent = "−";
+          }
+        });
       });
     </script>
   </body>

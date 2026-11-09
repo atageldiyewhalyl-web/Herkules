@@ -61,7 +61,8 @@
     <link rel="stylesheet" href="/assets/blog-ratgeber.css?v=20261104-nav" />
     <script defer src="/assets/cookie-consent.js"></script>
     <script defer src="/assets/google-tracking.js?v=20261105"></script>
-    <script defer src="/assets/request-form.js"></script>
+    <link rel="stylesheet" href="/assets/anfrage.css?v=20261109" />
+    <script defer src="/assets/anfrage.js?v=20261109"></script>
   </head>
   <body class="private-page article-page">
     <div class="article-progress" id="article-progress" role="progressbar" aria-label="Lesefortschritt" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
@@ -341,64 +342,7 @@
             <a class="rg-form__call" href="tel:+496218995969"><span>Lieber direkt sprechen?</span><strong>0621 899 59 69</strong></a>
             <a class="rg-form__wa" href="https://wa.me/4915117285670" target="_blank" rel="noopener">Per WhatsApp schreiben</a>
           </div>
-          <form class="request-form" aria-label="Umzugsanfrage">
-            <div class="request-form__grid">
-              <label>
-                <span>Vorname Nachname *</span>
-                <input type="text" name="name" autocomplete="name" required />
-              </label>
-              <label>
-                <span>Telefonnummer *</span>
-                <input type="tel" name="phone" autocomplete="tel" required />
-              </label>
-              <label>
-                <span>E-mail *</span>
-                <input type="email" name="email" autocomplete="email" required />
-              </label>
-              <label>
-                <span>Umzugsdatum *</span>
-                <input type="date" name="moving-date" required />
-              </label>
-            </div>
-            <label>
-              <span>Auszugsadresse: Straße, Nr., Postleitzahl und Ort *</span>
-              <input type="text" name="loading-address" autocomplete="street-address" required />
-            </label>
-            <label>
-              <span>Einzugsadresse: Straße, Nr., Postleitzahl und Ort</span>
-              <input type="text" name="unloading-address" />
-            </label>
-            <div class="request-form__grid">
-              <label>
-                <span>Leistung *</span>
-                <select name="service" required>
-                  <option selected>Privatumzüge</option>
-                  <option>Büroumzüge</option>
-                  <option>Seniorenumzüge</option>
-                  <option>Auslandsumzüge</option>
-                  <option>Halteverbotszone</option>
-                  <option>Aussenaufzug</option>
-                  <option>Umzugskartons &amp; Verpackungsmaterial</option>
-                </select>
-              </label>
-              <label>
-                <span>Wie haben Sie uns gefunden? *</span>
-                <select name="lead-source" required>
-                  <option value="">Bitte wählen</option>
-                  <option>Google Suche</option>
-                  <option>Empfehlung</option>
-                  <option>Social Media</option>
-                  <option>Sonstiges</option>
-                  <option>Flyer</option>
-                </select>
-              </label>
-            </div>
-            <label>
-              <span class="visually-hidden">Ihre Nachricht</span>
-              <textarea name="message" placeholder="Etage, Aufzug, Besonderheiten der Straße (optional)"></textarea>
-            </label>
-            <button class="request-form__submit" type="submit">Anfrage verschicken</button>
-          </form>
+          <form class="anfrage" aria-label="Umzugsanfrage"><noscript><p>Bitte aktivieren Sie JavaScript, um die Anfrage zu senden, oder rufen Sie uns an: <a href="tel:+496218995969">0621 899 59 69</a>.</p></noscript></form>
         </div>
       </section>
     </main>

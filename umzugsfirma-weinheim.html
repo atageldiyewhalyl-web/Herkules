@@ -29,7 +29,8 @@
     <link rel="preload" href="/assets/fonts/barlow-condensed-800.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" href="/assets/blog-ratgeber.css?v=20261104-nav" />
     <link rel="stylesheet" href="/assets/leistung.css?v=20261104-nav" />
-    <script defer src="/assets/request-form.js"></script>
+    <link rel="stylesheet" href="/assets/anfrage.css?v=20261109" />
+    <script defer src="/assets/anfrage.js?v=20261109"></script>
     <script defer src="/assets/cookie-consent.js"></script>
     <script defer src="/assets/google-tracking.js?v=20261105"></script>
     <script type="application/ld+json">[{"@context":"https://schema.org","@type":"MovingCompany","@id":"https://www.umzuege-herkules.de/#organization","name":"Herkules Umzüge & Transporte e.K.","url":"https://www.umzuege-herkules.de/","logo":{"@type":"ImageObject","url":"https://www.umzuege-herkules.de/assets/herkules-logo-nav.png","width":420,"height":199},"image":"https://www.umzuege-herkules.de/assets/standorte/umzugsfirma-weinheim/hero-1536.webp","description":"Herkules Umzüge & Transporte e.K. – Umzugsunternehmen für Weinheim an der Bergstraße seit 2004.","telephone":"+49 621 8995969","email":"info@herkules-umzuege24.de","address":{"@type":"PostalAddress","streetAddress":"Relaisstraße 192","postalCode":"68219","addressLocality":"Mannheim","addressCountry":"DE"},"geo":{"@type":"GeoCoordinates","latitude":49.4253395,"longitude":8.5335991},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"18:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"08:00","closes":"14:00"}],"areaServed":[{"@type":"City","name":"Heidelberg"},{"@type":"Place","name":"Heidelberg Altstadt"},{"@type":"Place","name":"Heidelberg Weststadt"},{"@type":"Place","name":"Heidelberg Neuenheim"},{"@type":"Place","name":"Heidelberg Bergheim"},{"@type":"City","name":"Mannheim"},{"@type":"AdministrativeArea","name":"Rhein-Neckar-Region"}],"foundingDate":"2004","priceRange":"€€","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","bestRating":"5","ratingCount":"48"},"sameAs":["https://www.google.com/maps?cid=13375963331920981323","https://www.yelp.de/biz/herkules-mannheim"]},{"@context":"https://schema.org","@type":"Service","@id":"https://www.umzuege-herkules.de/umzugsfirma-weinheim/#service","name":"Umzug Weinheim – Umzugsfirma Herkules","provider":{"@id":"https://www.umzuege-herkules.de/#organization"},"areaServed":[{"@type":"City","name":"Weinheim"},{"@type":"City","name":"Hemsbach"},{"@type":"City","name":"Laudenbach"},{"@type":"City","name":"Hirschberg an der Bergstraße"}],"url":"https://www.umzuege-herkules.de/umzugsfirma-weinheim/","description":"Umzugsfirma Weinheim an der Bergstraße: Altstadt, Hanglagen, Pendlerumzüge nach Mannheim und Frankfurt. Festpreis, versichert. Jetzt Angebot anfordern.","serviceType":["Privatumzug","Büroumzug","Seniorenumzug","Halteverbotszone","Außenaufzug","Möbeltransport"]},{"@context":"https://schema.org","@type":"FAQPage","@id":"https://www.umzuege-herkules.de/umzugsfirma-weinheim/#faq","mainEntity":[{"@type":"Question","name":"Fahren Sie Umzüge in Weinheim?","acceptedAnswer":{"@type":"Answer","text":"Ja. Weinheim liegt rund 18 Kilometer von unserem Standort in Mannheim entfernt und gehört zu unserem regelmäßigen Einsatzgebiet an der Bergstraße."}},{"@type":"Question","name":"Kommt ein Umzugs-LKW in die Weinheimer Altstadt?","acceptedAnswer":{"@type":"Answer","text":"In die engeren Gassen rund um Marktplatz und Gerberbachviertel oft nur eingeschränkt. Dort arbeiten wir mit kleinerem Fahrzeug und mehr Fahrten. Das wird bei der Besichtigung festgelegt."}},{"@type":"Question","name":"Was kostet ein Umzug von Weinheim nach Mannheim?","acceptedAnswer":{"@type":"Answer","text":"Je nach Wohnungsgröße meist zwischen 480 und 2.650 Euro. Die kurze Strecke bedeutet einen geringen Aufschlag gegenüber einem Umzug innerhalb Weinheims."}},{"@type":"Question","name":"Sind Hanglagen ein Problem?","acceptedAnswer":{"@type":"Answer","text":"Kein Problem, aber ein Planungspunkt. Die Straßen Richtung Wachenburg und Windeck sind schmal und teilweise steil. Wir prüfen die Zufahrt vorab und setzen wo nötig ein kleineres Fahrzeug ein."}},{"@type":"Question","name":"Wer ist für die Halteverbotszone in Weinheim zuständig?","acceptedAnswer":{"@type":"Answer","text":"Weinheim gehört zum Rhein-Neckar-Kreis in Baden-Württemberg. Bei einem Umzug nach Bensheim oder Heppenheim, die in Hessen liegen, sind zwei getrennte Genehmigungen bei zwei Behörden nötig."}}]},{"@context":"https://schema.org","@type":"BreadcrumbList","@id":"https://www.umzuege-herkules.de/umzugsfirma-weinheim/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Startseite","item":"https://www.umzuege-herkules.de/"},{"@type":"ListItem","position":2,"name":"Umzugsfirma Weinheim","item":"https://www.umzuege-herkules.de/umzugsfirma-weinheim/"}]}]</script>
@@ -395,64 +396,7 @@
             <p class="lt-mail"><a href="mailto:Info@herkules-umzuege24.de">Info@herkules-umzuege24.de</a></p>
             <p class="lc-address">Herkules Umzüge &amp; Transporte e.K., Relaisstraße 192, 68219 Mannheim</p>
           </div>
-          <form class="request-form" aria-label="Umzugsanfrage" aria-label="Umzugsanfrage">
-            <div class="request-form__grid">
-              <label>
-                <span>Vorname Nachname *</span>
-                <input type="text" name="name" autocomplete="name" required />
-              </label>
-              <label>
-                <span>Telefonnummer *</span>
-                <input type="tel" name="phone" autocomplete="tel" required />
-              </label>
-              <label>
-                <span>E-mail *</span>
-                <input type="email" name="email" autocomplete="email" required />
-              </label>
-              <label>
-                <span>Umzugsdatum *</span>
-                <input type="date" name="moving-date" required />
-              </label>
-            </div>
-            <label>
-              <span>Auszugsadresse: Straße, Nr., Postleitzahl und Ort *</span>
-              <input type="text" name="loading-address" autocomplete="street-address" required />
-            </label>
-            <label>
-              <span>Einzugsadresse: Straße, Nr., Postleitzahl und Ort</span>
-              <input type="text" name="unloading-address" />
-            </label>
-            <div class="request-form__grid">
-              <label>
-                <span>Leistung *</span>
-                <select name="service" required>
-                  <option>Halteverbotszone</option>
-                  <option selected>Privatumzüge</option>
-                  <option>Büroumzüge</option>
-                  <option>Seniorenumzüge</option>
-                  <option>Auslandsumzüge</option>
-                  <option>Aussenaufzug</option>
-                  <option>Umzugskartons &amp; Verpackungsmaterial</option>
-                </select>
-              </label>
-              <label>
-                <span>Wie haben Sie uns gefunden? *</span>
-                <select name="lead-source" required>
-                  <option value="">Bitte wählen</option>
-                  <option>Google Suche</option>
-                  <option>Empfehlung</option>
-                  <option>Social Media</option>
-                  <option>Sonstiges</option>
-                  <option>Flyer</option>
-                </select>
-              </label>
-            </div>
-            <label>
-              <span class="visually-hidden">Ihre Nachricht</span>
-              <textarea name="message" placeholder="Etage, Aufzug, Besonderheiten der Straße (optional)"></textarea>
-            </label>
-            <button class="request-form__submit" type="submit">Anfrage verschicken</button>
-          </form>
+          <form class="anfrage" aria-label="Umzugsanfrage"><noscript><p>Bitte aktivieren Sie JavaScript, um die Anfrage zu senden, oder rufen Sie uns an: <a href="tel:+496218995969">0621 899 59 69</a>.</p></noscript></form>
         </div>
       </section>
     </main>
