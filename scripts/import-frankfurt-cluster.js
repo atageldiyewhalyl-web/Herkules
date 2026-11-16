@@ -396,7 +396,7 @@ function footerHtml() {
       </div>
       <div class="site-footer__bottom">
         <p>© 2026 Herkules Umzüge &amp; Transporte e.K.</p>
-        <a class="site-footer__credit" href="https://nüll.com" target="_blank" rel="noopener">
+        <a class="site-footer__credit" href="https://nuell-agentur.com/" target="_blank" rel="noopener noreferrer">
           <span>Site made by</span>
           <img src="/assets/null-logo.png" alt="nüll.com" />
         </a>
