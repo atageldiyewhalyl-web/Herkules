@@ -39,8 +39,9 @@
   const isName = (value) => {
     const text = norm(value);
     const parts = text.split(/[\s-]+/).filter(Boolean);
+    // \p{L} lets Turkish, Polish and other names through ("Ayşe Yılmaz", "Łukasz Wójcik")
     return text.length >= 5 && text.length <= 80 && !looksRandom(text) && parts.length >= 2
-      && parts.every((part) => /^[A-Za-zÀ-ÖØ-öø-ÿ.'-]{2,}$/.test(part));
+      && parts.every((part) => /^[\p{L}.'-]{2,}$/u.test(part));
   };
   const isPhone = (value) => {
     const text = norm(value);
@@ -55,7 +56,8 @@
     const end = new Date(start); end.setFullYear(start.getFullYear() + 2);
     return picked >= start && picked <= end;
   };
-  const isStreet = (value) => /[A-Za-zÀ-ÖØ-öø-ÿ]{3,}/.test(value) && /\d/.test(value) && !looksRandom(value);
+  // Mannheim's Quadrate have no street name ("N7 13", "Q 7, 15"), so one letter plus a number is enough
+  const isStreet = (value) => norm(value).length >= 3 && /\p{L}/u.test(value) && /\d/.test(value) && !looksRandom(value);
   const isZip = (value) => /^(?=.*\d)[A-Za-z0-9 -]{4,10}$/.test(norm(value));
   // Town names are often one long word ("Ludwigshafen"), so only catch repeated or vowel-less input
   const isTown = (value) => {

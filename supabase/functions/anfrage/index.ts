@@ -113,7 +113,8 @@ function isValidName(value: string) {
   }
 
   const parts = text.split(/[\s-]+/).filter(Boolean);
-  return parts.length >= 2 && parts.every((part) => /^[A-Za-zÀ-ÖØ-öø-ÿ.'-]{2,}$/.test(part));
+  // \p{L} lets Turkish, Polish and other names through ("Ayşe Yılmaz", "Łukasz Wójcik")
+  return parts.length >= 2 && parts.every((part) => /^[\p{L}.'-]{2,}$/u.test(part));
 }
 
 function isValidPhone(value: string) {
@@ -144,7 +145,7 @@ function isValidAddress(value: string) {
   const text = normalize(value);
   const hasStreetNumber = /\b\d+[a-z]?\b/i.test(text);
   const hasPostalCode = /\b(?=[A-Z0-9 -]{4,10}\b)(?=[A-Z0-9 -]*\d)[A-Z0-9][A-Z0-9 -]{2,8}[A-Z0-9]\b/i.test(text);
-  const hasLetters = /[A-Za-zÀ-ÖØ-öø-ÿ]{3,}/.test(text);
+  const hasLetters = /\p{L}{3,}/u.test(text);
 
   return text.length >= 12 && !hasRandomText(text) && hasStreetNumber && hasPostalCode && hasLetters;
 }
