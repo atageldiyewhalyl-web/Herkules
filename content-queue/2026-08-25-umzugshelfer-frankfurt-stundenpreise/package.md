@@ -25,17 +25,18 @@ Dieser Artikel sagt Ihnen, wann Sie mit Stundenhelfern günstiger fahren — und
 
 ## Was Umzugshelfer nach Stunden kosten
 
-Bei Herkules Umzüge liegen die Stundenpreise **ab ca. 35–55 € pro Stunde und Helfer, inklusive Fahrzeug**. Die Spanne hängt von Teamgröße und Leistungsumfang ab.
+Bei Herkules Umzüge kostet die Stunde **mit 2 Helfern + LKW ab 110 €**, mit 3 Helfern + LKW ab 140 € und mit 4 Helfern + LKW ab 170 €. Die Mindestbuchung beträgt **4 Stunden**.
 
-Zwei Punkte, die in dieser Zahl leicht übersehen werden:
+Drei Punkte, die in diesen Zahlen leicht übersehen werden:
 
-- **„Pro Helfer".** Zwei Kräfte kosten das Doppelte. Wer 45 € liest und mit 45 € für den Tag rechnet, rechnet um den Faktor Teamgröße falsch.
+- **„Pro Team".** Der Stundenpreis gilt für das ganze Team, nicht pro Person. Ein größeres Team kostet mehr pro Stunde, ist aber meist schneller fertig.
+- **„Mindestens 4 Stunden".** Auch ein kurzer Einsatz wird mit 4 Stunden berechnet, mit 2 Helfern + LKW also mit mindestens 440 €.
 - **„Inklusive Fahrzeug".** Es kommt kein Mietwagen dazu. Das ist der Grund, warum ein Vergleich mit reinen Trageportalen — Helfer ohne LKW — nicht direkt funktioniert.
 
 | Position | Regelung bei Herkules |
 |---|---|
-| Stundensatz | ab ca. 35–55 € pro Stunde und Helfer, inkl. Fahrzeug |
-| Mindestbuchung | in der Regel 2–3 Stunden |
+| Stundensatz | 2 Helfer + LKW ab 110 €/h, 3 Helfer + LKW ab 140 €/h, 4 Helfer + LKW ab 170 €/h |
+| Mindestbuchung | 4 Stunden |
 | Abrechnungstakt | Viertelstundenschritte |
 | Zeit läuft ab | Eintreffen des Teams an der Beladestelle |
 | Zeit endet | nach vollständigem Entladen am Zielort |
@@ -76,7 +77,7 @@ Das ist der eigentliche Punkt dieses Artikels, und er ist unangenehm für jeden,
 
 Ohne eingerichtete Halteverbotszone steht der LKW in Nordend, Bornheim, Sachsenhausen oder Bockenheim realistisch 80 bis 150 Meter entfernt. Anwohnerparken ist dort ganztägig ausgelastet.
 
-Rechnen Sie das durch: Bei rund 50 Kartons plus Möbeln legt jede Kraft diesen Weg dutzendfach zurück. Ein bis zwei zusätzliche Arbeitsstunden **pro Person** sind die normale Folge. Bei zwei Kräften und 45 €/Std. sind das 90 bis 180 € — für einen Umstand, den eine Halteverbotszone für ca. 100 bis 150 € je Adresse verhindert hätte.
+Rechnen Sie das durch: Bei rund 50 Kartons plus Möbeln legt jede Kraft diesen Weg dutzendfach zurück. Ein bis zwei zusätzliche Arbeitsstunden **für das ganze Team** sind die normale Folge. Mit 2 Helfern + LKW zu 110 €/h sind das 110 bis 220 € — für einen Umstand, den eine Halteverbotszone für ca. 100 bis 150 € je Adresse verhindert hätte.
 
 Beim Festpreis nach Besichtigung ist dieses Risiko einkalkuliert und liegt beim Unternehmen. Bei Stundenabrechnung zahlen Sie es, und Sie erfahren die Summe erst am Abend.
 
@@ -125,9 +126,9 @@ Umgangssprachlich heißt alles „Umzugshelfer". Kaufmännisch sind es zwei vers
 
 Ein konkreter Vergleich, damit die Größenordnung sichtbar wird. 2-Zimmer-Wohnung, ca. 35 m³, 3. OG Altbau ohne Aufzug, Umzug innerhalb Frankfurts.
 
-**Variante Stundenabrechnung, optimistisch gerechnet:** 3 Kräfte, 6 Stunden, 45 €/Std. → ca. 810 €. Klingt gut.
+**Variante Stundenabrechnung, optimistisch gerechnet:** 3 Helfer + LKW, 6 Stunden à 140 € → ca. 840 €. Klingt gut.
 
-**Variante Stundenabrechnung, realistisch:** Ohne Halteverbot 100 m Laufweg an beiden Adressen, drittes OG, ein Schrank muss zerlegt werden. Aus 6 werden 9 bis 10 Stunden → ca. 1.215 bis 1.350 €. Ohne dass jemand etwas falsch gemacht hätte.
+**Variante Stundenabrechnung, realistisch:** Ohne Halteverbot 100 m Laufweg an beiden Adressen, drittes OG, ein Schrank muss zerlegt werden. Aus 6 werden 9 bis 10 Stunden → ca. 1.260 bis 1.400 €. Ohne dass jemand etwas falsch gemacht hätte.
 
 **Variante Festpreis:** 2-Zimmer-Wohnung innerhalb Frankfurts ca. 800–1.400 €, zuzüglich Halteverbot ca. 100–150 € je Adresse und ggf. Außenaufzug ca. 250–450 €. Der Betrag steht vorher fest, und wenn der Tag länger dauert, ändert das an Ihrer Rechnung nichts.
 
@@ -149,10 +150,10 @@ Kartons und Material vorab: [Umzugskartons](/umzugskartons/).
 ## Häufige Fragen zu Umzugshelfern in Frankfurt
 
 **Was kostet ein Umzugshelfer pro Stunde in Frankfurt?**
-Bei Herkules Umzüge ab ca. 35 bis 55 Euro pro Stunde und Helfer, inklusive Fahrzeug. Die Spanne richtet sich nach Teamgröße und Leistungsumfang. Wichtig ist das „pro Helfer": Ein Team aus drei Kräften kostet entsprechend das Dreifache des Stundensatzes.
+Bei Herkules Umzüge kostet die Stunde mit 2 Helfern + LKW ab 110 €, mit 3 Helfern + LKW ab 140 € und mit 4 Helfern + LKW ab 170 €. Der Preis gilt für das ganze Team, das Fahrzeug ist enthalten.
 
 **Gibt es eine Mindestbuchung?**
-In der Regel zwei bis drei Stunden. Das liegt an der Anfahrt, die sich sonst wirtschaftlich nicht darstellen lässt. Für sehr kleine Aufgaben lohnt sich ein kurzes Telefonat, bevor Sie buchen.
+Ja, 4 Stunden. Das liegt an der Anfahrt, die sich sonst wirtschaftlich nicht darstellen lässt. Für sehr kleine Aufgaben lohnt sich ein kurzes Telefonat, bevor Sie buchen.
 
 **Ab wann wird der Stundenpreis teurer als ein Festpreis?**
 Grob ab etwa 25 Kubikmetern Umzugsgut, in Frankfurt oft schon früher, sobald ein Altbau-Treppenhaus ohne Aufzug oder eine schwierige Parksituation dazukommt. Der Grund ist nicht der Stundensatz, sondern die Streuung: Bei Stundenabrechnung zahlen Sie jede zusätzliche Stunde, die durch Laufwege, Wartezeiten oder ein sperriges Möbelstück entsteht.
@@ -203,8 +204,8 @@ Mehr dazu: [Stundenpreise](/stundenpreise/) · [Umzugsfirma Frankfurt](/umzug-fr
     "@type": "FAQPage",
     "@id": "https://www.umzuege-herkules.de/blog/umzugshelfer-frankfurt-stundenpreise/#faq",
     "mainEntity": [
-      { "@type": "Question", "name": "Was kostet ein Umzugshelfer pro Stunde in Frankfurt?", "acceptedAnswer": { "@type": "Answer", "text": "Bei Herkules Umzüge liegen die Stundenpreise ab etwa 35 bis 55 Euro pro Stunde und Helfer, inklusive Fahrzeug. Die Spanne richtet sich nach Teamgröße und Leistungsumfang. Entscheidend für die Kalkulation ist der Zusatz pro Helfer: Ein Team aus drei Kräften kostet entsprechend das Dreifache des genannten Stundensatzes. Ein Mietwagen kommt nicht dazu, das Fahrzeug ist im Preis enthalten." } },
-      { "@type": "Question", "name": "Gibt es eine Mindestbuchung für Umzugshelfer?", "acceptedAnswer": { "@type": "Answer", "text": "In der Regel gilt eine Mindestbuchung von zwei bis drei Stunden. Grund ist die Anfahrt, die sich bei kürzeren Einsätzen wirtschaftlich nicht darstellen lässt. Für sehr kleine Aufgaben, etwa den Transport eines einzelnen Möbelstücks, lohnt sich ein kurzes Telefonat vor der Buchung, um Aufwand und Teamgröße realistisch abzustimmen." } },
+      { "@type": "Question", "name": "Was kostet ein Umzugshelfer pro Stunde in Frankfurt?", "acceptedAnswer": { "@type": "Answer", "text": "Bei Herkules Umzüge kostet die Stunde mit 2 Helfern plus LKW ab 110 Euro, mit 3 Helfern plus LKW ab 140 Euro und mit 4 Helfern plus LKW ab 170 Euro. Der Preis gilt für das ganze Team, nicht pro Person. Ein Mietwagen kommt nicht dazu, das Fahrzeug ist im Preis enthalten. Die Mindestbuchung beträgt 4 Stunden." } },
+      { "@type": "Question", "name": "Gibt es eine Mindestbuchung für Umzugshelfer?", "acceptedAnswer": { "@type": "Answer", "text": "Ja, die Mindestbuchung beträgt 4 Stunden. Grund ist die Anfahrt, die sich bei kürzeren Einsätzen wirtschaftlich nicht darstellen lässt. Für sehr kleine Aufgaben, etwa den Transport eines einzelnen Möbelstücks, lohnt sich ein kurzes Telefonat vor der Buchung, um Aufwand und Teamgröße realistisch abzustimmen." } },
       { "@type": "Question", "name": "Ab wann wird der Stundenpreis teurer als ein Festpreis?", "acceptedAnswer": { "@type": "Answer", "text": "Grob ab etwa 25 Kubikmetern Umzugsgut, in Frankfurt häufig schon früher, sobald ein Altbau-Treppenhaus ohne Aufzug oder eine schwierige Parksituation hinzukommt. Der Grund ist nicht der Stundensatz selbst, sondern die Streuung: Bei Stundenabrechnung zahlen Sie jede zusätzliche Stunde, die durch lange Laufwege, Wartezeiten am Aufzug oder ein sperriges Möbelstück entsteht. Ein Festpreis nach Besichtigung verlagert dieses Risiko auf das Unternehmen." } },
       { "@type": "Question", "name": "Ab wann läuft die Zeit bei Stundenabrechnung?", "acceptedAnswer": { "@type": "Answer", "text": "Die Zeit beginnt mit dem Eintreffen des Teams an der Beladestelle und endet nach dem vollständigen Entladen am Zielort. Abgerechnet wird in Viertelstundenschritten. Die Fahrt zwischen den beiden Adressen, die Wege zum Fahrzeug und Wartezeiten am Aufzug gehören zur Arbeitszeit. Genau deshalb wirken sich Parksituation und Laufwege bei Stundenabrechnung unmittelbar auf Ihre Rechnung aus." } },
       { "@type": "Question", "name": "Ist das Fahrzeug im Stundenpreis enthalten?", "acceptedAnswer": { "@type": "Answer", "text": "Ja. Sie brauchen keinen zusätzlichen Mietwagen. Im Stundenpreis enthalten sind die Arbeit des Teams, die Nutzung des Fahrzeugs, Transportdecken und Basismaterial. Verpackungsmaterial, Möbelmontage und die Einrichtung einer Halteverbotszone sind eigenständige Positionen und werden separat vereinbart." } },
@@ -259,10 +260,10 @@ Mehr dazu: [Stundenpreise](/stundenpreise/) · [Umzugsfirma Frankfurt](/umzug-fr
 - Ergänzend **#28:** Die Aufgabe „Stundenpreis-Ratecard auf `stundenpreise.html` in eine echte HTML-`<table>` umwandeln" passt zeitlich genau hierher — die Tabelle in diesem Post kann als Vorlage dienen.
 
 **Preisangaben — geprüft am Repo, Stand 2026-08-25**
-- Die genannten Werte stammen **direkt aus `stundenpreise.html`** (FAQ-Block und JSON-LD, beide identisch): „ab ca. 35–55 € pro Stunde und **Helfer** inklusive Fahrzeug", „Mindestbuchung von 2–3 Stunden", Viertelstunden-Abrechnung, Zeit ab Eintreffen an der Beladestelle bis vollständiges Entladen, enthalten sind Arbeit des Teams, Fahrzeug, Transportdecken und Basismaterial.
-- **Abweichung zum Briefing:** Das Briefing nannte „35–55 €/h inkl. Fahrzeug". Die Seite sagt präziser „pro Stunde **und Helfer**". Dieser Zusatz ist im Artikel bewusst prominent gesetzt, weil er den Endbetrag um den Faktor Teamgröße verändert — er darf beim Redigieren nicht wegfallen. Ansonsten stimmen Stundensatz und Mindestbuchung mit dem Briefing überein.
+- Die genannten Werte stammen **direkt aus `stundenpreise.html`** (FAQ-Block und JSON-LD, beide identisch): „2 Helfer + LKW ab 110 €/h, 3 Helfer + LKW ab 140 €/h, 4 Helfer + LKW ab 170 €/h" (Preis pro Team), „Mindestbuchung 4 Stunden" (korrigiert am 2026-11-16, vorher fälschlich 35–55 € pro Helfer, 2–3 Stunden), Viertelstunden-Abrechnung, Zeit ab Eintreffen an der Beladestelle bis vollständiges Entladen, enthalten sind Arbeit des Teams, Fahrzeug, Transportdecken und Basismaterial.
+- **Abweichung zum Briefing:** Das Briefing nannte „35–55 €/h inkl. Fahrzeug". Überholt: Der echte Preis ist 110 €/h für 2 Helfer + LKW (Teampreis), Mindestbuchung 4 Stunden.
 - Wohnungspreise (2-Zi 800–1.400 €), Halteverbot (100–150 € je Adresse) und Außenaufzug (250–450 €) sind mit den übrigen Frankfurt-Paketen abgeglichen. Bei Änderung alle Frankfurt-Pakete gemeinsam anpassen.
-- Das Rechenbeispiel verwendet 45 €/Std. als Mittelwert der Spanne. Falls sich die Spanne ändert, dieses Beispiel mit anpassen — es ist der meistzitierte Teil solcher Artikel.
+- Das Rechenbeispiel verwendet 140 €/h (3 Helfer + LKW). Falls sich die Spanne ändert, dieses Beispiel mit anpassen — es ist der meistzitierte Teil solcher Artikel.
 
 **Verify before publish**
 - **Frankfurt-Verfügbarkeit der Stundenbuchung:** `stundenpreise.html` ist durchgängig Mannheim-formuliert („Stundenpreise Mannheim", Einsatzgebiete „Mannheim und Umgebung, auch Ludwigshafen, Heidelberg, Schwetzingen"). Frankfurt wird dort **nicht** als Einsatzgebiet genannt. Vor Veröffentlichung bestätigen lassen, dass Stundeneinsätze in Frankfurt tatsächlich angeboten werden — und wenn ja, `stundenpreise.html` entsprechend ergänzen. Andernfalls verspricht dieser Post eine Leistung, die die Serviceseite nicht abdeckt.

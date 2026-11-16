@@ -16,7 +16,7 @@
 
 Service pages: Privatumzüge, Büroumzüge, Seniorenumzüge, Auslandsumzüge,
 Halteverbotszone, Außenaufzug, Stundenpreise (Umzugshelfer nach Stunden,
-ab ca. 35–55 €/h inkl. Fahrzeug, Mindestbuchung 2–3 h), Umzugskartons.
+2 Helfer + LKW ab 110 €/h, 3 Helfer ab 140 €/h, 4 Helfer ab 170 €/h, Mindestbuchung 4 h), Umzugskartons.
 Mentioned as add-ons in body copy (no dedicated pages): **Einlagerung,
 Küchenmontage, Verpackungsservice, Entsorgung, Packhilfe**. Special items
 (Klavier, Safe, Aquarium) mentioned in the Umzugskosten blog post only.

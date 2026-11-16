@@ -23,19 +23,19 @@ Bei der Stundenabrechnung tragen Sie es. Beim Festpreis trägt es das Unternehme
 
 ## Was Umzugshelfer in Mannheim kosten
 
-Unsere Stundenpreise richten sich nach Teamgröße und Leistungsumfang. In der Regel starten die Kosten **ab ca. 35–55 € pro Stunde und Helfer, inklusive Fahrzeug**. Abgerechnet wird in **Viertelstundenschritten**, üblich ist eine **Mindestbuchung von 2–3 Stunden**.
+Unsere Stundenpreise richten sich nach der Teamgröße und enthalten immer den LKW: **2 Helfer + LKW ab 110 €/h, 3 Helfer + LKW ab 140 €/h, 4 Helfer + LKW ab 170 €/h**. Abgerechnet wird in **Viertelstundenschritten**, es gilt eine **Mindestbuchung von 4 Stunden**.
 
 Zwei Punkte, die den Gesamtbetrag stärker bestimmen als der Stundensatz:
 
-**1. "Pro Stunde und Helfer" heißt: mal Teamgröße.** Ein Zweierteam kostet das Doppelte des Stundensatzes, ein Dreierteam das Dreifache. Ein größeres Team ist dabei nicht automatisch teurer — es ist oft schneller, sodass die Gesamtsumme sinkt. Aber die Rechnung entsteht aus Stunden × Helfer, nicht aus Stunden allein.
+**1. Der Preis gilt pro Team, und es sind mindestens 4 Stunden.** Ein Dreierteam kostet mehr pro Stunde als ein Zweierteam, ist aber nicht automatisch teurer — es ist oft schneller, sodass die Gesamtsumme sinkt. Wegen der Mindestbuchung kostet auch ein kurzer Einsatz mit 2 Helfern + LKW mindestens 440 €.
 
 **2. Die Uhr läuft ab Ankunft.** Die Zeit beginnt mit dem Eintreffen des Teams an der Beladestelle und endet nach dem vollständigen Entladen am Zielort.
 
 | | Stundenabrechnung | Festpreis |
 |---|---|---|
-| Abrechnung | ab ca. 35–55 €/Std. und Helfer, inkl. Fahrzeug | ein Betrag nach Besichtigung |
+| Abrechnung | 2 Helfer + LKW ab 110 €/h, 3 Helfer + LKW ab 140 €/h | ein Betrag nach Besichtigung |
 | Taktung | Viertelstunden | entfällt |
-| Mindestbuchung | i. d. R. 2–3 Stunden | entfällt |
+| Mindestbuchung | 4 Stunden | entfällt |
 | Wer trägt das Zeitrisiko | **Sie** | **das Unternehmen** |
 | Planbarkeit | gering | vollständig |
 | Am besten geeignet für | kleine, einfache Umzüge | alles ab ca. 2 Zimmern |
@@ -62,14 +62,14 @@ Typischer Mannheimer Fall: Studentenumzug innerhalb der Neckarstadt, WG-Wechsel 
 
 Die Stundenabrechnung wird dort teuer, wo der Zeitbedarf **nicht sicher vorhersagbar** ist. In Mannheim sind das drei Faktoren:
 
-**Parkplatzsuche ohne Halteverbotszone.** In den Quadraten, in der Neckarstadt und in der Schwetzingerstadt ist Anwohnerparken ganztägig ausgelastet. Ohne Zone steht der LKW schnell 80 bis 150 Meter entfernt. Bei rund 50 Kartons plus Möbeln kostet das ein bis zwei zusätzliche Stunden **pro Kraft** — bei einem Dreierteam also drei bis sechs bezahlte Stunden, für einen Weg, den eine Halteverbotszone für ca. 90–130 € beseitigt hätte.
+**Parkplatzsuche ohne Halteverbotszone.** In den Quadraten, in der Neckarstadt und in der Schwetzingerstadt ist Anwohnerparken ganztägig ausgelastet. Ohne Zone steht der LKW schnell 80 bis 150 Meter entfernt. Bei rund 50 Kartons plus Möbeln kostet das ein bis zwei zusätzliche Stunden **für das ganze Team** — beim Dreierteam mit LKW (140 €/h) also ca. 140 bis 280 €, für einen Weg, den eine Halteverbotszone für ca. 90–130 € beseitigt hätte.
 
 **Enge Treppenhäuser.** In den Altbaubeständen der Neckarstadt und der Quadrate passt manches Möbelstück nicht durchs Treppenauge. Was dann folgt — zerlegen, umplanen, tragen statt fahren — steht auf der Stundenrechnung.
 
 **Nicht fertig gepackt.** Der mit Abstand häufigste Grund für Überschreitungen. Ein Team, das wartet oder mitpackt, arbeitet zum vollen Stundensatz.
 
 <div class="callout callout--warning">
-<strong>Wichtig:</strong> Sparen Sie nicht die Halteverbotszone, wenn Sie nach Stunden abrechnen. Das ist die Ersparnis, die keine ist: Die Zone kostet einmalig ca. 90–130 €, der Laufweg ohne sie kostet Sie bei jedem Gang Arbeitszeit — und zwar multipliziert mit der Teamgröße.
+<strong>Wichtig:</strong> Sparen Sie nicht die Halteverbotszone, wenn Sie nach Stunden abrechnen. Das ist die Ersparnis, die keine ist: Die Zone kostet einmalig ca. 90–130 €, der Laufweg ohne sie kostet Sie bei jedem Gang Arbeitszeit — und zwar zum vollen Stundensatz des Teams.
 </div>
 
 Ablauf und Fristen: [Halteverbotszone in Mannheim beantragen](/blog/halteverbotszone-beantragen-mannheim/).
@@ -80,8 +80,8 @@ Ablauf und Fristen: [Halteverbotszone in Mannheim beantragen](/blog/halteverbots
 
 | Szenario | Ablauf | Kosten (Richtwert) |
 |---|---|---|
-| **Optimistisch** | fertig gepackt, Halteverbot eingerichtet, 5 Std. | 2 Helfer × 5 Std. × ca. 45 € ≈ **450 €** + Zone ca. 110 € = **ca. 560 €** |
-| **Realistisch ohne Zone** | 100 m Laufweg, 7,5 Std. | 2 Helfer × 7,5 Std. × ca. 45 € ≈ **675 €** |
+| **Optimistisch** | fertig gepackt, Halteverbot eingerichtet, 5 Std. | 2 Helfer + LKW × 5 Std. × 110 € = **550 €** + Zone ca. 110 € = **ca. 660 €** |
+| **Realistisch ohne Zone** | 100 m Laufweg, 7,5 Std. | 2 Helfer + LKW × 7,5 Std. × 110 € ≈ **825 €** |
 | **Festpreis nach Besichtigung** | Risiko beim Unternehmen | **ca. 600–1.000 €**, verbindlich |
 
 Die Zahlen zeigen das Muster: Bei einer 2-Zimmer-Wohnung liegen Stundenabrechnung und Festpreis nah beieinander — aber nur die eine Variante ist vorher bekannt. Genau ab dieser Größe kippt die Empfehlung Richtung Festpreis.
@@ -104,7 +104,7 @@ Enthalten sind Transport, Tragen und das Umzugsteam — **inklusive Fahrzeug**. 
 ## Häufige Fragen
 
 **Was kosten Umzugshelfer in Mannheim pro Stunde?**
-In der Regel ab ca. 35–55 € pro Stunde und Helfer, inklusive Fahrzeug. Abgerechnet wird in Viertelstundenschritten, üblich ist eine Mindestbuchung von 2–3 Stunden. Die Gesamtsumme ergibt sich aus Stunden × Anzahl der Helfer.
+2 Helfer + LKW ab 110 €/h, 3 Helfer + LKW ab 140 €/h, 4 Helfer + LKW ab 170 €/h. Der Preis gilt für das ganze Team inklusive Fahrzeug. Abgerechnet wird in Viertelstundenschritten, die Mindestbuchung beträgt 4 Stunden.
 
 **Ab wann lohnt sich der Festpreis mehr?**
 Ab etwa zwei Zimmern oder 25 m³, und immer dann, wenn Etage, Treppenhaus oder Parksituation den Zeitbedarf unsicher machen. Der Festpreis verlagert genau dieses Risiko auf das Unternehmen.
@@ -119,7 +119,7 @@ Nein. Die Mindestdauer betrifft ausschließlich Umzüge, die nach Stunden abgere
 Ab Eintreffen des Teams an der Beladestelle bis zum vollständigen Entladen am Zielort.
 
 **Lohnt sich die Halteverbotszone bei Stundenabrechnung?**
-Besonders dann. Sie kostet einmalig ca. 90–130 €, während der Laufweg ohne Zone bei jedem Gang Arbeitszeit kostet — multipliziert mit der Teamgröße. In den Quadraten und der Neckarstadt rechnet sich die Zone praktisch immer.
+Besonders dann. Sie kostet einmalig ca. 90–130 €, während der Laufweg ohne Zone bei jedem Gang Arbeitszeit kostet — zum vollen Stundensatz des Teams. In den Quadraten und der Neckarstadt rechnet sich die Zone praktisch immer.
 
 **Kann ich nur Trage- und Ladehilfe ohne Fahrzeug buchen?**
 Das klären wir im Einzelfall — sprechen Sie uns auf Ihren konkreten Bedarf an.
@@ -151,12 +151,12 @@ Sagen Sie uns Wohnungsgröße, Etage und Parksituation an beiden Adressen — wi
     "@type": "FAQPage",
     "@id": "https://www.umzuege-herkules.de/blog/umzugshelfer-mannheim-stundenpreise/#faq",
     "mainEntity": [
-      { "@type": "Question", "name": "Was kosten Umzugshelfer in Mannheim pro Stunde?", "acceptedAnswer": { "@type": "Answer", "text": "In der Regel ab etwa 35 bis 55 Euro pro Stunde und Helfer, inklusive Fahrzeug. Abgerechnet wird in Viertelstundenschritten, üblich ist eine Mindestbuchung von zwei bis drei Stunden. Die Gesamtsumme ergibt sich aus Stunden multipliziert mit der Anzahl der Helfer." } },
+      { "@type": "Question", "name": "Was kosten Umzugshelfer in Mannheim pro Stunde?", "acceptedAnswer": { "@type": "Answer", "text": "2 Helfer plus LKW ab 110 Euro pro Stunde, 3 Helfer plus LKW ab 140 Euro pro Stunde, 4 Helfer plus LKW ab 170 Euro pro Stunde. Der Preis gilt für das ganze Team inklusive Fahrzeug. Abgerechnet wird in Viertelstundenschritten, die Mindestbuchung beträgt 4 Stunden." } },
       { "@type": "Question", "name": "Ab wann lohnt sich ein Festpreis mehr als die Stundenabrechnung?", "acceptedAnswer": { "@type": "Answer", "text": "Ab etwa zwei Zimmern oder 25 Kubikmetern, und immer dann, wenn Etage, Treppenhaus oder Parksituation den Zeitbedarf unsicher machen. Der Festpreis verlagert dieses Zeitrisiko vom Kunden auf das Unternehmen." } },
       { "@type": "Question", "name": "Ist ein größeres Umzugsteam teurer?", "acceptedAnswer": { "@type": "Answer", "text": "Nicht zwangsläufig. Ein größeres Team kostet mehr pro Stunde, arbeitet aber meist schneller, sodass die Gesamtsumme sinken kann. Welche Teamgröße für den konkreten Umzug wirtschaftlich ist, klären wir vorab." } },
       { "@type": "Question", "name": "Gilt die Mindestbuchung auch bei Festpreis-Umzügen?", "acceptedAnswer": { "@type": "Answer", "text": "Nein. Die Mindestdauer betrifft ausschließlich Umzüge, die nach Stunden abgerechnet werden. Bei einem Festpreis nach Besichtigung spielt sie keine Rolle." } },
       { "@type": "Question", "name": "Ab wann läuft die Zeit bei der Stundenabrechnung?", "acceptedAnswer": { "@type": "Answer", "text": "Die Zeit beginnt mit dem Eintreffen des Teams an der Beladestelle und endet nach dem vollständigen Entladen am Zielort. Abgerechnet wird in Viertelstundenschritten." } },
-      { "@type": "Question", "name": "Lohnt sich eine Halteverbotszone bei Stundenabrechnung?", "acceptedAnswer": { "@type": "Answer", "text": "Gerade dann. Die Zone kostet einmalig etwa 90 bis 130 Euro, während ein langer Laufweg ohne Zone bei jedem Gang Arbeitszeit kostet, multipliziert mit der Teamgröße. In den Quadraten und der Neckarstadt rechnet sich die Zone praktisch immer." } },
+      { "@type": "Question", "name": "Lohnt sich eine Halteverbotszone bei Stundenabrechnung?", "acceptedAnswer": { "@type": "Answer", "text": "Gerade dann. Die Zone kostet einmalig etwa 90 bis 130 Euro, während ein langer Laufweg ohne Zone bei jedem Gang Arbeitszeit kostet, zum vollen Stundensatz des Teams. In den Quadraten und der Neckarstadt rechnet sich die Zone praktisch immer." } },
       { "@type": "Question", "name": "Was ist im Stundenpreis enthalten?", "acceptedAnswer": { "@type": "Answer", "text": "Enthalten sind Transport, Tragen und das Umzugsteam einschließlich Fahrzeug. Zusatzleistungen wie Verpackungsservice, Möbelmontage oder die Halteverbotszone werden gesondert vereinbart." } }
     ]
   }
@@ -180,10 +180,10 @@ Inbound required: `stundenpreise.html` (prominent — dies ist die Ratgeber-Erg�
 ## Notes for implementer
 - Blog post → `blog/umzugshelfer-mannheim-stundenpreise/index.html`. **Sitemap only**, kein Prerender-Eintrag (`blog/` ist passthroughDir).
 - TOC-Anker: jedes `<h2>` braucht eine `id`, und die Sidebar-TOC muss darauf zeigen (`ACTION-PLAN.md` #17 — alle bestehenden Posts zeigen fälschlich auf `#article-top`).
-- Preisangaben stammen wörtlich aus `stundenpreise.html` (Stand 2026-08-25): "ab ca. 35–55 € pro Stunde **und Helfer** inklusive Fahrzeug", Viertelstunden-Abrechnung, Mindestbuchung 2–3 Stunden. **Bei Änderung der Preisseite diesen Post mitpflegen.**
+- Preisangaben stammen wörtlich aus `stundenpreise.html` (Stand 2026-08-25): "2 Helfer + LKW ab 110 €/h, 3 Helfer + LKW ab 140 €/h, 4 Helfer + LKW ab 170 €/h" (Teampreis), Viertelstunden-Abrechnung, Mindestbuchung 4 Stunden (korrigiert am 2026-11-16). **Bei Änderung der Preisseite diesen Post mitpflegen.**
 - Der Zusatz "und Helfer" ist entscheidend und wird in Wettbewerbsvergleichen oft übersehen — im Text bewusst hervorgehoben.
 
 ### Verify before publish
 - Ist reine **Lade-/Tragehilfe ohne Fahrzeug** buchbar? Auf der Site nirgends belegt — die FAQ-Antwort ist deshalb bewusst offen formuliert. Bei Bestätigung konkretisieren.
 - Stundensatz-Spanne und Mindestbuchung gegen die dann aktuelle `stundenpreise.html` gegenprüfen.
-- Das Rechenbeispiel verwendet ca. 45 €/Std./Helfer als Mittelwert der genannten Spanne — vor Veröffentlichung freigeben lassen.
+- Das Rechenbeispiel verwendet 110 €/h für 2 Helfer + LKW.

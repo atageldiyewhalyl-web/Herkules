@@ -80,7 +80,7 @@ score; mark `written:<date>` / `skipped:<reason>`, never delete.
 - primary_kw: studenten umzug mannheim (vol: n/a, difficulty: low)
 - secondary_kws: wg umzug kosten, kleiner umzug umzugshelfer mannheim
 - intent: commercial + seasonal (Aug–Oct peak)
-- serp_evidence: not yet inspected. Freshness hook: semester start; Stundenpreise page (35–55 €/h, Mindestbuchung 2–3 h) is the perfect money page to link.
+- serp_evidence: not yet inspected. Freshness hook: semester start; Stundenpreise page (2 Helfer + LKW ab 110 €/h, Mindestbuchung 4 h) is the perfect money page to link.
 - angle: small-move economics — when 2 Helfer × 3 h beat a full move package.
 - score: 6 (write in August for the seasonal hook +2 then)
 - status: pending

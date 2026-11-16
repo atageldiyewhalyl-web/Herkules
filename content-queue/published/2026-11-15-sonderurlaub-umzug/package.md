@@ -107,7 +107,7 @@ Mit einem freien Tag gelingt der Umzug, wenn am Umzugstag nur noch getragen, gef
 
 Den einen Tag verlieren Sie meist an zwei Stellen: am **Möbelabbau** (Kleiderschränke, Betten, Küche) und an **langen Tragewegen** in Altbauten ohne Aufzug. Beides kann ein eingespieltes Team übernehmen, während Sie Schlüssel übergeben und Zählerstände notieren. Bei unseren [Privatumzügen](/privatumzuege/) gehören Ab- und Aufbau der Möbel deshalb fest zum Leistungsumfang.
 
-Was ein Team pro Stunde kostet, sehen Sie auf unserer Seite [Stundenpreise](/stundenpreise/). Die Richtwerte beginnen bei ca. 35–55 € pro Stunde und Helfer inklusive Fahrzeug. Wie viele Stunden es werden, hängt von Volumen, Etagen und Laufwegen ab. Eine Einschätzung für Ihren Umzug erhalten Sie nach Ihrer Anfrage. Den kompletten Zeitplan ab acht Wochen vor dem Umzug finden Sie in unserer [Umzugs-Checkliste](/blog/umzug-checkliste/).
+Was ein Team pro Stunde kostet, sehen Sie auf unserer Seite [Stundenpreise](/stundenpreise/). Mit 2 Helfern + LKW kostet die Stunde ab 110 €, die Mindestbuchung beträgt 4 Stunden. Wie viele Stunden es werden, hängt von Volumen, Etagen und Laufwegen ab. Eine Einschätzung für Ihren Umzug erhalten Sie nach Ihrer Anfrage. Den kompletten Zeitplan ab acht Wochen vor dem Umzug finden Sie in unserer [Umzugs-Checkliste](/blog/umzug-checkliste/).
 
 Sie haben Ihren freien Tag und brauchen jetzt das passende Team? Herkules zieht Sie in Mannheim, der Rhein-Neckar-Region und Frankfurt um, mit Halteverbotszone und Möbelmontage. [Fordern Sie ein kostenloses Angebot an](#anfrage) oder rufen Sie an: Mannheim ☎ 0621 899 59 69, Frankfurt ☎ 069 66554358.
 
@@ -202,7 +202,7 @@ Stellen Sie den Antrag schriftlich oder per E-Mail, sobald der Umzugstermin fest
 - Umzugskosten von der Steuer absetzen → /blog/umzugskosten-steuer-absetzen/ (verified exists)
 - Halteverbotszone in Mannheim beantragen → /blog/halteverbotszone-beantragen-mannheim/ (verified exists)
 - Privatumzügen → /privatumzuege/ (verified exists)
-- Stundenpreise → /stundenpreise/ (verified exists; source of the 35–55 € range)
+- Stundenpreise → /stundenpreise/ (verified exists; source of the 110 €/h rate, 4-hour minimum)
 - Umzugs-Checkliste → /blog/umzug-checkliste/ (verified exists)
 - Fordern Sie ein kostenloses Angebot an → #anfrage (request form on the page, same pattern as existing posts)
 
@@ -232,6 +232,6 @@ Stellen Sie den Antrag schriftlich oder per E-Mail, sobald der Umzugstermin fest
 - rg-ways "Passende Seiten": /blog/umzug-checkliste/, /blog/umzugskosten-steuer-absetzen/, /privatumzuege/.
 - Meta keywords (site convention): sonderurlaub umzug, sonderurlaub umzug anspruch, sonderurlaub umzug wie viele tage, sonderurlaub umzug tvöd, arbeitsbefreiung umzug, sonderurlaub umzug beantragen.
 - The article gives general information, not legal advice. Consider an optional one-line note below the lead: "Dieser Ratgeber ersetzt keine Rechtsberatung; maßgeblich sind Ihr Arbeitsvertrag und ein ggf. geltender Tarifvertrag."
-- Client facts used come only from the existing site: Stundenpreise "ab ca. 35–55 € pro Stunde und Helfer inklusive Fahrzeug" (/stundenpreise), "Werktags oft kurzfristiger verfügbar … Samstagsumzüge 4–6 Wochen Vorlauf" (/umzug-lindenhof), Möbelab- und -aufbau (offer box on existing posts), Mannheim Halteverbot lead time of about two weeks (existing posts), Frankfurt phone 069 66554358 (client registry, verified 2026-10-24).
+- Client facts used come only from the existing site: Stundenpreise "2 Helfer + LKW ab 110 €/h, Mindestbuchung 4 Stunden" (/stundenpreise, corrected 2026-11-16), "Werktags oft kurzfristiger verfügbar … Samstagsumzüge 4–6 Wochen Vorlauf" (/umzug-lindenhof), Möbelab- und -aufbau (offer box on existing posts), Mannheim Halteverbot lead time of about two weeks (existing posts), Frankfurt phone 069 66554358 (client registry, verified 2026-10-24).
 - Keyword research basis: SERP for "Sonderurlaub Umzug" is dominated by national HR and insurance sites (R+V, Lexware, karrierebibel, arbeitsvertrag.org, absentify), with no local mover ranking. PAA/longtail themes: Anspruch privat vs. betrieblich, wie viele Tage, TVöD, Ablehnung durch Arbeitgeber, Antrag. No existing Herkules post covers employment or leave topics.
 - Run `npm run validate` after insertion; the title tag has 48 characters and the meta description has 151 characters.
